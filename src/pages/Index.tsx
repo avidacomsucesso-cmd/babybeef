@@ -25,8 +25,11 @@ const Index = () => {
 
       {/* Navigation */}
       <nav className="fixed top-0 w-full z-40 px-8 py-6 flex justify-between items-center bg-gradient-to-b from-brand-charcoal to-transparent">
-        <div className="text-2xl font-serif font-bold tracking-tighter text-brand-gold">
-          BABY BEEF <span className="text-brand-ivory font-light">& CO.</span>
+        <div className="flex items-center gap-4">
+          <img src="/logo.jpeg" alt="Logo" className="h-12 w-12 rounded-full border border-brand-gold/30 object-cover" />
+          <div className="text-2xl font-serif font-bold tracking-tighter text-brand-gold">
+            BABY BEEF <span className="text-brand-ivory font-light">& CO.</span>
+          </div>
         </div>
         <div className="hidden md:flex gap-8 text-sm uppercase tracking-[0.2em] font-medium">
           <a href="#marca" className="hover:text-brand-gold transition-colors">A Marca</a>
@@ -42,10 +45,10 @@ const Index = () => {
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <div className="absolute inset-0 bg-black/60 z-10" />
+          <div className="absolute inset-0 bg-black/50 z-10" />
           <img 
-            src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&q=80&w=2000" 
-            alt="Premium Beef" 
+            src="/bull-banner.jpeg" 
+            alt="Premium Brand" 
             className="w-full h-full object-cover"
           />
         </div>
@@ -94,8 +97,8 @@ const Index = () => {
           </p>
           <div className="grid grid-cols-2 gap-8">
             <div>
-              <div className="text-brand-gold mb-2 font-serif text-3xl font-bold">100%</div>
-              <p className="text-xs uppercase tracking-wider text-brand-ivory/50">Origem Controlada</p>
+              <div className="text-brand-gold mb-2 font-serif text-3xl font-bold">PT</div>
+              <p className="text-xs uppercase tracking-wider text-brand-ivory/50">ADN Português</p>
             </div>
             <div>
               <div className="text-brand-gold mb-2 font-serif text-3xl font-bold">21+</div>
@@ -105,11 +108,35 @@ const Index = () => {
         </motion.div>
         <div className="relative h-[600px] rounded-2xl overflow-hidden shadow-2xl shadow-black">
           <img 
-            src="https://images.unsplash.com/photo-1594041680534-e8c8cdebd679?auto=format&fit=crop&q=80&w=1000" 
-            alt="Master Butcher" 
+            src="/staff-premium.jpeg" 
+            alt="Equipa Premium" 
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-brand-charcoal via-transparent to-transparent opacity-60" />
+        </div>
+      </section>
+
+      {/* Montra Real Section */}
+      <section className="py-24 bg-brand-muted/10 overflow-hidden">
+        <div className="max-w-7xl mx-auto px-8 mb-12 flex justify-between items-end">
+          <div>
+            <h2 className="text-brand-gold uppercase tracking-widest text-sm mb-4">O Espaço</h2>
+            <h3 className="text-4xl font-serif">A Nossa Montra Diária</h3>
+          </div>
+          <p className="text-brand-ivory/60 max-w-xs text-right hidden md:block">
+            Qualidade que se vê. Sabor que se lembra. Visite as nossas lojas físicas.
+          </p>
+        </div>
+        <div className="flex gap-4 px-8 animate-fade-in">
+          <div className="w-1/3 h-96 rounded-2xl overflow-hidden">
+            <img src="/talho-real-1.jpeg" className="w-full h-full object-cover hover:scale-110 transition-transform duration-700" alt="Talho Real" />
+          </div>
+          <div className="w-1/3 h-96 rounded-2xl overflow-hidden">
+            <img src="/montra-carne.jpeg" className="w-full h-full object-cover hover:scale-110 transition-transform duration-700" alt="Montra de Carne" />
+          </div>
+          <div className="w-1/3 h-96 rounded-2xl overflow-hidden">
+            <img src="/talho-real-2.jpeg" className="w-full h-full object-cover hover:scale-110 transition-transform duration-700" alt="Interior Loja" />
+          </div>
         </div>
       </section>
 
@@ -122,9 +149,9 @@ const Index = () => {
 
         <div className="grid md:grid-cols-3 gap-8 px-8 max-w-7xl mx-auto">
           {[
-            { title: "Picanha Black", img: "https://images.unsplash.com/photo-1603048297172-c92544798d5a?auto=format&fit=crop&q=80&w=600", desc: "Marmorização extrema e sabor inigualável." },
-            { title: "Tomahawk Gold", img: "https://images.unsplash.com/photo-1546241072-48010ad2862c?auto=format&fit=crop&q=80&w=600", desc: "A peça central de qualquer churrasco de elite." },
-            { title: "Kits de Assado", img: "https://images.unsplash.com/photo-1615937657715-bc7b4b7962c1?auto=format&fit=crop&q=80&w=600", desc: "A experiência Baby Beef completa na sua casa." }
+            { title: "Kits Grelhados", img: "/kit-premium-2.jpeg", desc: "A praticidade do 'Pegue e Leve' com a nossa qualidade." },
+            { title: "Cortes Premium", img: "/ribeye-salt.jpeg", desc: "Cortes de elite preparados pelos nossos mestres." },
+            { title: "Churrasco em Casa", img: "/kit-churrasco-fire.jpeg", desc: "Tudo o que precisa para o churrasco perfeito." }
           ].map((product, idx) => (
             <motion.div 
               key={idx}
@@ -140,6 +167,27 @@ const Index = () => {
               </div>
             </motion.div>
           ))}
+        </div>
+      </section>
+
+      {/* Logística Section (Franchise Focus) */}
+      <section className="py-24 bg-brand-charcoal border-y border-brand-gold/10">
+        <div className="max-w-7xl mx-auto px-8 grid md:grid-cols-2 gap-16 items-center">
+          <div className="order-2 md:order-1 relative h-[500px] rounded-2xl overflow-hidden shadow-2xl">
+            <img src="/van-mercedes.jpeg" className="w-full h-full object-cover" alt="Distribuição" />
+            <div className="absolute top-4 left-4 bg-brand-gold text-brand-charcoal px-4 py-1 rounded-full text-xs font-bold uppercase">Frota Própria</div>
+          </div>
+          <div className="order-1 md:order-2">
+            <ShieldCheck size={40} className="text-brand-gold mb-6" />
+            <h3 className="text-4xl font-serif mb-6">Qualidade & Distribuição Refrigerada</h3>
+            <p className="text-brand-ivory/70 text-lg mb-8">
+              Garantimos a integridade de cada corte através da nossa própria rede de logística. Controle total da cadeia de frio, desde a origem até à porta do franqueado ou do cliente.
+            </p>
+            <div className="flex gap-4">
+               <img src="/carro-smart.jpeg" className="w-24 h-24 rounded-lg object-cover border border-brand-gold/20" alt="Mini Delivery" />
+               <img src="/mota-delivery.jpeg" className="w-24 h-24 rounded-lg object-cover border border-brand-gold/20" alt="Moto Delivery" />
+            </div>
+          </div>
         </div>
       </section>
 
