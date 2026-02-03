@@ -26,7 +26,7 @@ const Index = () => {
       {/* Navigation */}
       <nav className="fixed top-0 w-full z-40 px-12 py-8 flex justify-between items-center bg-gradient-to-b from-black/80 to-transparent">
         <div className="flex items-center gap-6">
-          <img src="/logo.jpeg" alt="Logo" className="h-20 w-20 rounded-full border border-brand-gold/30 object-cover shadow-xl" />
+          <img src="/logo.jpeg" alt="Logo" className="h-28 w-28 rounded-full border border-brand-gold/30 object-cover shadow-xl" />
           <div className="hidden lg:block">
             <div className="text-2xl font-serif font-bold tracking-tighter text-brand-gold leading-none">
               BABY BEEF
@@ -55,7 +55,8 @@ const Index = () => {
           <img 
             src="/carne-crua-faca.jpeg" 
             alt="High Quality Meat" 
-            className="w-full h-full object-cover object-center"
+            className="w-full h-full object-cover object-center scale-105"
+            style={{ imageRendering: 'crisp-edges' }}
           />
         </div>
         
