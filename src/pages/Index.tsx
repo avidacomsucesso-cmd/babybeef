@@ -35,7 +35,7 @@ const Index = () => {
           </div>
         </div>
         
-        <div className="hidden md:flex gap-12 text-[11px] uppercase tracking-[0.3em] font-bold">
+        <div className="hidden md:flex gap-12 text-[15px] uppercase tracking-[0.3em] font-bold">
           <a href="#marca" className="hover:text-brand-gold transition-colors text-white">A Marca</a>
           <a href="#produtos" className="hover:text-brand-gold transition-colors text-white">Os Nossos Cortes</a>
           <a href="#lojas" className="hover:text-brand-gold transition-colors text-white">Lojas</a>
