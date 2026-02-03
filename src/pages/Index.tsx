@@ -43,31 +43,23 @@ const Index = () => {
       </nav>
 
       {/* Hero Section */}
-      <section className="relative h-screen flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 z-0">
-          <div className="absolute inset-0 bg-black/60 z-10" />
+      <section className="relative h-screen flex flex-col items-center justify-center overflow-hidden bg-brand-charcoal">
+        <div className="absolute inset-0 z-0 flex items-center justify-center">
+          <div className="absolute inset-0 bg-black/40 z-10" />
           <img 
-            src="/carne-crua-v2.jpeg" 
-            alt="Texture Background" 
-            className="w-full h-full object-cover"
+            src="/bull-banner.jpeg" 
+            alt="Official Banner" 
+            className="w-full h-full object-contain md:object-contain"
           />
         </div>
         
-        <div className="relative z-20 text-center px-4">
+        <div className="relative z-20 text-center px-4 mt-auto mb-16 md:mb-24">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.5 }}
             className="flex flex-col items-center"
           >
-            <motion.img 
-              src="/logo.jpeg" 
-              alt="Baby Beef & Co. Logo" 
-              className="w-48 h-48 md:w-64 md:h-64 rounded-full border-2 border-brand-gold/50 mb-8 object-cover shadow-2xl"
-              initial={{ scale: 0.8, opacity: 0 }}
-              animate={{ scale: 1, opacity: 1 }}
-              transition={{ duration: 1.2, ease: "easeOut" }}
-            />
             <span className="text-brand-gold uppercase tracking-[0.4em] text-sm font-semibold mb-4 block">O Rei do Talho</span>
             <h1 className="text-6xl md:text-8xl font-serif mb-8 leading-none">
               O Churrasco tem <br /> <span className="italic">um Rei.</span>
