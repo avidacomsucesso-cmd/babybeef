@@ -43,33 +43,31 @@ const Index = () => {
       </nav>
 
       {/* Hero Section */}
-      <section className="relative min-h-screen flex flex-col overflow-hidden">
-        {/* Banner de Identidade (Imagem) */}
-        <div className="relative h-[60vh] w-full overflow-hidden border-b border-brand-gold/20">
-          <div className="absolute inset-0 bg-black/20 z-10" />
+      <section className="relative h-screen flex items-center justify-center overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <div className="absolute inset-0 bg-black/40 z-10" />
           <img 
             src="/bull-banner.jpeg" 
-            alt="Baby Beef & Co. Branding" 
-            className="w-full h-full object-contain md:object-cover md:object-center bg-brand-charcoal"
+            alt="Premium Brand" 
+            className="w-full h-full object-contain md:object-cover md:object-center bg-black"
           />
         </div>
         
-        {/* Conteúdo de Texto (Espaço Limpo) */}
-        <div className="flex-1 flex flex-col items-center justify-center text-center px-4 py-12 bg-brand-charcoal relative z-20">
+        <div className="relative z-20 text-center px-4">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.5 }}
           >
-            <span className="text-brand-gold uppercase tracking-[0.4em] text-sm font-semibold mb-6 block">O Rei do Talho</span>
-            <h1 className="text-5xl md:text-8xl font-serif mb-10 leading-tight">
-              O Churrasco tem <br /> <span className="italic text-brand-gold">um Rei.</span>
+            <span className="text-brand-gold uppercase tracking-[0.4em] text-sm font-semibold mb-4 block">O Rei do Talho</span>
+            <h1 className="text-6xl md:text-8xl font-serif mb-8 leading-none">
+              O Churrasco tem <br /> <span className="italic">um Rei.</span>
             </h1>
-            <div className="flex flex-col md:flex-row gap-6 justify-center items-center">
-              <button className="bg-brand-gold text-brand-charcoal px-10 py-4 rounded-full font-bold uppercase tracking-widest hover:bg-brand-ivory transition-all duration-300 shadow-lg shadow-brand-gold/10">
+            <div className="flex flex-col md:flex-row gap-4 justify-center items-center">
+              <button className="bg-brand-gold text-brand-charcoal px-10 py-4 rounded-full font-bold uppercase tracking-widest hover:scale-105 transition-transform">
                 Conheça a Marca
               </button>
-              <button className="border border-brand-gold/50 text-brand-gold px-10 py-4 rounded-full font-bold uppercase tracking-widest hover:bg-brand-gold hover:text-brand-charcoal transition-all duration-300">
+              <button className="border border-brand-ivory/30 backdrop-blur-sm px-10 py-4 rounded-full font-bold uppercase tracking-widest hover:bg-brand-ivory hover:text-brand-charcoal transition-all">
                 Investir em Franquias
               </button>
             </div>
