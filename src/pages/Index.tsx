@@ -24,52 +24,67 @@ const Index = () => {
       <FireParticles />
 
       {/* Navigation */}
-      <nav className="fixed top-0 w-full z-40 px-8 py-6 flex justify-between items-center bg-gradient-to-b from-brand-charcoal to-transparent">
-        <div className="flex items-center gap-4">
-          <img src="/logo.jpeg" alt="Logo" className="h-12 w-12 rounded-full border border-brand-gold/30 object-cover" />
-          <div className="text-2xl font-serif font-bold tracking-tighter text-brand-gold">
-            BABY BEEF <span className="text-brand-ivory font-light">& CO.</span>
+      <nav className="fixed top-0 w-full z-40 px-12 py-8 flex justify-between items-center bg-gradient-to-b from-black/80 to-transparent">
+        <div className="flex items-center gap-6">
+          <img src="/logo.jpeg" alt="Logo" className="h-20 w-20 rounded-full border border-brand-gold/30 object-cover shadow-xl" />
+          <div className="hidden lg:block">
+            <div className="text-2xl font-serif font-bold tracking-tighter text-brand-gold leading-none">
+              BABY BEEF
+            </div>
+            <div className="text-sm tracking-[0.3em] text-brand-ivory/80 uppercase">O Rei do Talho</div>
           </div>
         </div>
-        <div className="hidden md:flex gap-8 text-sm uppercase tracking-[0.2em] font-medium">
-          <a href="#marca" className="hover:text-brand-gold transition-colors">A Marca</a>
-          <a href="#produtos" className="hover:text-brand-gold transition-colors">Produtos</a>
-          <a href="#franquias" className="hover:text-brand-gold transition-colors">Franquias</a>
-          <a href="#contacto" className="hover:text-brand-gold transition-colors">Contacto</a>
+        
+        <div className="hidden md:flex gap-12 text-[11px] uppercase tracking-[0.3em] font-bold">
+          <a href="#marca" className="hover:text-brand-gold transition-colors text-white">A Marca</a>
+          <a href="#produtos" className="hover:text-brand-gold transition-colors text-white">Os Nossos Cortes</a>
+          <a href="#lojas" className="hover:text-brand-gold transition-colors text-white">Lojas</a>
+          <a href="#franquias" className="hover:text-brand-gold transition-colors text-white">Franquias</a>
+          <a href="#contacto" className="hover:text-brand-gold transition-colors text-white">Contacto</a>
         </div>
-        <button className="bg-brand-gold text-brand-charcoal px-6 py-2 rounded-full text-xs uppercase font-bold tracking-widest hover:bg-brand-ivory transition-all duration-300">
-          Reservar
+
+        <button className="bg-brand-gold text-brand-charcoal px-8 py-3 rounded-full text-[10px] uppercase font-black tracking-widest hover:bg-white transition-all duration-300 shadow-lg">
+          Reservar Agora
         </button>
       </nav>
 
       {/* Hero Section */}
-      <section className="relative h-screen flex flex-col items-center justify-center overflow-hidden bg-brand-charcoal">
-        <div className="absolute inset-0 z-0 flex items-center justify-center">
-          <div className="absolute inset-0 bg-black/40 z-10" />
+      <section className="relative h-screen flex items-center overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent z-10" />
           <img 
-            src="/bull-banner.jpeg" 
-            alt="Official Banner" 
-            className="w-full h-full object-contain md:object-contain"
+            src="/carne-crua-faca.jpeg" 
+            alt="High Quality Meat" 
+            className="w-full h-full object-cover object-center"
           />
         </div>
         
-        <div className="relative z-20 text-center px-4 mt-auto mb-16 md:mb-24">
+        <div className="relative z-20 px-12 md:px-24 max-w-4xl">
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 0.5 }}
-            className="flex flex-col items-center"
+            initial={{ opacity: 0, x: -50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1.2, delay: 0.3 }}
           >
-            <span className="text-brand-gold uppercase tracking-[0.4em] text-sm font-semibold mb-4 block">O Rei do Talho</span>
-            <h1 className="text-6xl md:text-8xl font-serif mb-8 leading-none">
-              O Churrasco tem <br /> <span className="italic">um Rei.</span>
+            <div className="flex items-center gap-4 mb-6">
+              <div className="h-[1px] w-12 bg-brand-gold" />
+              <span className="text-brand-gold uppercase tracking-[0.5em] text-xs font-bold">Establecido em Portugal</span>
+            </div>
+            
+            <h1 className="text-7xl md:text-[120px] font-serif mb-8 leading-[0.9] drop-shadow-2xl">
+              O Churrasco <br /> 
+              <span className="italic text-brand-gold">tem um Rei.</span>
             </h1>
-            <div className="flex flex-col md:flex-row gap-4 justify-center items-center">
-              <button className="bg-brand-gold text-brand-charcoal px-10 py-4 rounded-full font-bold uppercase tracking-widest hover:scale-105 transition-transform">
-                Conheça a Marca
+            
+            <p className="text-xl md:text-2xl text-brand-ivory/80 font-light mb-12 max-w-xl leading-relaxed">
+              Mestria, tradição e os melhores cortes do mundo, selecionados para a sua mesa.
+            </p>
+
+            <div className="flex flex-col md:flex-row gap-6">
+              <button className="bg-brand-gold text-brand-charcoal px-12 py-5 rounded-full font-black uppercase tracking-widest hover:scale-105 transition-transform shadow-2xl">
+                Descobrir Coleção
               </button>
-              <button className="border border-brand-ivory/30 backdrop-blur-sm px-10 py-4 rounded-full font-bold uppercase tracking-widest hover:bg-brand-ivory hover:text-brand-charcoal transition-all">
-                Investir em Franquias
+              <button className="border border-white/20 backdrop-blur-md bg-white/5 px-12 py-5 rounded-full font-black uppercase tracking-widest hover:bg-white hover:text-brand-charcoal transition-all shadow-xl">
+                Seja um Franqueado
               </button>
             </div>
           </motion.div>
