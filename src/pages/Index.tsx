@@ -45,15 +45,15 @@ const Index = () => {
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <div className="absolute inset-0 bg-black/40 z-10" />
+          <div className="absolute inset-0 bg-black/30 z-10" />
           <img 
             src="/bull-banner.jpeg" 
             alt="Premium Brand" 
-            className="w-full h-full object-contain md:object-cover md:object-center bg-black"
+            className="w-full h-full object-cover object-top"
           />
         </div>
         
-        <div className="relative z-20 text-center px-4">
+        <div className="relative z-20 text-center px-4 mt-32 md:mt-48">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
