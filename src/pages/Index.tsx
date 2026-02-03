@@ -123,13 +123,13 @@ const Index = () => {
             </div>
           </div>
         </motion.div>
-        <div className="relative h-[600px] rounded-2xl overflow-hidden shadow-2xl shadow-black">
+        <div className="relative h-[600px] rounded-2xl overflow-hidden shadow-2xl shadow-black bg-brand-muted/20">
           <img 
             src="/staff-premium.jpeg" 
             alt="Equipa Premium" 
-            className="w-full h-full object-cover"
+            className="w-full h-full object-contain md:object-contain object-center"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-brand-charcoal via-transparent to-transparent opacity-60" />
+          <div className="absolute inset-0 bg-gradient-to-t from-brand-charcoal/40 via-transparent to-transparent opacity-60 pointer-events-none" />
         </div>
       </section>
 
