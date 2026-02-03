@@ -45,11 +45,11 @@ const Index = () => {
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <div className="absolute inset-0 bg-black/50 z-10" />
+          <div className="absolute inset-0 bg-black/40 z-10" />
           <img 
             src="/bull-banner.jpeg" 
             alt="Premium Brand" 
-            className="w-full h-full object-cover"
+            className="w-full h-full object-contain md:object-cover md:object-center bg-black"
           />
         </div>
         
