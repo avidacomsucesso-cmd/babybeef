@@ -23,6 +23,7 @@ import { pt } from "date-fns/locale";
 import { Calendar } from "@/components/ui/calendar";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 import { cn } from "@/lib/utils";
+import { motion } from "framer-motion";
 
 const MEAT_CATEGORIES = {
   essentials: {
@@ -46,14 +47,27 @@ const MEAT_CATEGORIES = {
 const OrderForm = ({ children }: { children: React.ReactNode }) => {
   const [open, setOpen] = useState(false);
   const [loading, setLoading] = useState(false);
-  const [selectedCuts, setSelectedCuts] = useState<string[]>([]);
+  const [selectedCuts, setSelectedCuts] = useState<{name: string, quantity: string, unit: string}[]>([]);
   const [orderType, setOrderType] = useState("pickup");
   const [date, setDate] = useState<Date>();
 
   const toggleCut = (cut: string) => {
-    setSelectedCuts(prev => 
-      prev.includes(cut) ? prev.filter(c => c !== cut) : [...prev, cut]
-    );
+    setSelectedCuts(prev => {
+      const exists = prev.find(c => c.name === cut);
+      if (exists) {
+        return prev.filter(c => c.name !== cut);
+      } else {
+        return [...prev, { name: cut, quantity: "1", unit: "kg" }];
+      }
+    });
+  };
+
+  const updateQuantity = (name: string, quantity: string) => {
+    setSelectedCuts(prev => prev.map(c => c.name === name ? { ...c, quantity } : c));
+  };
+
+  const updateUnit = (name: string, unit: string) => {
+    setSelectedCuts(prev => prev.map(c => c.name === name ? { ...c, unit } : c));
   };
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -113,27 +127,60 @@ const OrderForm = ({ children }: { children: React.ReactNode }) => {
               <ScrollArea className="flex-1 pr-4">
                 {Object.entries(MEAT_CATEGORIES).map(([key, cat]) => (
                   <TabsContent key={key} value={key} className="mt-0 space-y-3">
-                    {cat.items.map(item => (
-                      <div 
-                        key={item} 
-                        className={`flex items-center space-x-3 p-3 rounded-lg transition-colors border ${
-                          selectedCuts.includes(item) ? 'bg-brand-gold/10 border-brand-gold' : 'bg-brand-muted/30 border-brand-gold/10 hover:border-brand-gold/30'
-                        }`}
-                      >
-                        <Checkbox 
-                          id={`cut-${item}`} 
-                          checked={selectedCuts.includes(item)}
-                          onCheckedChange={() => toggleCut(item)}
-                          className="border-brand-gold/50 data-[state=checked]:bg-brand-gold data-[state=checked]:text-brand-charcoal"
-                        />
-                        <label 
-                          htmlFor={`cut-${item}`}
-                          className="text-sm font-bold leading-none cursor-pointer flex-1 text-brand-ivory py-1"
+                    {cat.items.map(item => {
+                      const selection = selectedCuts.find(c => c.name === item);
+                      return (
+                        <div 
+                          key={item} 
+                          className={`flex flex-col space-y-3 p-3 rounded-lg transition-colors border ${
+                            selection ? 'bg-brand-gold/10 border-brand-gold' : 'bg-brand-muted/30 border-brand-gold/10 hover:border-brand-gold/30'
+                          }`}
                         >
-                          {item}
-                        </label>
-                      </div>
-                    ))}
+                          <div className="flex items-center space-x-3">
+                            <Checkbox 
+                              id={`cut-${item}`} 
+                              checked={!!selection}
+                              onCheckedChange={() => toggleCut(item)}
+                              className="border-brand-gold/50 data-[state=checked]:bg-brand-gold data-[state=checked]:text-brand-charcoal"
+                            />
+                            <label 
+                              htmlFor={`cut-${item}`}
+                              className="text-sm font-bold leading-none cursor-pointer flex-1 text-brand-ivory py-1"
+                            >
+                              {item}
+                            </label>
+                          </div>
+                          
+                          {selection && (
+                            <motion.div 
+                              initial={{ opacity: 0, height: 0 }}
+                              animate={{ opacity: 1, height: 'auto' }}
+                              className="flex items-center gap-2 pl-8 pb-1"
+                            >
+                              <div className="flex-1 max-w-[100px]">
+                                <Input 
+                                  type="number" 
+                                  value={selection.quantity}
+                                  onChange={(e) => updateQuantity(item, e.target.value)}
+                                  className="h-8 bg-brand-charcoal border-brand-gold/20 text-xs text-brand-gold font-bold focus:border-brand-gold"
+                                  min="0.1"
+                                  step="0.1"
+                                />
+                              </div>
+                              <select 
+                                value={selection.unit}
+                                onChange={(e) => updateUnit(item, e.target.value)}
+                                className="h-8 bg-brand-charcoal border border-brand-gold/20 rounded-md text-[10px] uppercase font-bold text-brand-gold px-2 focus:border-brand-gold outline-none"
+                              >
+                                <option value="kg">Quilos (kg)</option>
+                                <option value="g">Gramas (g)</option>
+                                <option value="un">Unidades</option>
+                              </select>
+                            </motion.div>
+                          )}
+                        </div>
+                      );
+                    })}
                   </TabsContent>
                 ))}
               </ScrollArea>
