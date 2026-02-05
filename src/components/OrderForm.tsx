@@ -83,7 +83,7 @@ const OrderForm = ({ children }: { children: React.ReactNode }) => {
       <DialogTrigger asChild>
         {children}
       </DialogTrigger>
-      <DialogContent className="sm:max-w-[800px] max-h-[90vh] overflow-hidden flex flex-col bg-brand-charcoal border-brand-gold/20 text-brand-ivory p-0">
+      <DialogContent className="sm:max-w-[900px] max-h-[90vh] overflow-hidden flex flex-col bg-brand-charcoal border-brand-gold/20 text-brand-ivory p-0">
         <DialogHeader className="p-6 border-b border-brand-gold/10">
           <DialogTitle className="text-3xl font-serif text-brand-gold flex items-center gap-3">
             <ShoppingCart className="text-brand-gold" />
@@ -167,22 +167,22 @@ const OrderForm = ({ children }: { children: React.ReactNode }) => {
                 </RadioGroup>
               </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="space-y-4">
                 <div className="space-y-2">
                   <Label className="flex items-center gap-2 text-brand-gold font-bold">
-                    <CalendarIcon size={14} /> Data
+                    <CalendarIcon size={14} /> Data da Reserva
                   </Label>
                   <Popover>
                     <PopoverTrigger asChild>
                       <Button
                         variant={"outline"}
                         className={cn(
-                          "w-full justify-start text-left font-normal bg-brand-charcoal border-brand-gold/10 hover:bg-brand-muted focus:border-brand-gold",
+                          "w-full justify-start text-left font-normal bg-brand-charcoal border-brand-gold/10 hover:bg-brand-muted focus:border-brand-gold h-12",
                           !date && "text-muted-foreground"
                         )}
                       >
-                        <CalendarIcon className="mr-2 h-4 w-4" />
-                        {date ? format(date, "PPP", { locale: pt }) : <span>Escolha uma data</span>}
+                        <CalendarIcon className="mr-2 h-4 w-4 text-brand-gold" />
+                        {date ? format(date, "PPP", { locale: pt }) : <span>Selecione a data</span>}
                       </Button>
                     </PopoverTrigger>
                     <PopoverContent className="w-auto p-0 bg-brand-charcoal border-brand-gold/20 z-[100]" align="start">
@@ -197,18 +197,21 @@ const OrderForm = ({ children }: { children: React.ReactNode }) => {
                     </PopoverContent>
                   </Popover>
                 </div>
+                
                 <div className="space-y-2">
-                  <Label htmlFor="time" className="text-brand-gold font-bold">Horário</Label>
+                  <Label htmlFor="time" className="text-brand-gold font-bold flex items-center gap-2">
+                    Horário Sugerido
+                  </Label>
                   <Input 
                     type="time" 
                     id="time" 
                     required 
-                    className="bg-brand-charcoal border-brand-gold/10 focus:border-brand-gold h-10" 
+                    className="bg-brand-charcoal border-brand-gold/10 focus:border-brand-gold h-12" 
                   />
                 </div>
               </div>
 
-              <div className="space-y-4">
+              <div className="space-y-4 pt-4 border-t border-brand-gold/10">
                 <div className="space-y-2">
                   <Label htmlFor="name">Nome Completo</Label>
                   <Input id="name" required className="bg-brand-charcoal border-brand-gold/10" />
