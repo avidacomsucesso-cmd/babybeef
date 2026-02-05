@@ -4,6 +4,7 @@ import React, { useEffect, useState } from 'react';
 import { motion, useScroll, useSpring } from 'framer-motion';
 import { ChefHat, Flame, MapPin, TrendingUp, ShieldCheck, Phone, ChevronDown, Instagram, Facebook } from 'lucide-react';
 import FireParticles from '../components/FireParticles';
+import TestimonialsSection from '../components/TestimonialsSection';
 
 const Index = () => {
   const { scrollYProgress } = useScroll();
@@ -267,6 +268,9 @@ const Index = () => {
           </button>
         </div>
       </section>
+
+      {/* Testimonials Section */}
+      <TestimonialsSection />
 
       {/* Footer / Contacto */}
       <footer id="contacto" className="pt-24 pb-12 bg-black text-brand-ivory/60">
