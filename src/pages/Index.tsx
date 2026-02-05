@@ -220,6 +220,9 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Testimonials Section */}
+      <TestimonialsSection />
+
       {/* Logística Section (Franchise Focus) */}
       <section className="py-24 bg-brand-charcoal border-y border-brand-gold/10">
         <div className="max-w-7xl mx-auto px-8 grid md:grid-cols-2 gap-16 items-center">
