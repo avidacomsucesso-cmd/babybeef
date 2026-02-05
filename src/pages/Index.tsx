@@ -53,8 +53,8 @@ const Index = () => {
         <div className="absolute inset-0 z-0">
           <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent z-10" />
           <img 
-            src="/hero-steak-new.png" 
-            alt="Premium Steak Experience" 
+            src="/hero-master-cut.png" 
+            alt="Master Butcher Cut" 
             className="w-full h-full object-cover object-center scale-105"
             style={{ imageRendering: 'auto' }}
           />
