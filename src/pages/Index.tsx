@@ -27,7 +27,7 @@ const Index = () => {
       <FireParticles />
 
       {/* Navigation */}
-      <nav className="fixed top-0 w-full z-40 px-12 py-8 flex justify-between items-center bg-gradient-to-b from-black/80 to-transparent">
+      <nav className="absolute top-0 w-full z-40 px-12 py-8 flex justify-between items-center bg-gradient-to-b from-black/80 to-transparent">
         <div className="flex items-center gap-6">
           <img src="/logo-transparent.png" alt="Logo" className="h-52 w-52 object-contain drop-shadow-2xl" />
           <div className="hidden lg:block">
