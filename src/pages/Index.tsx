@@ -86,9 +86,11 @@ const Index = () => {
               <button className="bg-brand-gold text-brand-charcoal px-12 py-5 rounded-full font-black uppercase tracking-widest hover:scale-105 transition-transform shadow-2xl">
                 Descobrir Coleção
               </button>
-              <button className="border border-white/20 backdrop-blur-md bg-white/5 px-12 py-5 rounded-full font-black uppercase tracking-widest hover:bg-white hover:text-brand-charcoal transition-all shadow-xl">
-                Seja um Franqueado
-              </button>
+              <FranchiseForm>
+                <button className="border border-white/20 backdrop-blur-md bg-white/5 px-12 py-5 rounded-full font-black uppercase tracking-widest hover:bg-white hover:text-brand-charcoal transition-all shadow-xl">
+                  Seja um Franqueado
+                </button>
+              </FranchiseForm>
             </div>
           </motion.div>
         </div>
