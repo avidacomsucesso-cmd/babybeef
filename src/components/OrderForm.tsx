@@ -89,9 +89,13 @@ const OrderForm = ({ children }: { children: React.ReactNode }) => {
           <div className="flex-1 border-r border-brand-gold/20 p-6 overflow-hidden flex flex-col bg-brand-charcoal">
             <h4 className="text-lg font-serif text-brand-gold mb-4">Selecione os Cortes</h4>
             <Tabs defaultValue="essentials" className="w-full h-full flex flex-col">
-              <TabsList className="bg-brand-muted border border-brand-gold/30 w-full justify-start overflow-x-auto h-auto p-1 mb-4">
+              <TabsList className="bg-brand-muted border border-brand-gold/30 w-full flex flex-wrap h-auto p-1 mb-6 gap-1">
                 {Object.entries(MEAT_CATEGORIES).map(([key, cat]) => (
-                  <TabsTrigger key={key} value={key} className="text-xs data-[state=active]:bg-brand-gold data-[state=active]:text-brand-charcoal font-bold">
+                  <TabsTrigger 
+                    key={key} 
+                    value={key} 
+                    className="flex-1 min-w-[100px] text-[11px] md:text-xs py-2 data-[state=active]:bg-brand-gold data-[state=active]:text-brand-charcoal font-bold transition-all uppercase tracking-tighter"
+                  >
                     {cat.label}
                   </TabsTrigger>
                 ))}
