@@ -106,18 +106,20 @@ const OrderForm = ({ children }: { children: React.ReactNode }) => {
                     {cat.items.map(item => (
                       <div 
                         key={item} 
-                        className={`flex items-center space-x-3 p-3 rounded-lg transition-colors cursor-pointer border ${
+                        className={`flex items-center space-x-3 p-3 rounded-lg transition-colors border ${
                           selectedCuts.includes(item) ? 'bg-brand-gold/10 border-brand-gold' : 'bg-brand-muted/30 border-brand-gold/10 hover:border-brand-gold/30'
                         }`}
-                        onClick={() => toggleCut(item)}
                       >
                         <Checkbox 
-                          id={item} 
+                          id={`cut-${item}`} 
                           checked={selectedCuts.includes(item)}
                           onCheckedChange={() => toggleCut(item)}
                           className="border-brand-gold/50 data-[state=checked]:bg-brand-gold data-[state=checked]:text-brand-charcoal"
                         />
-                        <label className="text-sm font-bold leading-none cursor-pointer flex-1 text-brand-ivory">
+                        <label 
+                          htmlFor={`cut-${item}`}
+                          className="text-sm font-bold leading-none cursor-pointer flex-1 text-brand-ivory py-1"
+                        >
                           {item}
                         </label>
                       </div>
