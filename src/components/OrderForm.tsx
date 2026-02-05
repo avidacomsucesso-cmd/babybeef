@@ -86,12 +86,12 @@ const OrderForm = ({ children }: { children: React.ReactNode }) => {
 
         <form onSubmit={handleSubmit} className="flex-1 overflow-hidden flex flex-col md:flex-row">
           {/* Meat Selection Area */}
-          <div className="flex-1 border-r border-brand-gold/10 p-6 overflow-hidden flex flex-col">
+          <div className="flex-1 border-r border-brand-gold/20 p-6 overflow-hidden flex flex-col bg-brand-charcoal">
             <h4 className="text-lg font-serif text-brand-gold mb-4">Selecione os Cortes</h4>
             <Tabs defaultValue="essentials" className="w-full h-full flex flex-col">
-              <TabsList className="bg-brand-muted/50 border border-brand-gold/10 w-full justify-start overflow-x-auto h-auto p-1 mb-4">
+              <TabsList className="bg-brand-muted border border-brand-gold/30 w-full justify-start overflow-x-auto h-auto p-1 mb-4">
                 {Object.entries(MEAT_CATEGORIES).map(([key, cat]) => (
-                  <TabsTrigger key={key} value={key} className="text-xs data-[state=active]:bg-brand-gold data-[state=active]:text-brand-charcoal">
+                  <TabsTrigger key={key} value={key} className="text-xs data-[state=active]:bg-brand-gold data-[state=active]:text-brand-charcoal font-bold">
                     {cat.label}
                   </TabsTrigger>
                 ))}
@@ -100,14 +100,20 @@ const OrderForm = ({ children }: { children: React.ReactNode }) => {
                 {Object.entries(MEAT_CATEGORIES).map(([key, cat]) => (
                   <TabsContent key={key} value={key} className="mt-0 space-y-3">
                     {cat.items.map(item => (
-                      <div key={item} className="flex items-center space-x-3 p-2 hover:bg-brand-gold/5 rounded-lg transition-colors cursor-pointer" onClick={() => toggleCut(item)}>
+                      <div 
+                        key={item} 
+                        className={`flex items-center space-x-3 p-3 rounded-lg transition-colors cursor-pointer border ${
+                          selectedCuts.includes(item) ? 'bg-brand-gold/10 border-brand-gold' : 'bg-brand-muted/30 border-brand-gold/10 hover:border-brand-gold/30'
+                        }`}
+                        onClick={() => toggleCut(item)}
+                      >
                         <Checkbox 
                           id={item} 
                           checked={selectedCuts.includes(item)}
                           onCheckedChange={() => toggleCut(item)}
-                          className="border-brand-gold/50 data-[state=checked]:bg-brand-gold"
+                          className="border-brand-gold/50 data-[state=checked]:bg-brand-gold data-[state=checked]:text-brand-charcoal"
                         />
-                        <label className="text-sm font-medium leading-none cursor-pointer flex-1">
+                        <label className="text-sm font-bold leading-none cursor-pointer flex-1 text-brand-ivory">
                           {item}
                         </label>
                       </div>
@@ -119,21 +125,27 @@ const OrderForm = ({ children }: { children: React.ReactNode }) => {
           </div>
 
           {/* Contact & Logistics Area */}
-          <ScrollArea className="flex-1 p-6 bg-brand-muted/20">
+          <ScrollArea className="flex-1 p-6 bg-brand-muted/40">
             <div className="space-y-6">
               <div>
-                <Label className="text-brand-gold mb-3 block">Modo de Entrega</Label>
-                <RadioGroup defaultValue="pickup" className="flex gap-4" onValueChange={setOrderType}>
-                  <div className="flex items-center space-x-2 bg-brand-charcoal p-3 rounded-lg border border-brand-gold/10 flex-1">
-                    <RadioGroupItem value="pickup" id="pickup" />
-                    <Label htmlFor="pickup" className="flex items-center gap-2 cursor-pointer">
-                      <MapPin size={16} /> Retirar no Talho
+                <Label className="text-brand-gold text-sm font-bold mb-3 block uppercase tracking-wider">Modo de Entrega</Label>
+                <RadioGroup defaultValue="pickup" className="flex flex-col gap-3" onValueChange={setOrderType}>
+                  <div className={`flex items-center space-x-3 p-4 rounded-lg border transition-all cursor-pointer ${
+                    orderType === "pickup" ? 'bg-brand-gold/10 border-brand-gold shadow-[0_0_15px_rgba(198,155,60,0.1)]' : 'bg-brand-charcoal border-brand-gold/20'
+                  }`}
+                  onClick={() => setOrderType("pickup")}>
+                    <RadioGroupItem value="pickup" id="pickup" className="border-brand-gold text-brand-gold" />
+                    <Label htmlFor="pickup" className="flex items-center gap-3 cursor-pointer text-brand-ivory font-bold text-base">
+                      <MapPin size={18} className="text-brand-gold" /> Retirar no Talho
                     </Label>
                   </div>
-                  <div className="flex items-center space-x-2 bg-brand-charcoal p-3 rounded-lg border border-brand-gold/10 flex-1">
-                    <RadioGroupItem value="delivery" id="delivery" />
-                    <Label htmlFor="delivery" className="flex items-center gap-2 cursor-pointer">
-                      <ShoppingCart size={16} /> Entrega
+                  <div className={`flex items-center space-x-3 p-4 rounded-lg border transition-all cursor-pointer ${
+                    orderType === "delivery" ? 'bg-brand-gold/10 border-brand-gold shadow-[0_0_15px_rgba(198,155,60,0.1)]' : 'bg-brand-charcoal border-brand-gold/20'
+                  }`}
+                  onClick={() => setOrderType("delivery")}>
+                    <RadioGroupItem value="delivery" id="delivery" className="border-brand-gold text-brand-gold" />
+                    <Label htmlFor="delivery" className="flex items-center gap-3 cursor-pointer text-brand-ivory font-bold text-base">
+                      <ShoppingCart size={18} className="text-brand-gold" /> Entrega ao Domicílio
                     </Label>
                   </div>
                 </RadioGroup>
