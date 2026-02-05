@@ -107,10 +107,14 @@ const Index = () => {
           initial={{ opacity: 0, x: -50 }}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="text-brand-gold uppercase tracking-widest text-sm mb-4">A Filosofia</h2>
-          <h3 className="text-4xl md:text-5xl font-serif mb-8 leading-tight">A Arte de Servir a Perfeição em Cada Corte.</h3>
+          <h2 className="text-brand-gold uppercase tracking-widest text-sm mb-4">A Nossa Essência</h2>
+          <h3 className="text-4xl md:text-5xl font-serif mb-8 leading-tight">O Diferencial Baby Beef</h3>
+          <p className="text-brand-ivory/70 text-lg leading-relaxed mb-6">
+            Na Baby Beef, acreditamos que a excelência começa na origem e se revela no corte.
+            Não somos apenas um talho — somos especialistas em carne, movidos pela paixão pela mestria, pela tradição e pela qualidade absoluta.
+          </p>
           <p className="text-brand-ivory/70 text-lg leading-relaxed mb-8">
-            A Baby Beef & Co. nasceu da paixão pelo fogo e pelo respeito absoluto ao produto. Não somos apenas um talho; somos os guardiões da tradição do churrasco premium em Portugal. Cada peça é selecionada, cada corte é uma assinatura de mestria.
+            Cada peça que chega ao nosso balcão é cuidadosamente selecionada segundo critérios rigorosos de raça, marmoreio, frescura e consistência, garantindo uma experiência superior desde a escolha até ao momento à mesa. Trabalhamos apenas com fornecedores certificados e processos controlados, respeitando a cadeia de frio e os mais elevados padrões de segurança alimentar.
           </p>
           <div className="grid grid-cols-2 gap-8">
             <div>
