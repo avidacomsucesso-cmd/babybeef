@@ -314,10 +314,10 @@ const Index = () => {
           <div>
             <h5 className="text-brand-ivory font-bold mb-6 uppercase tracking-widest text-xs">Menu</h5>
             <ul className="space-y-4 text-sm">
-              <li><a href="#" className="hover:text-brand-gold">A Nossa História</a></li>
-              <li><a href="#" className="hover:text-brand-gold">Cortes Premium</a></li>
-              <li><a href="#" className="hover:text-brand-gold">Franquias</a></li>
-              <li><a href="#" className="hover:text-brand-gold">Lojas</a></li>
+              <li><a href="#marca" className="hover:text-brand-gold">A Marca</a></li>
+              <li><a href="#produtos" className="hover:text-brand-gold">Os Nossos Cortes</a></li>
+              <li><a href="#franquias" className="hover:text-brand-gold">Franquias</a></li>
+              <li><a href="#lojas" className="hover:text-brand-gold">Lojas</a></li>
             </ul>
           </div>
 
