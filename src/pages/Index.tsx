@@ -269,9 +269,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Testimonials Section */}
-      <TestimonialsSection />
-
       {/* Footer / Contacto */}
       <footer id="contacto" className="pt-24 pb-12 bg-black text-brand-ivory/60">
         <div className="max-w-7xl mx-auto px-8 grid md:grid-cols-4 gap-12 mb-20">
