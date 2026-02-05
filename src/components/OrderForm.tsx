@@ -17,7 +17,12 @@ import { Checkbox } from "@/components/ui/checkbox";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { toast } from "sonner";
-import { ShoppingCart, Calendar, MapPin, Phone, Mail } from 'lucide-react';
+import { ShoppingCart, Calendar as CalendarIcon, MapPin, Phone, Mail } from 'lucide-react';
+import { format } from "date-fns";
+import { pt } from "date-fns/locale";
+import { Calendar } from "@/components/ui/calendar";
+import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
+import { cn } from "@/lib/utils";
 
 const MEAT_CATEGORIES = {
   essentials: {
@@ -43,6 +48,7 @@ const OrderForm = ({ children }: { children: React.ReactNode }) => {
   const [loading, setLoading] = useState(false);
   const [selectedCuts, setSelectedCuts] = useState<string[]>([]);
   const [orderType, setOrderType] = useState("pickup");
+  const [date, setDate] = useState<Date>();
 
   const toggleCut = (cut: string) => {
     setSelectedCuts(prev => 
@@ -54,6 +60,10 @@ const OrderForm = ({ children }: { children: React.ReactNode }) => {
     e.preventDefault();
     if (selectedCuts.length === 0) {
       toast.error("Por favor, selecione pelo menos um corte.");
+      return;
+    }
+    if (!date) {
+      toast.error("Por favor, selecione uma data.");
       return;
     }
     setLoading(true);
@@ -159,10 +169,33 @@ const OrderForm = ({ children }: { children: React.ReactNode }) => {
 
               <div className="grid grid-cols-2 gap-4">
                 <div className="space-y-2">
-                  <Label htmlFor="date" className="flex items-center gap-2">
-                    <Calendar size={14} /> Data
+                  <Label className="flex items-center gap-2">
+                    <CalendarIcon size={14} /> Data
                   </Label>
-                  <Input type="date" id="date" required className="bg-brand-charcoal border-brand-gold/10 focus:border-brand-gold" />
+                  <Popover>
+                    <PopoverTrigger asChild>
+                      <Button
+                        variant={"outline"}
+                        className={cn(
+                          "w-full justify-start text-left font-normal bg-brand-charcoal border-brand-gold/10 hover:bg-brand-muted focus:border-brand-gold",
+                          !date && "text-muted-foreground"
+                        )}
+                      >
+                        <CalendarIcon className="mr-2 h-4 w-4" />
+                        {date ? format(date, "PPP", { locale: pt }) : <span>Escolha uma data</span>}
+                      </Button>
+                    </PopoverTrigger>
+                    <PopoverContent className="w-auto p-0 bg-brand-charcoal border-brand-gold/20" align="start">
+                      <Calendar
+                        mode="single"
+                        selected={date}
+                        onSelect={setDate}
+                        initialFocus
+                        locale={pt}
+                        className="bg-brand-charcoal text-brand-ivory"
+                      />
+                    </PopoverContent>
+                  </Popover>
                 </div>
                 <div className="space-y-2">
                   <Label htmlFor="time">Horário</Label>
