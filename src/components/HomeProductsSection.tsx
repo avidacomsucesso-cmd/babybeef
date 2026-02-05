@@ -43,26 +43,26 @@ const HomeProductsSection = () => {
             align: "start",
             loop: true,
           }}
-          className="w-full"
+          className="w-full max-w-5xl mx-auto"
         >
           <CarouselContent className="-ml-4">
             {homeProducts.map((product, index) => (
-              <CarouselItem key={index} className="pl-4 md:basis-1/2 lg:basis-1/3">
+              <CarouselItem key={index} className="pl-4 basis-full sm:basis-1/2 lg:basis-1/4">
                 <motion.div 
-                  whileHover={{ y: -10 }}
-                  className="bg-brand-muted/20 border border-brand-gold/10 rounded-2xl overflow-hidden group h-full"
+                  whileHover={{ y: -5 }}
+                  className="bg-brand-muted/20 border border-brand-gold/10 rounded-xl overflow-hidden group h-full scale-[0.9]"
                 >
-                  <div className="aspect-[3/4] overflow-hidden">
+                  <div className="aspect-square overflow-hidden">
                     <img 
                       src={product.img} 
                       alt={product.title} 
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" 
                     />
                   </div>
-                  <div className="p-6 text-center">
-                    <h4 className="text-xl font-serif text-brand-gold mb-2">{product.title}</h4>
-                    <p className="text-brand-ivory font-bold">{product.price}</p>
-                    <button className="mt-4 text-[10px] uppercase tracking-widest text-brand-gold hover:text-brand-ivory transition-colors">
+                  <div className="p-4 text-center">
+                    <h4 className="text-lg font-serif text-brand-gold mb-1">{product.title}</h4>
+                    <p className="text-sm text-brand-ivory font-bold">{product.price}</p>
+                    <button className="mt-3 text-[9px] uppercase tracking-widest text-brand-gold hover:text-brand-ivory transition-colors">
                       Ver Detalhes
                     </button>
                   </div>
