@@ -7,6 +7,7 @@ import FireParticles from '../components/FireParticles';
 import TestimonialsSection from '../components/TestimonialsSection';
 import FranchiseForm from '../components/FranchiseForm';
 import OrderForm from '../components/OrderForm';
+import HomeProductsSection from '../components/HomeProductsSection';
 
 const Index = () => {
   const { scrollYProgress } = useScroll();
@@ -232,6 +233,9 @@ const Index = () => {
           </div>
         </div>
       </section>
+
+      {/* Leve Baby Beef para casa Section */}
+      <HomeProductsSection />
 
       {/* Testimonials Section */}
       <TestimonialsSection />
