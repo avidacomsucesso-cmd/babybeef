@@ -167,9 +167,9 @@ const OrderForm = ({ children }: { children: React.ReactNode }) => {
                 </RadioGroup>
               </div>
 
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="space-y-2">
-                  <Label className="flex items-center gap-2">
+                  <Label className="flex items-center gap-2 text-brand-gold font-bold">
                     <CalendarIcon size={14} /> Data
                   </Label>
                   <Popover>
@@ -185,7 +185,7 @@ const OrderForm = ({ children }: { children: React.ReactNode }) => {
                         {date ? format(date, "PPP", { locale: pt }) : <span>Escolha uma data</span>}
                       </Button>
                     </PopoverTrigger>
-                    <PopoverContent className="w-auto p-0 bg-brand-charcoal border-brand-gold/20" align="start">
+                    <PopoverContent className="w-auto p-0 bg-brand-charcoal border-brand-gold/20 z-[100]" align="start">
                       <Calendar
                         mode="single"
                         selected={date}
@@ -198,8 +198,13 @@ const OrderForm = ({ children }: { children: React.ReactNode }) => {
                   </Popover>
                 </div>
                 <div className="space-y-2">
-                  <Label htmlFor="time">Horário</Label>
-                  <Input type="time" id="time" required className="bg-brand-charcoal border-brand-gold/10 focus:border-brand-gold" />
+                  <Label htmlFor="time" className="text-brand-gold font-bold">Horário</Label>
+                  <Input 
+                    type="time" 
+                    id="time" 
+                    required 
+                    className="bg-brand-charcoal border-brand-gold/10 focus:border-brand-gold h-10" 
+                  />
                 </div>
               </div>
 
