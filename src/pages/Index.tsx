@@ -29,7 +29,7 @@ const Index = () => {
       {/* Navigation */}
       <nav className="fixed top-0 w-full z-40 px-12 py-8 flex justify-between items-center bg-gradient-to-b from-black/80 to-transparent">
         <div className="flex items-center gap-6">
-          <img src="/logo-transparent.png" alt="Logo" className="h-40 w-40 object-contain drop-shadow-2xl" />
+          <img src="/logo-transparent.png" alt="Logo" className="h-52 w-52 object-contain drop-shadow-2xl" />
           <div className="hidden lg:block">
             <div className="text-2xl font-serif font-bold tracking-tighter text-brand-gold leading-none">
               BABY BEEF
@@ -65,7 +65,7 @@ const Index = () => {
           />
         </div>
         
-        <div className="relative z-20 px-12 md:px-24 max-w-4xl">
+        <div className="relative z-20 px-12 md:px-24 max-w-4xl pt-24 md:pt-32">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
