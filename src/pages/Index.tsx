@@ -164,15 +164,23 @@ const Index = () => {
       {/* Produtos Highlights */}
       <section id="produtos" className="py-24 bg-brand-muted/30">
         <div className="max-w-7xl mx-auto px-8 text-center mb-16">
-          <h2 className="text-brand-gold uppercase tracking-widest text-sm mb-4">Seleção do Rei</h2>
-          <h3 className="text-4xl md:text-5xl font-serif">Cortes que Impressionam</h3>
+          <h2 className="text-brand-gold uppercase tracking-widest text-sm mb-4">A Seleção do Rei</h2>
+          <h3 className="text-4xl md:text-6xl font-serif mb-8 leading-tight">Cortes Premium, Sem Compromissos</h3>
+          <p className="text-brand-ivory/70 text-lg max-w-3xl mx-auto leading-relaxed">
+            Os Cortes Premium Baby Beef são pensados para quem reconhece e valoriza a diferença. 
+            Da picanha ao ribeye, do tomahawk aos cortes especiais preparados, cada peça é trabalhada com precisão por profissionais experientes que dominam a arte do talho moderno.
+          </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 px-8 max-w-7xl mx-auto">
+        <div className="grid md:grid-cols-3 gap-8 px-8 max-w-7xl mx-auto mb-16">
           {[
             { title: "Kits Grelhados", img: "/kit-premium-2.jpeg", desc: "A praticidade do 'Pegue e Leve' com a nossa qualidade." },
-            { title: "Cortes Premium", img: "/ribeye-salt.jpeg", desc: "Cortes de elite preparados pelos nossos mestres." },
-            { title: "Churrasco em Casa", img: "/kit-churrasco-fire.jpeg", desc: "Tudo o que precisa para o churrasco perfeito." }
+            { 
+              title: "Cortes de Elite", 
+              img: "/ribeye-salt.jpeg", 
+              desc: "Trabalhamos apenas com fornecedores certificados e processos controlados, respeitando a anatomia da carne." 
+            },
+            { title: "Churrasco em Casa", img: "/kit-churrasco-fire.jpeg", desc: "Tudo o que precisa para o churrasco perfeito com o selo Baby Beef." }
           ].map((product, idx) => (
             <motion.div 
               key={idx}
@@ -188,6 +196,26 @@ const Index = () => {
               </div>
             </motion.div>
           ))}
+        </div>
+
+        <div className="max-w-4xl mx-auto px-8 text-center">
+          <p className="text-brand-ivory/70 text-lg leading-relaxed mb-8">
+            Aqui, o corte não é apenas técnico — é estratégico. Respeitamos a anatomia da carne para preservar sabor, textura e suculência, oferecendo cortes ideais tanto para o churrasco perfeito como para preparações mais refinadas.
+          </p>
+          <p className="text-brand-gold font-serif text-2xl mb-8 italic">
+            "Porque quando a carne é realmente boa, não precisa de excessos. Precisa de respeito."
+          </p>
+          <div className="pt-12 border-t border-brand-gold/10">
+            <h4 className="text-3xl font-serif text-brand-gold mb-6">O Rei do Talho</h4>
+            <p className="text-brand-ivory/80 text-lg mb-8">
+              Na Baby Beef, elevamos o talho a um novo patamar. Unimos tradição e inovação, rigor e paixão, produto e experiência.
+            </p>
+            <div className="inline-block px-8 py-4 border border-brand-gold/30 rounded-lg">
+              <p className="text-brand-gold font-black uppercase tracking-[0.2em] text-sm">
+                O Churrasco tem um Rei. E o Rei do Talho chama-se Baby Beef.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
