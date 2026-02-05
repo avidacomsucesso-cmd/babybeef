@@ -6,6 +6,7 @@ import { ChefHat, Flame, MapPin, TrendingUp, ShieldCheck, Phone, ChevronDown, In
 import FireParticles from '../components/FireParticles';
 import TestimonialsSection from '../components/TestimonialsSection';
 import FranchiseForm from '../components/FranchiseForm';
+import OrderForm from '../components/OrderForm';
 
 const Index = () => {
   const { scrollYProgress } = useScroll();
@@ -45,9 +46,11 @@ const Index = () => {
           <a href="#contacto" className="hover:text-brand-gold transition-colors text-white">Contacto</a>
         </div>
 
-        <button className="bg-brand-gold text-brand-charcoal px-8 py-3 rounded-full text-[10px] uppercase font-black tracking-widest hover:bg-white transition-all duration-300 shadow-lg">
-          Reservar Agora
-        </button>
+        <OrderForm>
+          <button className="bg-brand-gold text-brand-charcoal px-8 py-3 rounded-full text-[10px] uppercase font-black tracking-widest hover:bg-white transition-all duration-300 shadow-lg">
+            Reservar Agora
+          </button>
+        </OrderForm>
       </nav>
 
       {/* Hero Section */}
@@ -191,14 +194,19 @@ const Index = () => {
             <motion.div 
               key={idx}
               whileHover={{ y: -10 }}
-              className="bg-brand-charcoal border border-brand-ivory/10 rounded-2xl overflow-hidden group"
+              className="bg-brand-charcoal border border-brand-gold/10 rounded-2xl overflow-hidden group"
             >
               <div className="h-72 overflow-hidden">
                 <img src={product.img} alt={product.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
               </div>
               <div className="p-8">
                 <h4 className="text-2xl font-serif text-brand-gold mb-2">{product.title}</h4>
-                <p className="text-brand-ivory/60 text-sm">{product.desc}</p>
+                <p className="text-brand-ivory/60 text-sm mb-6">{product.desc}</p>
+                <OrderForm>
+                  <button className="w-full py-3 border border-brand-gold/30 rounded-lg text-xs uppercase font-bold tracking-widest hover:bg-brand-gold hover:text-brand-charcoal transition-all">
+                    Reservar Corte
+                  </button>
+                </OrderForm>
               </div>
             </motion.div>
           ))}
