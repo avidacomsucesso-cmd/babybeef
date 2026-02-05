@@ -5,6 +5,7 @@ import { motion, useScroll, useSpring } from 'framer-motion';
 import { ChefHat, Flame, MapPin, TrendingUp, ShieldCheck, Phone, ChevronDown, Instagram, Facebook } from 'lucide-react';
 import FireParticles from '../components/FireParticles';
 import TestimonialsSection from '../components/TestimonialsSection';
+import FranchiseForm from '../components/FranchiseForm';
 
 const Index = () => {
   const { scrollYProgress } = useScroll();
@@ -266,9 +267,11 @@ const Index = () => {
               <p className="text-sm opacity-70">Um conceito boutique com escala industrial.</p>
             </div>
           </div>
-          <button className="bg-brand-charcoal text-brand-gold px-12 py-5 rounded-full font-bold uppercase tracking-widest hover:scale-105 transition-transform shadow-xl">
-            Solicitar Dossier de Investimento
-          </button>
+          <FranchiseForm>
+            <button className="bg-brand-charcoal text-brand-gold px-12 py-5 rounded-full font-bold uppercase tracking-widest hover:scale-105 transition-transform shadow-xl">
+              Solicitar Dossier de Investimento
+            </button>
+          </FranchiseForm>
         </div>
       </section>
 
