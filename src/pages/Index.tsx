@@ -158,7 +158,7 @@ const Index = () => {
             Qualidade que se vê. Sabor que se lembra. Visite as nossas lojas físicas.
           </p>
         </div>
-        <div className="flex gap-4 px-8 animate-fade-in max-w-6xl mx-auto scale-[0.8]">
+        <div className="flex gap-4 px-8 animate-fade-in max-w-7xl mx-auto">
           <div className="w-1/3 h-96 rounded-2xl overflow-hidden">
             <img src="/talho-real-1.jpeg" className="w-full h-full object-cover hover:scale-110 transition-transform duration-700" alt="Talho Real" />
           </div>
