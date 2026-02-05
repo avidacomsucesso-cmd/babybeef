@@ -38,7 +38,7 @@ const Index = () => {
           </div>
         </div>
         
-        <div className="hidden md:flex gap-12 text-[15px] uppercase tracking-[0.3em] font-bold">
+        <div className="hidden md:flex gap-12 text-[13px] uppercase tracking-[0.3em] font-bold">
           <a href="#marca" className="hover:text-brand-gold transition-colors text-white">A Marca</a>
           <a href="#produtos" className="hover:text-brand-gold transition-colors text-white">Os Nossos Cortes</a>
           <a href="#lojas" className="hover:text-brand-gold transition-colors text-white">Lojas</a>
@@ -47,8 +47,8 @@ const Index = () => {
         </div>
 
         <OrderForm>
-          <button className="bg-brand-gold text-brand-charcoal px-8 py-3 rounded-full text-[10px] uppercase font-black tracking-widest hover:bg-white transition-all duration-300 shadow-lg">
-            Reservar Agora
+          <button className="bg-brand-gold text-brand-charcoal px-8 py-3 rounded-full text-[13px] uppercase font-black tracking-widest hover:bg-white transition-all duration-300 shadow-lg">
+            Reservar
           </button>
         </OrderForm>
       </nav>
