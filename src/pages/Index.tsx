@@ -244,7 +244,7 @@ const Index = () => {
               BABY BEEF <span className="text-brand-ivory font-light">& CO.</span>
             </div>
             <p className="text-lg max-w-md mb-8">
-              Elevando o padrão do churrasco em Portugal através da mestria e da paixão pelo fogo.
+              Elevando o padrão do talho em Portugal através da mestria e da paixão pelo fogo.
             </p>
             <div className="flex gap-4">
               <a href="#" className="w-12 h-12 rounded-full border border-brand-ivory/20 flex items-center justify-center hover:bg-brand-gold hover:text-brand-charcoal transition-all">
@@ -269,8 +269,8 @@ const Index = () => {
           <div>
             <h5 className="text-brand-ivory font-bold mb-6 uppercase tracking-widest text-xs">Contacto</h5>
             <ul className="space-y-4 text-sm">
-              <li className="flex items-center gap-2"><MapPin size={16} className="text-brand-gold" /> Lisboa, Portugal</li>
-              <li className="flex items-center gap-2"><Phone size={16} className="text-brand-gold" /> +351 210 000 000</li>
+              <li className="flex items-center gap-2"><MapPin size={16} className="text-brand-gold" /> R. Pulido Valente 12, 2675-670 Odivelas</li>
+              <li className="flex items-center gap-2"><Phone size={16} className="text-brand-gold" /> 21 354 8524</li>
               <li className="flex items-center gap-2 underline text-brand-gold">geral@babybeef.pt</li>
             </ul>
           </div>
