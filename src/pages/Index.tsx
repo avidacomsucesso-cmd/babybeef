@@ -154,47 +154,53 @@ const Index = () => {
                     </motion.div>
                 </section>
                 {}
-                <section
-                    id="marca"
-                    className="pt-24 pb-12 px-8 max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
-                    <motion.div
-                        whileInView={{
-                            opacity: 1,
-                            x: 0
-                        }}
-                        initial={{
-                            opacity: 0,
-                            x: -50
-                        }}
-                        transition={{
-                            duration: 0.8
-                        }}>
-                        <h2 className="text-brand-gold uppercase tracking-widest text-sm mb-4">A Nossa Essência</h2>
-                        <h3 className="text-4xl md:text-5xl font-serif mb-8 leading-tight">O Diferencial Baby Beef</h3>
-                        <p className="text-brand-ivory/70 text-lg leading-relaxed mb-6">Na Baby Beef, acreditamos que a excelência começa na origem e se revela no corte.
+                <section id="marca" className="relative pt-24 pb-12 overflow-hidden">
+                    <div className="absolute inset-0 z-0">
+                        <img 
+                            src="/vintage_film_bg.jpg" 
+                            alt="Background" 
+                            className="w-full h-full object-cover opacity-40"
+                        />
+                        <div className="absolute inset-0 bg-brand-charcoal/60" />
+                    </div>
+
+                    <div className="relative z-10 px-8 max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+                        <motion.div
+                            whileInView={{ opacity: 1, x: 0 }}
+                            initial={{
+                                opacity: 0,
+                                x: -50
+                            }}
+                            transition={{
+                                duration: 0.8
+                            }}>
+                            <h2 className="text-brand-gold uppercase tracking-widest text-sm mb-4">A Nossa Essência</h2>
+                            <h3 className="text-4xl md:text-5xl font-serif mb-8 leading-tight">O Diferencial Baby Beef</h3>
+                            <p className="text-brand-ivory/70 text-lg leading-relaxed mb-6">Na Baby Beef, acreditamos que a excelência começa na origem e se revela no corte.
                                           Não somos apenas um talho — somos especialistas em carne, movidos pela paixão pela mestria, pela tradição e pela qualidade absoluta.
                                         </p>
-                        <p className="text-brand-ivory/70 text-lg leading-relaxed mb-8">Cada peça que chega ao nosso balcão é cuidadosamente selecionada segundo critérios rigorosos de raça, marmoreio, frescura e consistência, garantindo uma experiência superior desde a escolha até ao momento à mesa. Trabalhamos apenas com fornecedores certificados e processos controlados, respeitando a cadeia de frio e os mais elevados padrões de segurança alimentar.
+                            <p className="text-brand-ivory/70 text-lg leading-relaxed mb-8">Cada peça que chega ao nosso balcão é cuidadosamente selecionada segundo critérios rigorosos de raça, marmoreio, frescura e consistência, garantindo uma experiência superior desde a escolha até ao momento à mesa. Trabalhamos apenas com fornecedores certificados e processos controlados, respeitando a cadeia de frio e os mais elevados padrões de segurança alimentar.
                                         </p>
-                        <div className="grid grid-cols-2 gap-8">
-                            <div>
-                                <div className="text-brand-gold mb-2 font-serif text-3xl font-bold">PT</div>
-                                <p className="text-xs uppercase tracking-wider text-brand-ivory/50">ADN Português</p>
+                            <div className="grid grid-cols-2 gap-8">
+                                <div>
+                                    <div className="text-brand-gold mb-2 font-serif text-3xl font-bold">PT</div>
+                                    <p className="text-xs uppercase tracking-wider text-brand-ivory/50">ADN Português</p>
+                                </div>
+                                <div>
+                                    <div className="text-brand-gold mb-2 font-serif text-3xl font-bold">21+</div>
+                                    <p className="text-xs uppercase tracking-wider text-brand-ivory/50">Dias de Maturação</p>
+                                </div>
                             </div>
-                            <div>
-                                <div className="text-brand-gold mb-2 font-serif text-3xl font-bold">21+</div>
-                                <p className="text-xs uppercase tracking-wider text-brand-ivory/50">Dias de Maturação</p>
-                            </div>
-                        </div>
-                    </motion.div>
-                    <div
-                        className="relative h-[600px] rounded-2xl overflow-hidden shadow-2xl shadow-black bg-brand-muted/20">
-                        <img
-                            src="/staff-premium.jpeg"
-                            alt="Equipa Premium"
-                            className="w-full h-full object-contain md:object-contain object-center" />
+                        </motion.div>
                         <div
-                            className="absolute inset-0 bg-gradient-to-t from-brand-charcoal/40 via-transparent to-transparent opacity-60 pointer-events-none" />
+                            className="relative h-[600px] rounded-2xl overflow-hidden shadow-2xl shadow-black bg-brand-muted/20">
+                            <img
+                                src="/staff-premium.jpeg"
+                                alt="Equipa Premium"
+                                className="w-full h-full object-contain md:object-contain object-center" />
+                            <div
+                                className="absolute inset-0 bg-gradient-to-t from-brand-charcoal/40 via-transparent to-transparent opacity-60 pointer-events-none" />
+                        </div>
                     </div>
                 </section>
                 {}
