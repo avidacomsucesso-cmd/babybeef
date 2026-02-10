@@ -75,11 +75,11 @@ const Index = () => {
                                 alt="Background"
                                 className="w-full h-full object-cover opacity-30 mix-blend-overlay" />
                         </div>
-                        <div className="w-full max-w-2xl 2xl:max-w-3xl overflow-hidden relative z-10 flex justify-center">
+                        <div className="w-full max-w-4xl overflow-hidden relative z-10">
                             <img
                                 src="/header-placa-premium.png"
                                 alt="Baby Beef & Co. - O Rei do Talho"
-                                className="w-full h-auto object-contain block scale-[1.3] -my-[12%] md:-my-[15%]" />
+                                className="w-full h-auto object-cover block" />
                         </div>
                         <div className="w-full bg-black/40 border-y border-white/10 relative z-10">
                             <div
