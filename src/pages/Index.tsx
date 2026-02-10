@@ -105,7 +105,7 @@ const Index = () => {
       </section>
 
       {/* A Marca Section */}
-      <section id="marca" className="py-24 px-8 max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+      <section id="marca" className="pt-24 pb-12 px-8 max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
         <motion.div
           whileInView={{ opacity: 1, x: 0 }}
           initial={{ opacity: 0, x: -50 }}
@@ -142,9 +142,9 @@ const Index = () => {
       </section>
 
       {/* Montra Real Section */}
-      <section className="py-24 bg-brand-muted/10 overflow-hidden">
+      <section className="pt-12 pb-24 bg-brand-muted/10 overflow-hidden">
         <div className="max-w-7xl mx-auto px-8 mb-12">
-          <div className="max-w-2xl mx-auto mb-16">
+          <div className="max-w-2xl mx-auto mb-12">
             <div className="rounded-2xl overflow-hidden shadow-xl border border-brand-gold/20">
               <img 
                 src="/brand-banner-horizontal.png" 
