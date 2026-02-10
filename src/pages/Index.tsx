@@ -170,7 +170,7 @@ const Index = () => {
                         </motion.div>
                     </section>
                     {}
-                    <section id="marca" className="relative pt-24 pb-12 overflow-hidden bg-brand-charcoal">
+                    <section id="marca" className="relative pt-12 md:pt-24 pb-6 md:pb-12 overflow-hidden bg-brand-charcoal">
                         <div className="absolute inset-0 z-0">
                           <img 
                             src="/vintage_film_bg.jpg" 
@@ -219,7 +219,7 @@ const Index = () => {
                         </div>
                     </section>
                     {}
-                    <section className="pt-12 pb-24 overflow-hidden bg-brand-charcoal">
+                    <section className="relative pt-6 md:pt-12 pb-12 md:pb-24 overflow-hidden bg-brand-charcoal">
                         <div className="absolute inset-0 z-0">
                           <img 
                             src="/vintage_film_bg.jpg" 
@@ -295,7 +295,7 @@ const Index = () => {
                         </div>
                     </section>
                     {}
-                    <section id="produtos" className="relative py-24 overflow-hidden bg-brand-charcoal">
+                    <section id="produtos" className="relative py-12 md:py-24 overflow-hidden bg-brand-charcoal">
                         <div className="absolute inset-0 z-0">
                           <img 
                             src="/vintage_film_bg.jpg" 
@@ -402,7 +402,25 @@ const Index = () => {
                     {}
                     <TestimonialsSection />
                     {}
-                    <section className="py-24 bg-brand-charcoal border-y border-brand-gold/10">
+                    <section className="py-12 md:py-24 bg-brand-charcoal overflow-hidden border-t border-brand-gold/10">
+                        <div className="max-w-4xl mx-auto px-8 text-center">
+                            <p className="text-brand-ivory/70 text-lg leading-relaxed mb-8">Aqui, o corte não é apenas técnico — é estratégico. Respeitamos a anatomia da carne para preservar sabor, textura e suculência, oferecendo cortes ideais tanto para o churrasco perfeito como para preparações mais refinadas.
+                                          </p>
+                            <p className="text-brand-gold font-serif text-2xl mb-8 italic">"Porque quando a carne é realmente boa, não precisa de excessos. Precisa de respeito."
+                                          </p>
+                            <div className="pt-12 border-t border-brand-gold/10">
+                                <h4 className="text-3xl font-serif text-brand-gold mb-6">O Rei do Talho</h4>
+                                <p className="text-brand-ivory/80 text-lg mb-8">Na Baby Beef, elevamos o talho a um novo patamar. Unimos tradição e inovação, rigor e paixão, produto e experiência.
+                                          </p>
+                                <div className="inline-block px-8 py-4 border border-brand-gold/30 rounded-lg">
+                                    <p className="text-brand-gold font-black uppercase tracking-[0.2em] text-sm">O Churrasco tem um Rei. E o Rei do Talho chama-se Baby Beef.
+                                                  </p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    {}
+                    <section className="py-12 md:py-24 bg-brand-charcoal border-y border-brand-gold/10">
                         <div
                             className="max-w-7xl mx-auto px-8 grid md:grid-cols-2 gap-16 items-center">
                             <div
@@ -435,7 +453,7 @@ const Index = () => {
                     {}
                     <section
                         id="franquias"
-                        className="py-32 px-8 bg-brand-gold text-brand-charcoal overflow-hidden">
+                        className="py-16 md:py-32 px-8 bg-brand-gold text-brand-charcoal overflow-hidden">
                         <div className="max-w-6xl mx-auto flex flex-col items-center">
                             <motion.div
                                 initial={{
