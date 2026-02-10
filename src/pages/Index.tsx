@@ -306,48 +306,80 @@ const Index = () => {
 
                         <div className="relative z-10 max-w-7xl mx-auto px-8">
                           <div className="text-center mb-16">
-                            <h2 className="text-brand-gold uppercase tracking-widest text-sm mb-4">A Seleção do Rei</h2>
-                            <h3 className="text-4xl md:text-6xl font-serif mb-8 leading-tight">Cortes Premium, É nosso Compromisso</h3>
-                            <p className="text-brand-ivory/70 text-lg max-w-3xl mx-auto leading-relaxed">Os Cortes Premium Baby Beef são pensados para quem reconhece e valoriza a diferença. 
-                                          Da picanha ao ribeye, do tomahawk aos cortes especiais preparados, cada peça é trabalhada com precisão por profissionais experientes que dominam a arte do talho moderno.
-                                        </p>
+                            <h2 className="text-brand-gold uppercase tracking-widest text-[10px] md:text-sm mb-2 md:mb-4">A Seleção do Rei</h2>
+                            <h3 className="text-3xl md:text-6xl font-serif mb-8 leading-tight">Cortes Premium, Sem Compromissos</h3>
+                            <p className="text-brand-ivory/70 text-sm md:text-lg max-w-3xl mx-auto leading-relaxed">
+                              Os Cortes Premium Baby Beef são pensados para quem reconhece e valoriza a diferença. 
+                              Da picanha ao ribeye, do tomahawk aos cortes especiais preparados, cada peça é trabalhada com precisão por profissionais experientes que dominam a arte do talho moderno.
+                            </p>
                           </div>
-                          <div className="grid md:grid-cols-3 gap-8 px-8 max-w-7xl mx-auto mb-16">
-                            {[{
-                                title: "Kits Grelhados",
-                                img: "/kit-premium-2.jpeg",
-                                desc: "A praticidade do 'Pegue e Leve' com a nossa qualidade."
-                            }, {
-                                title: "Cortes de Elite",
-                                img: "/ribeye-salt.jpeg",
-                                desc: "Trabalhamos apenas com fornecedores certificados e processos controlados, respeitando a anatomia da carne."
-                            }, {
-                                title: "Churrasco em Casa",
-                                img: "/kit-churrasco-fire.jpeg",
-                                desc: "Tudo o que precisa para o churrasco perfeito com o selo Baby Beef."
-                            }].map((product, idx) => (<motion.div
+
+                          {/* Desktop Grid / Mobile Carousel for Cortes Premium */}
+                          <div className="hidden md:grid md:grid-cols-3 gap-8 mb-16">
+                            {[
+                              { title: "Kits Grelhados", img: "/kit-premium-2.jpeg", desc: "A praticidade do 'Pegue e Leve' com a nossa qualidade." },
+                              { 
+                                title: "Cortes de Elite", 
+                                img: "/ribeye-salt.jpeg", 
+                                desc: "Trabalhamos apenas com fornecedores certificados e processos controlados, respeitando a anatomia da carne." 
+                              },
+                              { title: "Churrasco em Casa", img: "/kit-churrasco-fire.jpeg", desc: "Tudo o que precisa para o churrasco perfeito com o selo Baby Beef." }
+                            ].map((product, idx) => (
+                              <motion.div 
                                 key={idx}
-                                whileHover={{
-                                    y: -10
-                                }}
-                                className="bg-brand-charcoal border border-brand-gold/10 rounded-2xl overflow-hidden group">
+                                whileHover={{ y: -10 }}
+                                className="bg-brand-charcoal border border-brand-gold/10 rounded-2xl overflow-hidden group"
+                              >
                                 <div className="h-72 overflow-hidden">
-                                    <img
-                                        src={product.img}
-                                        alt={product.title}
-                                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+                                  <img src={product.img} alt={product.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
                                 </div>
                                 <div className="p-8">
-                                    <h4 className="text-2xl font-serif text-brand-gold mb-2">{product.title}</h4>
-                                    <p className="text-brand-ivory/60 text-sm mb-6">{product.desc}</p>
-                                    <OrderForm>
-                                        <button
-                                            className="w-full py-3 border border-brand-gold/30 rounded-lg text-xs uppercase font-bold tracking-widest hover:bg-brand-gold hover:text-brand-charcoal transition-all">Reservar Corte
-                                                            </button>
-                                    </OrderForm>
+                                  <h4 className="text-2xl font-serif text-brand-gold mb-2">{product.title}</h4>
+                                  <p className="text-brand-ivory/60 text-sm mb-6">{product.desc}</p>
+                                  <OrderForm>
+                                    <button className="w-full py-3 border border-brand-gold/30 rounded-lg text-xs uppercase font-bold tracking-widest hover:bg-brand-gold hover:text-brand-charcoal transition-all">
+                                      Reservar Corte
+                                    </button>
+                                  </OrderForm>
                                 </div>
-                            </motion.div>))}
+                              </motion.div>
+                            ))}
                           </div>
+
+                          {/* Mobile Carousel for Cortes Premium */}
+                          <div className="md:hidden mb-16">
+                            <Carousel opts={{ align: "start", loop: true }} className="w-full">
+                              <CarouselContent>
+                                {[
+                                  { title: "Kits Grelhados", img: "/kit-premium-2.jpeg", desc: "A praticidade do 'Pegue e Leve' com a nossa qualidade." },
+                                  { title: "Cortes de Elite", img: "/ribeye-salt.jpeg", desc: "Trabalhamos apenas com fornecedores certificados e processos controlados." },
+                                  { title: "Churrasco em Casa", img: "/kit-churrasco-fire.jpeg", desc: "Tudo o que precisa para o churrasco perfeito com o selo Baby Beef." }
+                                ].map((product, idx) => (
+                                  <CarouselItem key={idx}>
+                                    <div className="bg-brand-charcoal border border-brand-gold/10 rounded-2xl overflow-hidden mx-2 h-full">
+                                      <div className="h-64 overflow-hidden">
+                                        <img src={product.img} alt={product.title} className="w-full h-full object-cover" />
+                                      </div>
+                                      <div className="p-6">
+                                        <h4 className="text-xl font-serif text-brand-gold mb-2">{product.title}</h4>
+                                        <p className="text-brand-ivory/60 text-sm mb-6">{product.desc}</p>
+                                        <OrderForm>
+                                          <button className="w-full py-3 border border-brand-gold/30 rounded-lg text-xs uppercase font-bold tracking-widest hover:bg-brand-gold hover:text-brand-charcoal transition-all">
+                                            Reservar Corte
+                                          </button>
+                                        </OrderForm>
+                                      </div>
+                                    </div>
+                                  </CarouselItem>
+                                ))}
+                              </CarouselContent>
+                              <div className="flex justify-center gap-4 mt-6">
+                                <CarouselPrevious className="static translate-y-0 h-8 w-8" />
+                                <CarouselNext className="static translate-y-0 h-8 w-8" />
+                              </div>
+                            </Carousel>
+                          </div>
+
                           <div className="max-w-4xl mx-auto px-8 text-center">
                             <p className="text-brand-ivory/70 text-lg leading-relaxed mb-8">Aqui, o corte não é apenas técnico — é estratégico. Respeitamos a anatomia da carne para preservar sabor, textura e suculência, oferecendo cortes ideais tanto para o churrasco perfeito como para preparações mais refinadas.
                                           </p>
