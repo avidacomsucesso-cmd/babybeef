@@ -271,15 +271,25 @@ const Index = () => {
                     </div>
                 </section>
                 {}
-                <section id="produtos" className="py-24 bg-brand-muted/30">
-                    <div className="max-w-7xl mx-auto px-8 text-center mb-16">
+                <section id="produtos" className="relative py-24 overflow-hidden">
+                    <div className="absolute inset-0 z-0">
+                      <img 
+                        src="/vintage_film_bg.jpg" 
+                        alt="Background Texture" 
+                        className="w-full h-full object-cover opacity-20"
+                      />
+                      <div className="absolute inset-0 bg-brand-charcoal/80" />
+                    </div>
+
+                    <div className="relative z-10 max-w-7xl mx-auto px-8">
+                      <div className="text-center mb-16">
                         <h2 className="text-brand-gold uppercase tracking-widest text-sm mb-4">A Seleção do Rei</h2>
                         <h3 className="text-4xl md:text-6xl font-serif mb-8 leading-tight">Cortes Premium, É nosso Compromisso</h3>
                         <p className="text-brand-ivory/70 text-lg max-w-3xl mx-auto leading-relaxed">Os Cortes Premium Baby Beef são pensados para quem reconhece e valoriza a diferença. 
                                           Da picanha ao ribeye, do tomahawk aos cortes especiais preparados, cada peça é trabalhada com precisão por profissionais experientes que dominam a arte do talho moderno.
                                         </p>
-                    </div>
-                    <div className="grid md:grid-cols-3 gap-8 px-8 max-w-7xl mx-auto mb-16">
+                      </div>
+                      <div className="grid md:grid-cols-3 gap-8 px-8 max-w-7xl mx-auto mb-16">
                         {[{
                             title: "Kits Grelhados",
                             img: "/kit-premium-2.jpeg",
@@ -314,8 +324,8 @@ const Index = () => {
                                 </OrderForm>
                             </div>
                         </motion.div>))}
-                    </div>
-                    <div className="max-w-4xl mx-auto px-8 text-center">
+                      </div>
+                      <div className="max-w-4xl mx-auto px-8 text-center">
                         <p className="text-brand-ivory/70 text-lg leading-relaxed mb-8">Aqui, o corte não é apenas técnico — é estratégico. Respeitamos a anatomia da carne para preservar sabor, textura e suculência, oferecendo cortes ideais tanto para o churrasco perfeito como para preparações mais refinadas.
                                         </p>
                         <p className="text-brand-gold font-serif text-2xl mb-8 italic">"Porque quando a carne é realmente boa, não precisa de excessos. Precisa de respeito."
@@ -329,6 +339,7 @@ const Index = () => {
                                                     </p>
                             </div>
                         </div>
+                      </div>
                     </div>
                 </section>
                 {}
