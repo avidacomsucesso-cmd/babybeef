@@ -73,7 +73,7 @@ const Index = () => {
                             <img
                                 src="/vintage_film_bg.jpg"
                                 alt="Background"
-                                className="w-full h-full object-cover opacity-30 mix-blend-overlay" />
+                                className="w-full h-full object-cover opacity-60 mix-blend-overlay" />
                         </div>
                         <div className="w-full max-w-5xl px-6 overflow-hidden relative z-10">
                             <img
@@ -179,7 +179,7 @@ const Index = () => {
                             <img
                                 src="/vintage_film_bg.jpg"
                                 alt="Background"
-                                className="w-full h-full object-cover opacity-30 mix-blend-overlay" />
+                                className="w-full h-full object-cover opacity-60 mix-blend-overlay" />
                         </div>
                         <div
                             className="relative z-10 px-8 max-w-7xl 2xl:max-w-[1600px] mx-auto grid md:grid-cols-2 gap-16 2xl:gap-32 items-center">
@@ -231,7 +231,7 @@ const Index = () => {
                             <img
                                 src="/vintage_film_bg.jpg"
                                 alt="Background Texture"
-                                className="w-full h-full object-cover opacity-30 mix-blend-overlay" />
+                                className="w-full h-full object-cover opacity-60 mix-blend-overlay" />
                         </div>
                         <div className="relative z-10 max-w-7xl 2xl:max-w-[1600px] mx-auto px-8 mb-12">
                             <div
@@ -334,7 +334,7 @@ const Index = () => {
                             <img
                                 src="/vintage_film_bg.jpg"
                                 alt="Background Texture"
-                                className="w-full h-full object-cover opacity-30 mix-blend-overlay" />
+                                className="w-full h-full object-cover opacity-60 mix-blend-overlay" />
                         </div>
                         <div className="relative z-10 max-w-7xl 2xl:max-w-[1600px] mx-auto px-8">
                             <div className="text-center mb-24">
@@ -466,7 +466,7 @@ const Index = () => {
                             <img
                                 src="/vintage_film_bg.jpg"
                                 alt="Background Texture"
-                                className="w-full h-full object-cover opacity-30 mix-blend-overlay" />
+                                className="w-full h-full object-cover opacity-60 mix-blend-overlay" />
                         </div>
                         <div className="relative z-10 max-w-4xl mx-auto px-8 text-center">
                             <p className="text-brand-ivory/70 text-lg leading-relaxed mb-8">Aqui, o corte não é apenas técnico — é estratégico. Respeitamos a anatomia da carne para preservar sabor, textura e suculência, oferecendo cortes ideais tanto para o churrasco perfeito como para preparações mais refinadas.
@@ -491,7 +491,7 @@ const Index = () => {
                             <img
                                 src="/vintage_film_bg.jpg"
                                 alt="Background Texture"
-                                className="w-full h-full object-cover opacity-30 mix-blend-overlay" />
+                                className="w-full h-full object-cover opacity-60 mix-blend-overlay" />
                         </div>
                         <div
                             className="relative z-10 max-w-7xl mx-auto px-8 grid md:grid-cols-2 gap-16 items-center">

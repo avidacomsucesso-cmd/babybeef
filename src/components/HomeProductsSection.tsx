@@ -28,7 +28,7 @@ const HomeProductsSection = () => {
         <img
           src="/vintage_film_bg.jpg"
           alt="Background Texture"
-          className="w-full h-full object-cover opacity-30 mix-blend-overlay" />
+          className="w-full h-full object-cover opacity-60 mix-blend-overlay" />
       </div>
       <div className="relative z-10 max-w-7xl 2xl:max-w-[1600px] mx-auto px-8">
         <motion.div
