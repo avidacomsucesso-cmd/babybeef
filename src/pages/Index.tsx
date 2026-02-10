@@ -104,6 +104,19 @@ const Index = () => {
         </motion.div>
       </section>
 
+      {/* Brand Banner Horizontal */}
+      <section className="w-full bg-brand-charcoal py-12">
+        <div className="max-w-7xl mx-auto px-8">
+          <div className="rounded-2xl overflow-hidden shadow-2xl border border-brand-gold/20">
+            <img 
+              src="/brand-banner-horizontal.png" 
+              alt="Baby Beef & Co. Branding" 
+              className="w-full h-auto object-cover"
+            />
+          </div>
+        </div>
+      </section>
+
       {/* A Marca Section */}
       <section id="marca" className="py-24 px-8 max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
         <motion.div
