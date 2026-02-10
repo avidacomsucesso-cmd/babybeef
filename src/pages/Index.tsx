@@ -104,19 +104,6 @@ const Index = () => {
         </motion.div>
       </section>
 
-      {/* Brand Banner Horizontal */}
-      <section className="w-full bg-brand-charcoal py-6">
-        <div className="max-w-4xl mx-auto px-8">
-          <div className="rounded-2xl overflow-hidden shadow-2xl border border-brand-gold/20 scale-[0.6] origin-center">
-            <img 
-              src="/brand-banner-horizontal.png" 
-              alt="Baby Beef & Co. Branding" 
-              className="w-full h-auto object-cover"
-            />
-          </div>
-        </div>
-      </section>
-
       {/* A Marca Section */}
       <section id="marca" className="py-24 px-8 max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
         <motion.div
@@ -156,23 +143,25 @@ const Index = () => {
 
       {/* Montra Real Section */}
       <section className="py-24 bg-brand-muted/10 overflow-hidden">
-        <div className="max-w-7xl mx-auto px-8 mb-12 flex justify-between items-end">
-          <div>
-            <h2 className="text-brand-gold uppercase tracking-widest text-sm mb-4">O Espaço</h2>
-            <h3 className="text-4xl font-serif">Nossas Carnes Selecionadas</h3>
+        <div className="max-w-7xl mx-auto px-8 mb-12">
+          <div className="max-w-2xl mx-auto mb-16">
+            <div className="rounded-2xl overflow-hidden shadow-xl border border-brand-gold/20">
+              <img 
+                src="/brand-banner-horizontal.png" 
+                alt="Baby Beef & Co. Branding" 
+                className="w-full h-auto object-cover"
+              />
+            </div>
           </div>
-          <p className="text-brand-ivory/60 max-w-xs text-right hidden md:block">
-            Qualidade que se vê. Sabor que se lembra. Visite as nossas lojas físicas.
-          </p>
-        </div>
 
-        <div className="max-w-3xl mx-auto px-8 mb-12">
-          <div className="rounded-2xl overflow-hidden shadow-xl border border-brand-gold/20">
-            <img 
-              src="/brand-banner-horizontal.png" 
-              alt="Baby Beef & Co. Branding" 
-              className="w-full h-auto object-cover"
-            />
+          <div className="flex justify-between items-end">
+            <div>
+              <h2 className="text-brand-gold uppercase tracking-widest text-sm mb-4">O Espaço</h2>
+              <h3 className="text-4xl font-serif">Nossas Carnes Selecionadas</h3>
+            </div>
+            <p className="text-brand-ivory/60 max-w-xs text-right hidden md:block">
+              Qualidade que se vê. Sabor que se lembra. Visite as nossas lojas físicas.
+            </p>
           </div>
         </div>
 
