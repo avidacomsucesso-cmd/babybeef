@@ -28,9 +28,9 @@ const Index = () => {
       <FireParticles />
 
       {/* Navigation */}
-      <nav className="absolute top-0 w-full z-40 px-12 py-8 flex justify-between items-start bg-gradient-to-b from-black/80 to-transparent">
+      <nav className="absolute top-0 w-full z-40 px-6 md:px-12 py-6 md:py-8 flex justify-between items-start bg-gradient-to-b from-black/80 to-transparent">
         <div className="flex flex-col items-center gap-2">
-          <img src="/logo-transparent.png" alt="Logo" className="h-60 w-60 object-contain drop-shadow-2xl" />
+          <img src="/logo-transparent.png" alt="Logo" className="h-32 w-32 md:h-60 md:w-60 object-contain drop-shadow-2xl" />
         </div>
         
         <div className="hidden md:flex gap-12 text-[13px] uppercase tracking-[0.3em] font-bold mt-8">
@@ -42,7 +42,7 @@ const Index = () => {
         </div>
 
         <OrderForm>
-          <button className="bg-brand-gold text-brand-charcoal px-8 py-3 rounded-full text-[13px] uppercase font-black tracking-widest hover:bg-white transition-all duration-300 shadow-lg mt-8">
+          <button className="bg-brand-gold text-brand-charcoal px-6 md:px-8 py-2 md:py-3 rounded-full text-[11px] md:text-[13px] uppercase font-black tracking-widest hover:bg-white transition-all duration-300 shadow-lg mt-4 md:mt-8">
             Reservar
           </button>
         </OrderForm>
@@ -60,7 +60,7 @@ const Index = () => {
           />
         </div>
         
-        <div className="relative z-20 px-12 md:px-24 max-w-4xl pt-48 md:pt-64">
+        <div className="relative z-20 px-8 md:px-24 max-w-4xl pt-56 md:pt-64">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
