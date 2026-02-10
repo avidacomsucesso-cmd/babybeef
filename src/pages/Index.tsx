@@ -344,9 +344,9 @@ const Index = () => {
               <p className="text-[10px] uppercase tracking-[0.2em] text-brand-ivory/60 mb-4 text-center md:text-left">Este talho está assegurado pela:</p>
               <div className="flex flex-col items-center md:items-start gap-2">
                 <img 
-                  src="/allianz-logo-white.png" 
+                  src="/allianz-neon.png" 
                   alt="Allianz Seguros" 
-                  className="h-12 object-contain opacity-90" 
+                  className="h-16 w-full object-contain rounded-lg" 
                 />
                 <div className="h-[1px] w-full bg-brand-gold/20 my-2" />
                 <p className="text-sm font-serif text-brand-gold italic">Com seguro Multirriscos</p>
