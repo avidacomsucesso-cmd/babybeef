@@ -274,32 +274,47 @@ const Index = () => {
       </section>
 
       {/* Franquias Section */}
-      <section id="franquias" className="py-32 px-8 bg-brand-gold text-brand-charcoal">
-        <div className="max-w-5xl mx-auto text-center">
-          <TrendingUp size={48} className="mx-auto mb-8" />
-          <h2 className="text-5xl md:text-6xl font-serif mb-8 leading-tight">Expanda o Reinado. <br />Seja um Franqueado.</h2>
-          <p className="text-xl mb-12 opacity-80 max-w-2xl mx-auto">
-            A Baby Beef & Co. oferece um modelo de negócio estruturado, logística de frio premium e uma marca com autoridade imediata no mercado.
-          </p>
-          <div className="grid md:grid-cols-3 gap-12 text-left mb-16">
-            <div className="border-l-2 border-brand-charcoal/20 pl-6">
-              <h5 className="font-bold text-lg mb-2">Suporte 360º</h5>
-              <p className="text-sm opacity-70">Do treino de mestres talhantes à gestão de marketing.</p>
+      <section id="franquias" className="py-32 px-8 bg-brand-gold text-brand-charcoal overflow-hidden">
+        <div className="max-w-6xl mx-auto flex flex-col items-center">
+          <motion.div 
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="w-full mb-16 rounded-3xl overflow-hidden shadow-2xl border-4 border-brand-charcoal/10"
+          >
+            <img 
+              src="/franchise-storefront.jpeg" 
+              className="w-full h-auto object-cover" 
+              alt="Modelo de Loja Baby Beef" 
+            />
+          </motion.div>
+
+          <div className="text-center w-full">
+            <TrendingUp size={48} className="mx-auto mb-8" />
+            <h2 className="text-5xl md:text-6xl font-serif mb-8 leading-tight">Expanda o Reinado. <br />Seja um Franqueado.</h2>
+            <p className="text-xl mb-12 opacity-80 max-w-2xl mx-auto">
+              A Baby Beef & Co. oferece um modelo de negócio estruturado, logística de frio premium e uma marca com autoridade imediata no mercado.
+            </p>
+            <div className="grid md:grid-cols-3 gap-12 text-left mb-16">
+              <div className="border-l-2 border-brand-charcoal/20 pl-6">
+                <h5 className="font-bold text-lg mb-2">Suporte 360º</h5>
+                <p className="text-sm opacity-70">Do treino de mestres talhantes à gestão de marketing.</p>
+              </div>
+              <div className="border-l-2 border-brand-charcoal/20 pl-6">
+                <h5 className="font-bold text-lg mb-2">Logística Exclusiva</h5>
+                <p className="text-sm opacity-70">Cadeia de frio própria garantindo qualidade total.</p>
+              </div>
+              <div className="border-l-2 border-brand-charcoal/20 pl-6">
+                <h5 className="font-bold text-lg mb-2">Alta Rentabilidade</h5>
+                <p className="text-sm opacity-70">Um conceito boutique com escala industrial.</p>
+              </div>
             </div>
-            <div className="border-l-2 border-brand-charcoal/20 pl-6">
-              <h5 className="font-bold text-lg mb-2">Logística Exclusiva</h5>
-              <p className="text-sm opacity-70">Cadeia de frio própria garantindo qualidade total.</p>
-            </div>
-            <div className="border-l-2 border-brand-charcoal/20 pl-6">
-              <h5 className="font-bold text-lg mb-2">Alta Rentabilidade</h5>
-              <p className="text-sm opacity-70">Um conceito boutique com escala industrial.</p>
-            </div>
+            <FranchiseForm>
+              <button className="bg-brand-charcoal text-brand-gold px-12 py-5 rounded-full font-bold uppercase tracking-widest hover:scale-105 transition-transform shadow-xl">
+                Solicitar Dossier de Investimento
+              </button>
+            </FranchiseForm>
           </div>
-          <FranchiseForm>
-            <button className="bg-brand-charcoal text-brand-gold px-12 py-5 rounded-full font-bold uppercase tracking-widest hover:scale-105 transition-transform shadow-xl">
-              Solicitar Dossier de Investimento
-            </button>
-          </FranchiseForm>
         </div>
       </section>
 
