@@ -29,9 +29,9 @@ const Index = () => {
 
       {/* Hero Section Container */}
       <div className="relative flex flex-col">
-        {/* Navigation / Header - Mudado para relativo para ocupar espaço real no fluxo */}
+        {/* Navigation / Header - Espaçamentos reduzidos conforme solicitado */}
         <nav className="relative w-full z-40 flex flex-col items-center bg-black">
-          <div className="w-full max-w-4xl pt-4 md:pt-8 px-6">
+          <div className="w-full max-w-4xl pt-2 md:pt-4 px-6">
             <img 
               src="/header-placa-premium.png" 
               alt="Baby Beef & Co. - O Rei do Talho" 
@@ -39,8 +39,8 @@ const Index = () => {
             />
           </div>
           
-          <div className="w-full bg-gradient-to-b from-black to-transparent pb-8">
-            <div className="flex flex-wrap justify-center gap-6 md:gap-12 text-[11px] md:text-[13px] uppercase tracking-[0.3em] font-bold px-6 py-6">
+          <div className="w-full bg-gradient-to-b from-black to-transparent">
+            <div className="flex flex-wrap justify-center items-center gap-6 md:gap-12 text-[11px] md:text-[13px] uppercase tracking-[0.3em] font-bold px-6 py-2 md:py-4">
               <a href="#marca" className="hover:text-brand-gold transition-colors text-white">A Marca</a>
               <a href="#produtos" className="hover:text-brand-gold transition-colors text-white">Os Nossos Cortes</a>
               <a href="#lojas" className="hover:text-brand-gold transition-colors text-white">Lojas</a>
