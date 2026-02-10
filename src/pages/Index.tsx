@@ -29,9 +29,9 @@ const Index = () => {
 
       {/* Hero Section Container */}
       <div className="relative flex flex-col">
-        {/* Navigation / Header - Espaçamentos minimizados para máxima proximidade */}
+        {/* Navigation / Header - Posicionamento ultra-compacto baseado na referência */}
         <nav className="relative w-full z-40 flex flex-col items-center bg-black">
-          <div className="w-full max-w-4xl pt-0 md:pt-1 px-6">
+          <div className="w-full max-w-4xl pt-4 px-6">
             <img 
               src="/header-placa-premium.png" 
               alt="Baby Beef & Co. - O Rei do Talho" 
@@ -39,8 +39,8 @@ const Index = () => {
             />
           </div>
           
-          <div className="w-full bg-gradient-to-b from-black to-transparent -mt-2 md:-mt-4">
-            <div className="flex flex-wrap justify-center items-center gap-6 md:gap-12 text-[11px] md:text-[13px] uppercase tracking-[0.3em] font-bold px-6 py-2 md:py-3">
+          <div className="w-full bg-black border-y border-white/10 mt-2">
+            <div className="flex flex-wrap justify-center items-center gap-6 md:gap-12 text-[11px] md:text-[13px] uppercase tracking-[0.3em] font-bold px-6 py-4">
               <a href="#marca" className="hover:text-brand-gold transition-colors text-white">A Marca</a>
               <a href="#produtos" className="hover:text-brand-gold transition-colors text-white">Os Nossos Cortes</a>
               <a href="#lojas" className="hover:text-brand-gold transition-colors text-white">Lojas</a>
@@ -48,7 +48,7 @@ const Index = () => {
               <a href="#contacto" className="hover:text-brand-gold transition-colors text-white">Contacto</a>
               
               <OrderForm>
-                <button className="bg-brand-gold text-brand-charcoal px-6 py-2 rounded-full text-[11px] md:text-[13px] uppercase font-black tracking-widest hover:bg-white transition-all duration-300 shadow-lg">
+                <button className="bg-brand-gold text-brand-charcoal px-6 py-1.5 rounded-full text-[11px] md:text-[13px] uppercase font-black tracking-widest hover:bg-white transition-all duration-300 shadow-lg ml-4">
                   Reservar
                 </button>
               </OrderForm>
@@ -56,7 +56,7 @@ const Index = () => {
           </div>
         </nav>
 
-        {/* Hero Content Section */}
+        {/* Hero Content Section - Começa imediatamente após o menu */}
         <section className="relative h-[80vh] flex items-center overflow-hidden">
           <div className="absolute inset-0 z-0">
             <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent z-10" />
