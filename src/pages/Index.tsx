@@ -30,10 +30,10 @@ const Index = () => {
       {/* Navigation */}
       <nav className="absolute top-0 w-full z-40 px-12 py-8 flex justify-between items-start bg-gradient-to-b from-black/80 to-transparent">
         <div className="flex flex-col items-center gap-2">
-          <img src="/logo-transparent.png" alt="Logo" className="h-52 w-52 object-contain drop-shadow-2xl" />
+          <img src="/logo-transparent.png" alt="Logo" className="h-60 w-60 object-contain drop-shadow-2xl" />
         </div>
         
-        <div className="hidden md:flex gap-12 text-[13px] uppercase tracking-[0.3em] font-bold mt-12">
+        <div className="hidden md:flex gap-12 text-[13px] uppercase tracking-[0.3em] font-bold mt-8">
           <a href="#marca" className="hover:text-brand-gold transition-colors text-white">A Marca</a>
           <a href="#produtos" className="hover:text-brand-gold transition-colors text-white">Os Nossos Cortes</a>
           <a href="#lojas" className="hover:text-brand-gold transition-colors text-white">Lojas</a>
