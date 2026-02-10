@@ -338,25 +338,29 @@ const Index = () => {
                             <div className="text-center mb-16">
                                 <h2
                                     className="text-brand-gold uppercase tracking-widest text-[10px] md:text-sm mb-2 md:mb-4">A Seleção do Rei</h2>
-                                <h3 className="text-3xl md:text-6xl font-serif mb-8 leading-tight">Cortes Premium, esse é o nosso Compromisso.</h3>
+                                <h3 className="text-3xl md:text-6xl font-serif mb-8 leading-tight">Cortes Premium, esse é o nosso Compromisso.</h3>
                                 <p
                                     className="text-brand-ivory/70 text-sm md:text-lg max-w-3xl mx-auto leading-relaxed">Os Cortes Premium Baby Beef são pensados para quem reconhece e valoriza a diferença. Da picanha ao ribeye, do tomahawk aos cortes especiais preparados, cada peça é trabalhada com precisão por profissionais experientes que dominam a arte do talho moderno.</p>
                             </div>
                             {}
                             <div className="hidden md:grid md:grid-cols-3 gap-8 mb-16">
-                                {[{
-                                    title: "Kits Grelhados",
-                                    img: "/kit-premium-2.jpeg",
-                                    desc: "A praticidade do 'Pegue e Leve' com a nossa qualidade."
-                                }, {
-                                    title: "Cortes de Elite",
-                                    img: "/ribeye-salt.jpeg",
-                                    desc: "Trabalhamos apenas com fornecedores certificados e processos controlados, respeitando a anatomia da carne."
-                                }, {
-                                    title: "Churrasco em Casa",
-                                    img: "/kit-churrasco-fire.jpeg",
-                                    desc: "Tudo o que precisa para o churrasco perfeito com o selo Baby Beef."
-                                }].map((product, idx) => (<motion.div
+                                {[
+                                    {
+                                        title: "Kits Grelhados",
+                                        img: "/kit-premium-2.jpeg",
+                                        desc: "A praticidade do 'Pegue e Leve' com a nossa qualidade."
+                                    },
+                                    {
+                                        title: "Cortes de Elite",
+                                        img: "/ribeye-salt.jpeg",
+                                        desc: "Trabalhamos apenas com fornecedores certificados e processos controlados, respeitando a anatomia da carne."
+                                    },
+                                    {
+                                        title: "Churrasco em Casa",
+                                        img: "/kit-churrasco-fire.jpeg",
+                                        desc: "Tudo o que precisa para o churrasco perfeito com o selo Baby Beef."
+                                    }
+                                ].map((product, idx) => (<motion.div
                                     key={idx}
                                     whileHover={{
                                         y: -10
@@ -388,19 +392,23 @@ const Index = () => {
                                     }}
                                     className="w-full">
                                     <CarouselContent>
-                                        {[{
-                                            title: "Kits Grelhados",
-                                            img: "/kit-premium-2.jpeg",
-                                            desc: "A praticidade do 'Pegue e Leve' com a nossa qualidade."
-                                        }, {
-                                            title: "Cortes de Elite",
-                                            img: "/ribeye-salt.jpeg",
-                                            desc: "Trabalhamos apenas com fornecedores certificados e processos controlados."
-                                        }, {
-                                            title: "Churrasco em Casa",
-                                            img: "/kit-churrasco-fire.jpeg",
-                                            desc: "Tudo o que precisa para o churrasco perfeito com o selo Baby Beef."
-                                        }].map((product, idx) => (<CarouselItem key={idx}>
+                                        {[
+                                            {
+                                                title: "Kits Grelhados",
+                                                img: "/kit-premium-2.jpeg",
+                                                desc: "A praticidade do 'Pegue e Leve' com a nossa qualidade."
+                                            },
+                                            {
+                                                title: "Cortes de Elite",
+                                                img: "/ribeye-salt.jpeg",
+                                                desc: "Trabalhamos apenas com fornecedores certificados e processos controlados."
+                                            },
+                                            {
+                                                title: "Churrasco em Casa",
+                                                img: "/kit-churrasco-fire.jpeg",
+                                                desc: "Tudo o que precisa para o churrasco perfeito com o selo Baby Beef."
+                                            }
+                                        ].map((product, idx) => (<CarouselItem key={idx}>
                                             <div
                                                 className="bg-brand-charcoal border border-brand-gold/10 rounded-2xl overflow-hidden mx-2 h-full">
                                                 <div className="h-64 overflow-hidden">
@@ -541,9 +549,10 @@ const Index = () => {
                                     </div>
                                 </div>
                                 <FranchiseForm>
-                                    <button
-                                        className="bg-brand-charcoal text-brand-gold px-12 py-5 rounded-full font-bold uppercase tracking-widest hover:scale-105 transition-transform shadow-xl">Solicitar Dossier de Investimento
-                                                                                                                                                                                                                    </button>
+                                    <button className="bg-brand-charcoal text-brand-gold px-6 md:px-12 py-3 md:py-5 rounded-full font-bold uppercase tracking-widest hover:scale-105 transition-transform shadow-xl text-[10px] md:text-sm">
+                                      <span className="hidden md:inline">Solicitar Dossier de Investimento</span>
+                                      <span className="md:hidden">Fale Conosco</span>
+                                    </button>
                                 </FranchiseForm>
                             </div>
                         </div>
