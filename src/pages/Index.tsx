@@ -79,7 +79,7 @@ const Index = () => {
                             <img
                                 src="/header-placa-premium.png"
                                 alt="Baby Beef & Co. - O Rei do Talho"
-                                className="w-full h-auto object-cover scale-[1.15] -my-[8%]" />
+                                className="w-full h-auto object-cover scale-[1.15] -my-[8%] md:-mb-[10%]" />
                         </div>
                         <div className="w-full bg-black/40 border-y border-white/10 relative z-10">
                             <div
@@ -120,7 +120,7 @@ const Index = () => {
                                     imageRendering: "auto"
                                 }} />
                         </div>
-                        <div className="relative z-20 px-8 md:px-24 max-w-4xl py-20 md:pt-4 md:pb-20">
+                        <div className="relative z-20 px-8 md:px-24 max-w-4xl py-20 md:pt-1 md:pb-20">
                             <motion.div
                                 initial={{
                                     opacity: 0,
@@ -346,19 +346,23 @@ const Index = () => {
                             </div>
                             {}
                             <div className="hidden md:grid md:grid-cols-3 gap-8 mb-16">
-                                {[{
-                                    title: "Kits Grelhados",
-                                    img: "/kit-premium-2.jpeg",
-                                    desc: "A praticidade do 'Pegue e Leve' com a nossa qualidade."
-                                }, {
-                                    title: "Cortes de Elite",
-                                    img: "/ribeye-salt.jpeg",
-                                    desc: "Trabalhamos apenas com fornecedores certificados e processos controlados, respeitando a anatomia da carne."
-                                }, {
-                                    title: "Churrasco em Casa",
-                                    img: "/kit-churrasco-fire.jpeg",
-                                    desc: "Tudo o que precisa para o churrasco perfeito com o selo Baby Beef."
-                                }].map((product, idx) => (<motion.div
+                                {[
+                                    {
+                                        title: "Kits Grelhados",
+                                        img: "/kit-premium-2.jpeg",
+                                        desc: "A praticidade do 'Pegue e Leve' com a nossa qualidade."
+                                    },
+                                    {
+                                        title: "Cortes de Elite",
+                                        img: "/ribeye-salt.jpeg",
+                                        desc: "Trabalhamos apenas com fornecedores certificados e processos controlados, respeitando a anatomia da carne."
+                                    },
+                                    {
+                                        title: "Churrasco em Casa",
+                                        img: "/kit-churrasco-fire.jpeg",
+                                        desc: "Tudo o que precisa para o churrasco perfeito com o selo Baby Beef."
+                                    }
+                                ].map((product, idx) => (<motion.div
                                     key={idx}
                                     whileHover={{
                                         y: -10
@@ -390,19 +394,23 @@ const Index = () => {
                                     }}
                                     className="w-full">
                                     <CarouselContent>
-                                        {[{
-                                            title: "Kits Grelhados",
-                                            img: "/kit-premium-2.jpeg",
-                                            desc: "A praticidade do 'Pegue e Leve' com a nossa qualidade."
-                                        }, {
-                                            title: "Cortes de Elite",
-                                            img: "/ribeye-salt.jpeg",
-                                            desc: "Trabalhamos apenas com fornecedores certificados e processos controlados."
-                                        }, {
-                                            title: "Churrasco em Casa",
-                                            img: "/kit-churrasco-fire.jpeg",
-                                            desc: "Tudo o que precisa para o churrasco perfeito com o selo Baby Beef."
-                                        }].map((product, idx) => (<CarouselItem key={idx}>
+                                        {[
+                                            {
+                                                title: "Kits Grelhados",
+                                                img: "/kit-premium-2.jpeg",
+                                                desc: "A praticidade do 'Pegue e Leve' com a nossa qualidade."
+                                            },
+                                            {
+                                                title: "Cortes de Elite",
+                                                img: "/ribeye-salt.jpeg",
+                                                desc: "Trabalhamos apenas com fornecedores certificados e processos controlados."
+                                            },
+                                            {
+                                                title: "Churrasco em Casa",
+                                                img: "/kit-churrasco-fire.jpeg",
+                                                desc: "Tudo o que precisa para o churrasco perfeito com o selo Baby Beef."
+                                            }
+                                        ].map((product, idx) => (<CarouselItem key={idx}>
                                             <div
                                                 className="bg-brand-charcoal border border-brand-gold/10 rounded-2xl overflow-hidden mx-2 h-full">
                                                 <div className="h-64 overflow-hidden">
