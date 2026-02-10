@@ -343,11 +343,14 @@ const Index = () => {
             <div className="bg-white/5 p-6 rounded-xl border border-white/10 w-full">
               <p className="text-[10px] uppercase tracking-[0.2em] text-brand-ivory/60 mb-4 text-center md:text-left">Este talho está assegurado pela:</p>
               <div className="flex flex-col items-center md:items-start gap-2">
-                <img 
-                  src="/allianz-neon.png" 
-                  alt="Allianz Seguros" 
-                  className="h-16 w-full object-contain rounded-lg shadow-[0_0_20px_rgba(255,255,255,0.1)]" 
-                />
+                <div className="relative h-16 w-full flex items-center justify-center bg-black rounded-lg border border-white/5 overflow-hidden">
+                  <img 
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Allianz_logo.svg/2560px-Allianz_logo.svg.png" 
+                    alt="Allianz Seguros" 
+                    className="h-8 object-contain brightness-0 invert" 
+                  />
+                  <div className="absolute inset-0 shadow-[inset_0_0_20px_rgba(255,255,255,0.05)]"></div>
+                </div>
                 <div className="h-[1px] w-full bg-brand-gold/20 my-2" />
                 <p className="text-sm font-serif text-brand-gold italic">Com seguro Multirriscos</p>
               </div>
