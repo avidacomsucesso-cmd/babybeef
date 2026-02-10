@@ -370,11 +370,7 @@ const Index = () => {
             <div className="bg-white/5 p-6 rounded-xl border border-white/10 w-full">
               <p className="text-[10px] uppercase tracking-[0.2em] text-brand-ivory/60 mb-4 text-center md:text-left">Este talho está assegurado pela:</p>
               <div className="flex flex-col items-center md:items-start gap-2">
-                <img 
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Allianz_logo.svg/2560px-Allianz_logo.svg.png" 
-                  alt="Allianz Seguros" 
-                  className="h-8 object-contain brightness-0 invert" 
-                />
+                <span className="text-3xl font-serif font-bold text-white tracking-tight">Allianz</span>
                 <div className="h-[1px] w-full bg-brand-gold/20 my-2" />
                 <p className="text-sm font-serif text-brand-gold italic">Com seguro Multirriscos</p>
               </div>
