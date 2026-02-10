@@ -152,21 +152,33 @@ const Index = () => {
         <div className="max-w-7xl mx-auto px-8 mb-12 flex justify-between items-end">
           <div>
             <h2 className="text-brand-gold uppercase tracking-widest text-sm mb-4">O Espaço</h2>
-            <h3 className="text-4xl font-serif">A Nossa Montra Diária</h3>
+            <h3 className="text-4xl font-serif">Nossas Carnes Selecionadas</h3>
           </div>
           <p className="text-brand-ivory/60 max-w-xs text-right hidden md:block">
             Qualidade que se vê. Sabor que se lembra. Visite as nossas lojas físicas.
           </p>
         </div>
-        <div className="flex gap-4 px-8 animate-fade-in max-w-7xl mx-auto">
-          <div className="w-1/3 h-96 rounded-2xl overflow-hidden">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 px-8 animate-fade-in max-w-7xl mx-auto">
+          <div className="h-96 rounded-2xl overflow-hidden shadow-xl">
             <img src="/talho-real-1.jpeg" className="w-full h-full object-cover hover:scale-110 transition-transform duration-700" alt="Talho Real" />
           </div>
-          <div className="w-1/3 h-96 rounded-2xl overflow-hidden">
+          <div className="h-96 rounded-2xl overflow-hidden shadow-xl">
             <img src="/montra-carne.jpeg" className="w-full h-full object-cover hover:scale-110 transition-transform duration-700" alt="Montra de Carne" />
           </div>
-          <div className="w-1/3 h-96 rounded-2xl overflow-hidden">
+          <div className="h-96 rounded-2xl overflow-hidden shadow-xl">
             <img src="/talho-real-2.jpeg" className="w-full h-full object-cover hover:scale-110 transition-transform duration-700" alt="Interior Loja" />
+          </div>
+          <div className="h-96 rounded-2xl overflow-hidden shadow-xl">
+            <img src="/montra-3.jpeg" className="w-full h-full object-cover hover:scale-110 transition-transform duration-700" alt="Carne Selecionada 1" />
+          </div>
+          <div className="h-96 rounded-2xl overflow-hidden shadow-xl">
+            <img src="/montra-4.jpeg" className="w-full h-full object-cover hover:scale-110 transition-transform duration-700" alt="Carne Selecionada 2" />
+          </div>
+          <div className="h-96 rounded-2xl overflow-hidden shadow-xl">
+            <img src="/montra-5.jpg" className="w-full h-full object-cover hover:scale-110 transition-transform duration-700" alt="Carne Selecionada 3" />
+          </div>
+          <div className="h-96 rounded-2xl overflow-hidden shadow-xl lg:col-span-3">
+            <img src="/montra-6.jpeg" className="w-full h-full object-cover hover:scale-110 transition-transform duration-700" alt="Montra Completa" />
           </div>
         </div>
       </section>
