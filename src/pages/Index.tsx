@@ -75,15 +75,15 @@ const Index = () => {
                                 alt="Background"
                                 className="w-full h-full object-cover opacity-30 mix-blend-overlay" />
                         </div>
-                        <div className="w-full max-w-2xl px-6 overflow-hidden relative z-10">
+                        <div className="w-full max-w-4xl px-6 overflow-hidden relative z-10">
                             <img
                                 src="/header-placa-premium.png"
                                 alt="Baby Beef & Co. - O Rei do Talho"
-                                className="w-full h-auto object-cover scale-[1.0] md:scale-[0.8] -my-[15%] md:-my-[20%]" />
+                                className="w-full h-auto object-cover scale-[1.1] md:scale-[1.05] -my-[6%] md:-my-[4%]" />
                         </div>
                         <div className="w-full bg-black/40 border-y border-white/10 relative z-10">
                             <div
-                                className="flex flex-wrap justify-center items-center gap-6 md:gap-16 text-[11px] md:text-[14px] 2xl:text-[16px] uppercase tracking-[0.3em] font-bold px-6 py-2 md:py-3">
+                                className="flex flex-wrap justify-center items-center gap-6 md:gap-16 text-[11px] md:text-[14px] 2xl:text-[16px] uppercase tracking-[0.3em] font-bold px-6 py-4 md:py-6">
                                 <a
                                     href="#marca"
                                     className="hover:text-brand-gold transition-colors text-white">A Marca</a>
