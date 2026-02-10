@@ -120,7 +120,7 @@ const Index = () => {
                                     imageRendering: "auto"
                                 }} />
                         </div>
-                        <div className="relative z-20 px-8 md:px-24 max-w-4xl py-20">
+                        <div className="relative z-20 px-8 md:px-24 max-w-4xl py-20 md:pt-4 md:pb-20">
                             <motion.div
                                 initial={{
                                     opacity: 0,
