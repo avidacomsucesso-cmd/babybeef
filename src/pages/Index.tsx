@@ -28,18 +28,18 @@ const Index = () => {
       <FireParticles />
 
       {/* Navigation */}
-      <nav className="absolute top-0 w-full z-40 px-12 py-8 flex justify-between items-center bg-gradient-to-b from-black/80 to-transparent">
-        <div className="flex items-center gap-6">
-          <img src="/logo-transparent.png" alt="Logo" className="h-52 w-52 object-contain drop-shadow-2xl" />
-          <div className="hidden lg:block">
-            <div className="text-2xl font-serif font-bold tracking-tighter text-brand-gold leading-none">
+      <nav className="absolute top-0 w-full z-40 px-12 py-8 flex justify-between items-start bg-gradient-to-b from-black/80 to-transparent">
+        <div className="flex flex-col items-center gap-2">
+          <img src="/logo-transparent.png" alt="Logo" className="h-40 w-40 object-contain drop-shadow-2xl" />
+          <div className="hidden lg:block text-center">
+            <div className="text-xl font-serif font-bold tracking-tighter text-brand-gold leading-none">
               BABY BEEF
             </div>
-            <div className="text-sm tracking-[0.3em] text-brand-ivory/80 uppercase">O Rei do Talho</div>
+            <div className="text-[10px] tracking-[0.3em] text-brand-ivory/80 uppercase">O Rei do Talho</div>
           </div>
         </div>
         
-        <div className="hidden md:flex gap-12 text-[13px] uppercase tracking-[0.3em] font-bold">
+        <div className="hidden md:flex gap-12 text-[13px] uppercase tracking-[0.3em] font-bold mt-8">
           <a href="#marca" className="hover:text-brand-gold transition-colors text-white">A Marca</a>
           <a href="#produtos" className="hover:text-brand-gold transition-colors text-white">Os Nossos Cortes</a>
           <a href="#lojas" className="hover:text-brand-gold transition-colors text-white">Lojas</a>
@@ -48,7 +48,7 @@ const Index = () => {
         </div>
 
         <OrderForm>
-          <button className="bg-brand-gold text-brand-charcoal px-8 py-3 rounded-full text-[13px] uppercase font-black tracking-widest hover:bg-white transition-all duration-300 shadow-lg">
+          <button className="bg-brand-gold text-brand-charcoal px-8 py-3 rounded-full text-[13px] uppercase font-black tracking-widest hover:bg-white transition-all duration-300 shadow-lg mt-8">
             Reservar
           </button>
         </OrderForm>
@@ -66,7 +66,7 @@ const Index = () => {
           />
         </div>
         
-        <div className="relative z-20 px-12 md:px-24 max-w-4xl pt-24 md:pt-32">
+        <div className="relative z-20 px-12 md:px-24 max-w-4xl pt-48 md:pt-64">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
