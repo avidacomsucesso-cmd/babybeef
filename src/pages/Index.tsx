@@ -10,6 +10,13 @@
 /* Logística Section (Franchise Focus) */
 /* Franquias Section */
 /* Footer / Contacto */
+/* Hero Section Container */
+/* Navigation / Header - Posicionamento ultra-compacto baseado na referência */
+/* Background Image para o Topo */
+/* Desktop Grid / Mobile Carousel */
+/* Mobile Carousel - Only visible on small screens */
+/* Desktop Grid / Mobile Carousel for Cortes Premium */
+/* Mobile Carousel for Cortes Premium */
 "use client";
 import React, { useEffect, useState } from "react";
 import { motion, useScroll, useSpring } from "framer-motion";
@@ -56,27 +63,24 @@ const Index = () => {
             <FireParticles />
             {}
             <div className="relative flex flex-col">
-                {/* Hero Section Container */}
+                {}
                 <div className="relative flex flex-col">
-                    {/* Navigation / Header - Posicionamento ultra-compacto baseado na referência */}
-                    <nav className="relative w-full z-40 flex flex-col items-center bg-brand-charcoal overflow-hidden">
-                        {/* Background Image para o Topo */}
+                    {}
+                    <nav
+                        className="relative w-full z-40 flex flex-col items-center bg-brand-charcoal overflow-hidden">
+                        {}
                         <div className="absolute inset-0 z-0">
-                            <img 
-                              src="/vintage_film_bg.jpg" 
-                              alt="Background" 
-                              className="w-full h-full object-cover opacity-30 mix-blend-overlay"
-                            />
+                            <img
+                                src="/vintage_film_bg.jpg"
+                                alt="Background"
+                                className="w-full h-full object-cover opacity-30 mix-blend-overlay" />
                         </div>
-
                         <div className="w-full max-w-4xl px-6 overflow-hidden relative z-10">
-                            <img 
-                              src="/header-placa-premium.png" 
-                              alt="Baby Beef & Co. - O Rei do Talho" 
-                              className="w-full h-auto object-cover scale-[1.15] -my-[8%]"
-                            />
+                            <img
+                                src="/header-placa-premium.png"
+                                alt="Baby Beef & Co. - O Rei do Talho"
+                                className="w-full h-auto object-cover scale-[1.15] -my-[8%]" />
                         </div>
-                        
                         <div className="w-full bg-black/40 border-y border-white/10 relative z-10">
                             <div
                                 className="flex flex-wrap justify-center items-center gap-6 md:gap-12 text-[11px] md:text-[13px] uppercase tracking-[0.3em] font-bold px-6 py-4">
@@ -98,7 +102,7 @@ const Index = () => {
                                 <OrderForm>
                                     <button
                                         className="bg-brand-gold text-brand-charcoal px-6 py-1.5 rounded-full text-[11px] md:text-[13px] uppercase font-black tracking-widest hover:bg-white transition-all duration-300 shadow-lg ml-4">Reservar
-                                                    </button>
+                                                                                            </button>
                                 </OrderForm>
                             </div>
                         </div>
@@ -140,19 +144,17 @@ const Index = () => {
                                 </h1>
                                 <p
                                     className="text-xl md:text-2xl text-brand-ivory/80 font-light mb-12 max-w-xl leading-relaxed">Maestria, tradição e os melhores cortes do mundo, selecionados para a sua mesa.
-                                              </p>
+                                                                                  </p>
                                 <div className="flex flex-col md:flex-row gap-6">
                                     <a href="#produtos">
                                         <button
-                                            className="bg-brand-gold text-brand-charcoal px-8 md:px-12 py-3 md:py-5 rounded-full font-black uppercase tracking-widest hover:scale-105 transition-transform shadow-2xl w-full md:w-auto text-[11px] md:text-sm">
-                                          Descobrir Coleção
-                                        </button>
+                                            className="bg-brand-gold text-brand-charcoal px-8 md:px-12 py-3 md:py-5 rounded-full font-black uppercase tracking-widest hover:scale-105 transition-transform shadow-2xl w-full md:w-auto text-[11px] md:text-sm">Descobrir Coleção
+                                                                                    </button>
                                     </a>
                                     <FranchiseForm>
                                         <button
-                                            className="border border-white/20 backdrop-blur-md bg-white/5 px-8 md:px-12 py-3 md:py-5 rounded-full font-black uppercase tracking-widest hover:bg-white hover:text-brand-charcoal transition-all shadow-xl text-[11px] md:text-sm">
-                                          Seja um Franqueado
-                                        </button>
+                                            className="border border-white/20 backdrop-blur-md bg-white/5 px-8 md:px-12 py-3 md:py-5 rounded-full font-black uppercase tracking-widest hover:bg-white hover:text-brand-charcoal transition-all shadow-xl text-[11px] md:text-sm">Seja um Franqueado
+                                                                                    </button>
                                     </FranchiseForm>
                                 </div>
                             </motion.div>
@@ -170,18 +172,22 @@ const Index = () => {
                         </motion.div>
                     </section>
                     {}
-                    <section id="marca" className="relative pt-12 md:pt-24 pb-6 md:pb-12 overflow-hidden bg-brand-charcoal">
+                    <section
+                        id="marca"
+                        className="relative pt-12 md:pt-24 pb-6 md:pb-12 overflow-hidden bg-brand-charcoal">
                         <div className="absolute inset-0 z-0">
-                          <img 
-                            src="/vintage_film_bg.jpg" 
-                            alt="Background" 
-                            className="w-full h-full object-cover opacity-30 mix-blend-overlay"
-                          />
+                            <img
+                                src="/vintage_film_bg.jpg"
+                                alt="Background"
+                                className="w-full h-full object-cover opacity-30 mix-blend-overlay" />
                         </div>
-
-                        <div className="relative z-10 px-8 max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+                        <div
+                            className="relative z-10 px-8 max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
                             <motion.div
-                                whileInView={{ opacity: 1, x: 0 }}
+                                whileInView={{
+                                    opacity: 1,
+                                    x: 0
+                                }}
                                 initial={{
                                     opacity: 0,
                                     x: -50
@@ -192,10 +198,10 @@ const Index = () => {
                                 <h2 className="text-brand-gold uppercase tracking-widest text-sm mb-4">A Nossa Essência</h2>
                                 <h3 className="text-4xl md:text-5xl font-serif mb-8 leading-tight">O Diferencial Baby Beef</h3>
                                 <p className="text-brand-ivory/70 text-lg leading-relaxed mb-6">Na Baby Beef, acreditamos que a excelência começa na origem e se revela no corte.
-                                          Não somos apenas um talho — somos especialistas em carne, movidos pela paixão pela mestria, pela tradição e pela qualidade absoluta.
-                                        </p>
+                                                                              Não somos apenas um talho — somos especialistas em carne, movidos pela paixão pela mestria, pela tradição e pela qualidade absoluta.
+                                                                            </p>
                                 <p className="text-brand-ivory/70 text-lg leading-relaxed mb-8">Cada peça que chega ao nosso balcão é cuidadosamente selecionada segundo critérios rigorosos de raça, marmoreio, frescura e consistência, garantindo uma experiência superior desde a escolha até ao momento à mesa. Trabalhamos apenas com fornecedores certificados e processos controlados, respeitando a cadeia de frio e os mais elevados padrões de segurança alimentar.
-                                          </p>
+                                                                              </p>
                                 <div className="grid grid-cols-2 gap-8">
                                     <div>
                                         <div className="text-brand-gold mb-2 font-serif text-3xl font-bold">PT</div>
@@ -219,182 +225,225 @@ const Index = () => {
                         </div>
                     </section>
                     {}
-                    <section className="relative pt-6 md:pt-12 pb-12 md:pb-24 overflow-hidden bg-brand-charcoal">
+                    <section
+                        className="relative pt-6 md:pt-12 pb-12 md:pb-24 overflow-hidden bg-brand-charcoal">
                         <div className="absolute inset-0 z-0">
-                          <img 
-                            src="/vintage_film_bg.jpg" 
-                            alt="Background Texture" 
-                            className="w-full h-full object-cover opacity-30 mix-blend-overlay"
-                          />
+                            <img
+                                src="/vintage_film_bg.jpg"
+                                alt="Background Texture"
+                                className="w-full h-full object-cover opacity-30 mix-blend-overlay" />
                         </div>
-
                         <div className="relative z-10 max-w-7xl mx-auto px-8 mb-12">
-                          <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-4">
-                            <div>
-                              <h2 className="text-brand-gold uppercase tracking-widest text-[10px] md:text-sm mb-2 md:mb-4">O Espaço</h2>
-                              <h3 className="text-3xl md:text-4xl font-serif">Nossas Carnes Selecionadas</h3>
+                            <div
+                                className="flex flex-col md:flex-row justify-between items-start md:items-end gap-4">
+                                <div>
+                                    <h2
+                                        className="text-brand-gold uppercase tracking-widest text-[10px] md:text-sm mb-2 md:mb-4">O Espaço</h2>
+                                    <h3 className="text-3xl md:text-4xl font-serif">Nossas Carnes Selecionadas</h3>
+                                </div>
+                                <p
+                                    className="text-brand-ivory/60 max-w-xs text-left md:text-right text-sm md:text-base">Qualidade que se vê. Sabor que se lembra. Visite as nossas lojas físicas.
+                                                                </p>
                             </div>
-                            <p className="text-brand-ivory/60 max-w-xs text-left md:text-right text-sm md:text-base">
-                              Qualidade que se vê. Sabor que se lembra. Visite as nossas lojas físicas.
-                            </p>
-                          </div>
                         </div>
-
-                        {/* Desktop Grid / Mobile Carousel */}
+                        {}
                         <div className="relative z-10 max-w-7xl mx-auto px-4 md:px-8">
-                          <div className="hidden md:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 animate-fade-in">
-                            <div className="h-96 rounded-2xl overflow-hidden shadow-xl">
-                              <img src="/talho-real-1.jpeg" className="w-full h-full object-cover hover:scale-110 transition-transform duration-700" alt="Talho Real" />
+                            <div
+                                className="hidden md:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 animate-fade-in">
+                                <div className="h-96 rounded-2xl overflow-hidden shadow-xl">
+                                    <img
+                                        src="/talho-real-1.jpeg"
+                                        className="w-full h-full object-cover hover:scale-110 transition-transform duration-700"
+                                        alt="Talho Real" />
+                                </div>
+                                <div className="h-96 rounded-2xl overflow-hidden shadow-xl">
+                                    <img
+                                        src="/montra-elite.jpeg"
+                                        className="w-full h-full object-cover hover:scale-110 transition-transform duration-700"
+                                        alt="Montra de Elite" />
+                                </div>
+                                <div className="h-96 rounded-2xl overflow-hidden shadow-xl">
+                                    <img
+                                        src="/talho-real-2.jpeg"
+                                        className="w-full h-full object-cover hover:scale-110 transition-transform duration-700"
+                                        alt="Interior Loja" />
+                                </div>
+                                <div className="h-96 rounded-2xl overflow-hidden shadow-xl">
+                                    <img
+                                        src="/montra-3.jpeg"
+                                        className="w-full h-full object-cover hover:scale-110 transition-transform duration-700"
+                                        alt="Carne Selecionada 1" />
+                                </div>
+                                <div className="h-96 rounded-2xl overflow-hidden shadow-xl">
+                                    <img
+                                        src="/montra-4.jpeg"
+                                        className="w-full h-full object-cover hover:scale-110 transition-transform duration-700"
+                                        alt="Carne Selecionada 2" />
+                                </div>
+                                <div className="h-96 rounded-2xl overflow-hidden shadow-xl">
+                                    <img
+                                        src="/montra-5.jpg"
+                                        className="w-full h-full object-cover hover:scale-110 transition-transform duration-700"
+                                        alt="Carne Selecionada 3" />
+                                </div>
+                                <div className="h-96 rounded-2xl overflow-hidden shadow-xl lg:col-span-3">
+                                    <img
+                                        src="/montra-6.jpeg"
+                                        className="w-full h-full object-cover hover:scale-110 transition-transform duration-700"
+                                        alt="Montra Completa" />
+                                </div>
                             </div>
-                            <div className="h-96 rounded-2xl overflow-hidden shadow-xl">
-                              <img src="/montra-elite.jpeg" className="w-full h-full object-cover hover:scale-110 transition-transform duration-700" alt="Montra de Elite" />
-                            </div>
-                            <div className="h-96 rounded-2xl overflow-hidden shadow-xl">
-                              <img src="/talho-real-2.jpeg" className="w-full h-full object-cover hover:scale-110 transition-transform duration-700" alt="Interior Loja" />
-                            </div>
-                            <div className="h-96 rounded-2xl overflow-hidden shadow-xl">
-                              <img src="/montra-3.jpeg" className="w-full h-full object-cover hover:scale-110 transition-transform duration-700" alt="Carne Selecionada 1" />
-                            </div>
-                            <div className="h-96 rounded-2xl overflow-hidden shadow-xl">
-                              <img src="/montra-4.jpeg" className="w-full h-full object-cover hover:scale-110 transition-transform duration-700" alt="Carne Selecionada 2" />
-                            </div>
-                            <div className="h-96 rounded-2xl overflow-hidden shadow-xl">
-                              <img src="/montra-5.jpg" className="w-full h-full object-cover hover:scale-110 transition-transform duration-700" alt="Carne Selecionada 3" />
-                            </div>
-                            <div className="h-96 rounded-2xl overflow-hidden shadow-xl lg:col-span-3">
-                              <img src="/montra-6.jpeg" className="w-full h-full object-cover hover:scale-110 transition-transform duration-700" alt="Montra Completa" />
-                            </div>
-                          </div>
-
-                          {/* Mobile Carousel - Only visible on small screens */}
-                          <div className="md:hidden">
-                            <Carousel opts={{ align: "start", loop: true }} className="w-full">
-                              <CarouselContent>
-                                {[
-                                  "/talho-real-1.jpeg",
-                                  "/montra-elite.jpeg",
-                                  "/talho-real-2.jpeg",
-                                  "/montra-3.jpeg",
-                                  "/montra-4.jpeg",
-                                  "/montra-5.jpg",
-                                  "/montra-6.jpeg"
-                                ].map((src, index) => (
-                                  <CarouselItem key={index}>
-                                    <div className="h-[450px] rounded-2xl overflow-hidden shadow-xl mx-2">
-                                      <img src={src} className="w-full h-full object-cover" alt={`Slide ${index}`} />
+                            {}
+                            <div className="md:hidden">
+                                <Carousel
+                                    opts={{
+                                        align: "start",
+                                        loop: true
+                                    }}
+                                    className="w-full">
+                                    <CarouselContent>
+                                        {[
+                                            "/talho-real-1.jpeg",
+                                            "/montra-elite.jpeg",
+                                            "/talho-real-2.jpeg",
+                                            "/montra-3.jpeg",
+                                            "/montra-4.jpeg",
+                                            "/montra-5.jpg",
+                                            "/montra-6.jpeg"
+                                        ].map((src, index) => (<CarouselItem key={index}>
+                                            <div className="h-[450px] rounded-2xl overflow-hidden shadow-xl mx-2">
+                                                <img src={src} className="w-full h-full object-cover" alt={`Slide ${index}`} />
+                                            </div>
+                                        </CarouselItem>))}
+                                    </CarouselContent>
+                                    <div className="flex justify-center gap-4 mt-6">
+                                        <CarouselPrevious className="static translate-y-0 h-8 w-8" />
+                                        <CarouselNext className="static translate-y-0 h-8 w-8" />
                                     </div>
-                                  </CarouselItem>
-                                ))}
-                              </CarouselContent>
-                              <div className="flex justify-center gap-4 mt-6">
-                                <CarouselPrevious className="static translate-y-0 h-8 w-8" />
-                                <CarouselNext className="static translate-y-0 h-8 w-8" />
-                              </div>
-                            </Carousel>
-                          </div>
+                                </Carousel>
+                            </div>
                         </div>
                     </section>
                     {}
-                    <section id="produtos" className="relative py-12 md:py-24 overflow-hidden bg-brand-charcoal">
+                    <section
+                        id="produtos"
+                        className="relative py-12 md:py-24 overflow-hidden bg-brand-charcoal">
                         <div className="absolute inset-0 z-0">
-                          <img 
-                            src="/vintage_film_bg.jpg" 
-                            alt="Background Texture" 
-                            className="w-full h-full object-cover opacity-30 mix-blend-overlay"
-                          />
+                            <img
+                                src="/vintage_film_bg.jpg"
+                                alt="Background Texture"
+                                className="w-full h-full object-cover opacity-30 mix-blend-overlay" />
                         </div>
-
                         <div className="relative z-10 max-w-7xl mx-auto px-8">
-                          <div className="text-center mb-16">
-                            <h2 className="text-brand-gold uppercase tracking-widest text-[10px] md:text-sm mb-2 md:mb-4">A Seleção do Rei</h2>
-                            <h3 className="text-3xl md:text-6xl font-serif mb-8 leading-tight">Cortes Premium, Sem Compromissos</h3>
-                            <p className="text-brand-ivory/70 text-sm md:text-lg max-w-3xl mx-auto leading-relaxed">
-                              Os Cortes Premium Baby Beef são pensados para quem reconhece e valoriza a diferença. 
-                              Da picanha ao ribeye, do tomahawk aos cortes especiais preparados, cada peça é trabalhada com precisão por profissionais experientes que dominam a arte do talho moderno.
-                            </p>
-                          </div>
-
-                          {/* Desktop Grid / Mobile Carousel for Cortes Premium */}
-                          <div className="hidden md:grid md:grid-cols-3 gap-8 mb-16">
-                            {[
-                              { title: "Kits Grelhados", img: "/kit-premium-2.jpeg", desc: "A praticidade do 'Pegue e Leve' com a nossa qualidade." },
-                              { 
-                                title: "Cortes de Elite", 
-                                img: "/ribeye-salt.jpeg", 
-                                desc: "Trabalhamos apenas com fornecedores certificados e processos controlados, respeitando a anatomia da carne." 
-                              },
-                              { title: "Churrasco em Casa", img: "/kit-churrasco-fire.jpeg", desc: "Tudo o que precisa para o churrasco perfeito com o selo Baby Beef." }
-                            ].map((product, idx) => (
-                              <motion.div 
-                                key={idx}
-                                whileHover={{ y: -10 }}
-                                className="bg-brand-charcoal border border-brand-gold/10 rounded-2xl overflow-hidden group"
-                              >
-                                <div className="h-72 overflow-hidden">
-                                  <img src={product.img} alt={product.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
-                                </div>
-                                <div className="p-8">
-                                  <h4 className="text-2xl font-serif text-brand-gold mb-2">{product.title}</h4>
-                                  <p className="text-brand-ivory/60 text-sm mb-6">{product.desc}</p>
-                                  <OrderForm>
-                                    <button className="w-full py-3 border border-brand-gold/30 rounded-lg text-xs uppercase font-bold tracking-widest hover:bg-brand-gold hover:text-brand-charcoal transition-all">
-                                      Reservar Corte
-                                    </button>
-                                  </OrderForm>
-                                </div>
-                              </motion.div>
-                            ))}
-                          </div>
-
-                          {/* Mobile Carousel for Cortes Premium */}
-                          <div className="md:hidden mb-16">
-                            <Carousel opts={{ align: "start", loop: true }} className="w-full">
-                              <CarouselContent>
-                                {[
-                                  { title: "Kits Grelhados", img: "/kit-premium-2.jpeg", desc: "A praticidade do 'Pegue e Leve' com a nossa qualidade." },
-                                  { title: "Cortes de Elite", img: "/ribeye-salt.jpeg", desc: "Trabalhamos apenas com fornecedores certificados e processos controlados." },
-                                  { title: "Churrasco em Casa", img: "/kit-churrasco-fire.jpeg", desc: "Tudo o que precisa para o churrasco perfeito com o selo Baby Beef." }
-                                ].map((product, idx) => (
-                                  <CarouselItem key={idx}>
-                                    <div className="bg-brand-charcoal border border-brand-gold/10 rounded-2xl overflow-hidden mx-2 h-full">
-                                      <div className="h-64 overflow-hidden">
-                                        <img src={product.img} alt={product.title} className="w-full h-full object-cover" />
-                                      </div>
-                                      <div className="p-6">
-                                        <h4 className="text-xl font-serif text-brand-gold mb-2">{product.title}</h4>
+                            <div className="text-center mb-16">
+                                <h2
+                                    className="text-brand-gold uppercase tracking-widest text-[10px] md:text-sm mb-2 md:mb-4">A Seleção do Rei</h2>
+                                <h3 className="text-3xl md:text-6xl font-serif mb-8 leading-tight">Cortes Premium, este é o nosso Compromissos</h3>
+                                <p
+                                    className="text-brand-ivory/70 text-sm md:text-lg max-w-3xl mx-auto leading-relaxed">Os Cortes Premium Baby Beef são pensados para quem reconhece e valoriza a diferença. 
+                                                                  Da picanha ao ribeye, do tomahawk aos cortes especiais preparados, cada peça é trabalhada com precisão por profissionais experientes que dominam a arte do talho moderno.
+                                                                </p>
+                            </div>
+                            {}
+                            <div className="hidden md:grid md:grid-cols-3 gap-8 mb-16">
+                                {[{
+                                    title: "Kits Grelhados",
+                                    img: "/kit-premium-2.jpeg",
+                                    desc: "A praticidade do 'Pegue e Leve' com a nossa qualidade."
+                                }, {
+                                    title: "Cortes de Elite",
+                                    img: "/ribeye-salt.jpeg",
+                                    desc: "Trabalhamos apenas com fornecedores certificados e processos controlados, respeitando a anatomia da carne."
+                                }, {
+                                    title: "Churrasco em Casa",
+                                    img: "/kit-churrasco-fire.jpeg",
+                                    desc: "Tudo o que precisa para o churrasco perfeito com o selo Baby Beef."
+                                }].map((product, idx) => (<motion.div
+                                    key={idx}
+                                    whileHover={{
+                                        y: -10
+                                    }}
+                                    className="bg-brand-charcoal border border-brand-gold/10 rounded-2xl overflow-hidden group">
+                                    <div className="h-72 overflow-hidden">
+                                        <img
+                                            src={product.img}
+                                            alt={product.title}
+                                            className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+                                    </div>
+                                    <div className="p-8">
+                                        <h4 className="text-2xl font-serif text-brand-gold mb-2">{product.title}</h4>
                                         <p className="text-brand-ivory/60 text-sm mb-6">{product.desc}</p>
                                         <OrderForm>
-                                          <button className="w-full py-3 border border-brand-gold/30 rounded-lg text-xs uppercase font-bold tracking-widest hover:bg-brand-gold hover:text-brand-charcoal transition-all">
-                                            Reservar Corte
-                                          </button>
+                                            <button
+                                                className="w-full py-3 border border-brand-gold/30 rounded-lg text-xs uppercase font-bold tracking-widest hover:bg-brand-gold hover:text-brand-charcoal transition-all">Reservar Corte
+                                                                                    </button>
                                         </OrderForm>
-                                      </div>
                                     </div>
-                                  </CarouselItem>
-                                ))}
-                              </CarouselContent>
-                              <div className="flex justify-center gap-4 mt-6">
-                                <CarouselPrevious className="static translate-y-0 h-8 w-8" />
-                                <CarouselNext className="static translate-y-0 h-8 w-8" />
-                              </div>
-                            </Carousel>
-                          </div>
-
-                          <div className="max-w-4xl mx-auto px-8 text-center">
-                            <p className="text-brand-ivory/70 text-lg leading-relaxed mb-8">Aqui, o corte não é apenas técnico — é estratégico. Respeitamos a anatomia da carne para preservar sabor, textura e suculência, oferecendo cortes ideais tanto para o churrasco perfeito como para preparações mais refinadas.
-                                          </p>
-                            <p className="text-brand-gold font-serif text-2xl mb-8 italic">"Porque quando a carne é realmente boa, não precisa de excessos. Precisa de respeito."
-                                          </p>
-                            <div className="pt-12 border-t border-brand-gold/10">
-                                <h4 className="text-3xl font-serif text-brand-gold mb-6">O Rei do Talho</h4>
-                                <p className="text-brand-ivory/80 text-lg mb-8">Na Baby Beef, elevamos o talho a um novo patamar. Unimos tradição e inovação, rigor e paixão, produto e experiência.
-                                          </p>
-                                <div className="inline-block px-8 py-4 border border-brand-gold/30 rounded-lg">
-                                    <p className="text-brand-gold font-black uppercase tracking-[0.2em] text-sm">O Churrasco tem um Rei. E o Rei do Talho chama-se Baby Beef.
-                                                  </p>
+                                </motion.div>))}
+                            </div>
+                            {}
+                            <div className="md:hidden mb-16">
+                                <Carousel
+                                    opts={{
+                                        align: "start",
+                                        loop: true
+                                    }}
+                                    className="w-full">
+                                    <CarouselContent>
+                                        {[{
+                                            title: "Kits Grelhados",
+                                            img: "/kit-premium-2.jpeg",
+                                            desc: "A praticidade do 'Pegue e Leve' com a nossa qualidade."
+                                        }, {
+                                            title: "Cortes de Elite",
+                                            img: "/ribeye-salt.jpeg",
+                                            desc: "Trabalhamos apenas com fornecedores certificados e processos controlados."
+                                        }, {
+                                            title: "Churrasco em Casa",
+                                            img: "/kit-churrasco-fire.jpeg",
+                                            desc: "Tudo o que precisa para o churrasco perfeito com o selo Baby Beef."
+                                        }].map((product, idx) => (<CarouselItem key={idx}>
+                                            <div
+                                                className="bg-brand-charcoal border border-brand-gold/10 rounded-2xl overflow-hidden mx-2 h-full">
+                                                <div className="h-64 overflow-hidden">
+                                                    <img
+                                                        src={product.img}
+                                                        alt={product.title}
+                                                        className="w-full h-full object-cover" />
+                                                </div>
+                                                <div className="p-6">
+                                                    <h4 className="text-xl font-serif text-brand-gold mb-2">{product.title}</h4>
+                                                    <p className="text-brand-ivory/60 text-sm mb-6">{product.desc}</p>
+                                                    <OrderForm>
+                                                        <button
+                                                            className="w-full py-3 border border-brand-gold/30 rounded-lg text-xs uppercase font-bold tracking-widest hover:bg-brand-gold hover:text-brand-charcoal transition-all">Reservar Corte
+                                                                                                      </button>
+                                                    </OrderForm>
+                                                </div>
+                                            </div>
+                                        </CarouselItem>))}
+                                    </CarouselContent>
+                                    <div className="flex justify-center gap-4 mt-6">
+                                        <CarouselPrevious className="static translate-y-0 h-8 w-8" />
+                                        <CarouselNext className="static translate-y-0 h-8 w-8" />
+                                    </div>
+                                </Carousel>
+                            </div>
+                            <div className="max-w-4xl mx-auto px-8 text-center">
+                                <p className="text-brand-ivory/70 text-lg leading-relaxed mb-8">Aqui, o corte não é apenas técnico — é estratégico. Respeitamos a anatomia da carne para preservar sabor, textura e suculência, oferecendo cortes ideais tanto para o churrasco perfeito como para preparações mais refinadas.
+                                                                              </p>
+                                <p className="text-brand-gold font-serif text-2xl mb-8 italic">"Porque quando a carne é realmente boa, não precisa de excessos. Precisa de respeito."
+                                                                              </p>
+                                <div className="pt-12 border-t border-brand-gold/10">
+                                    <h4 className="text-3xl font-serif text-brand-gold mb-6">O Rei do Talho</h4>
+                                    <p className="text-brand-ivory/80 text-lg mb-8">Na Baby Beef, elevamos o talho a um novo patamar. Unimos tradição e inovação, rigor e paixão, produto e experiência.
+                                                                                  </p>
+                                    <div className="inline-block px-8 py-4 border border-brand-gold/30 rounded-lg">
+                                        <p className="text-brand-gold font-black uppercase tracking-[0.2em] text-sm">O Churrasco tem um Rei. E o Rei do Talho chama-se Baby Beef.
+                                                                                              </p>
+                                    </div>
                                 </div>
                             </div>
-                          </div>
                         </div>
                     </section>
                     {}
@@ -402,25 +451,27 @@ const Index = () => {
                     {}
                     <TestimonialsSection />
                     {}
-                    <section className="py-12 md:py-24 bg-brand-charcoal overflow-hidden border-t border-brand-gold/10">
+                    <section
+                        className="py-12 md:py-24 bg-brand-charcoal overflow-hidden border-t border-brand-gold/10">
                         <div className="max-w-4xl mx-auto px-8 text-center">
                             <p className="text-brand-ivory/70 text-lg leading-relaxed mb-8">Aqui, o corte não é apenas técnico — é estratégico. Respeitamos a anatomia da carne para preservar sabor, textura e suculência, oferecendo cortes ideais tanto para o churrasco perfeito como para preparações mais refinadas.
-                                          </p>
+                                                                          </p>
                             <p className="text-brand-gold font-serif text-2xl mb-8 italic">"Porque quando a carne é realmente boa, não precisa de excessos. Precisa de respeito."
-                                          </p>
+                                                                          </p>
                             <div className="pt-12 border-t border-brand-gold/10">
                                 <h4 className="text-3xl font-serif text-brand-gold mb-6">O Rei do Talho</h4>
                                 <p className="text-brand-ivory/80 text-lg mb-8">Na Baby Beef, elevamos o talho a um novo patamar. Unimos tradição e inovação, rigor e paixão, produto e experiência.
-                                          </p>
+                                                                              </p>
                                 <div className="inline-block px-8 py-4 border border-brand-gold/30 rounded-lg">
                                     <p className="text-brand-gold font-black uppercase tracking-[0.2em] text-sm">O Churrasco tem um Rei. E o Rei do Talho chama-se Baby Beef.
-                                                  </p>
+                                                                                          </p>
                                 </div>
                             </div>
                         </div>
                     </section>
                     {}
-                    <section className="py-12 md:py-24 bg-brand-charcoal border-y border-brand-gold/10">
+                    <section
+                        className="py-12 md:py-24 bg-brand-charcoal border-y border-brand-gold/10">
                         <div
                             className="max-w-7xl mx-auto px-8 grid md:grid-cols-2 gap-16 items-center">
                             <div
@@ -436,7 +487,7 @@ const Index = () => {
                                 <ShieldCheck size={40} className="text-brand-gold mb-6" />
                                 <h3 className="text-4xl font-serif mb-6">Qualidade & Distribuição Refrigerada</h3>
                                 <p className="text-brand-ivory/70 text-lg mb-8">Garantimos a integridade de cada corte através da nossa própria rede de logística. Controle total da cadeia de frio, desde a origem até à porta do franqueado ou do cliente.
-                                          </p>
+                                                                              </p>
                                 <div className="flex gap-4">
                                     <img
                                         src="/carro-smart.jpeg"
@@ -477,7 +528,7 @@ const Index = () => {
                                 <TrendingUp size={48} className="mx-auto mb-8" />
                                 <h2 className="text-5xl md:text-6xl font-serif mb-8 leading-tight">Expanda o Reinado. <br />Seja um Franqueado.</h2>
                                 <p className="text-xl mb-12 opacity-80 max-w-2xl mx-auto">A Baby Beef & Co. oferece um modelo de negócio estruturado, logística de frio premium e uma marca com autoridade imediata no mercado.
-                                          </p>
+                                                                              </p>
                                 <div className="grid md:grid-cols-3 gap-12 text-left mb-16">
                                     <div className="border-l-2 border-brand-charcoal/20 pl-6">
                                         <h5 className="font-bold text-lg mb-2">Suporte 360º</h5>
@@ -495,7 +546,7 @@ const Index = () => {
                                 <FranchiseForm>
                                     <button
                                         className="bg-brand-charcoal text-brand-gold px-12 py-5 rounded-full font-bold uppercase tracking-widest hover:scale-105 transition-transform shadow-xl">Solicitar Dossier de Investimento
-                                                    </button>
+                                                                                            </button>
                                 </FranchiseForm>
                             </div>
                         </div>
@@ -508,7 +559,7 @@ const Index = () => {
                                     className="text-3xl font-serif font-bold tracking-tighter text-brand-gold mb-6">BABY BEEF <span className="text-brand-ivory font-light">& CO.</span>
                                 </div>
                                 <p className="text-lg max-w-md mb-8">Elevando o padrão do talho em Portugal através da mestria e da paixão pelo fogo.
-                                          </p>
+                                                                              </p>
                                 <div className="flex gap-4">
                                     <a
                                         href="#"
@@ -542,9 +593,9 @@ const Index = () => {
                                     </li>
                                     <li className="flex items-center gap-2">
                                         <Phone size={16} className="text-brand-gold" />219 335 677
-                                                    </li>
+                                                                                            </li>
                                     <li className="flex items-center gap-2 underline text-brand-gold">geral@babybeef.pt
-                                                    </li>
+                                                                                            </li>
                                 </ul>
                             </div>
                             <div className="flex flex-col items-center md:items-start">
@@ -563,7 +614,7 @@ const Index = () => {
                         </div>
                         <div
                             className="max-w-7xl mx-auto px-8 pt-12 border-t border-brand-ivory/10 text-center text-xs tracking-widest uppercase">© 2024 Baby Beef | O Mundo do Talho agora tem um Rei.
-                                  </div>
+                                                              </div>
                     </footer>
                 </div>
             </div>
