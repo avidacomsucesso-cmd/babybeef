@@ -62,12 +62,12 @@ const Index = () => {
                 }} />
             <FireParticles />
             {}
-            <div className="relative flex flex-col">
+            <div className="relative flex flex-col min-h-screen">
                 {}
                 <div className="relative flex flex-col">
                     {}
                     <nav
-                        className="relative w-full z-40 flex flex-col items-center bg-brand-charcoal overflow-hidden">
+                        className="relative w-full z-40 flex flex-col items-center bg-brand-charcoal overflow-hidden shrink-0">
                         {}
                         <div className="absolute inset-0 z-0">
                             <img
@@ -75,11 +75,11 @@ const Index = () => {
                                 alt="Background"
                                 className="w-full h-full object-cover opacity-30 mix-blend-overlay" />
                         </div>
-                        <div className="w-full max-w-5xl px-6 overflow-hidden relative z-10">
+                        <div className="w-full max-w-4xl px-6 overflow-hidden relative z-10">
                             <img
                                 src="/header-placa-premium.png"
                                 alt="Baby Beef & Co. - O Rei do Talho"
-                                className="w-full h-auto object-cover scale-[1.15] -my-[8%] md:-mb-[10%]" />
+                                className="w-full h-auto object-cover scale-[1.1] md:scale-[1.05] -my-[6%] md:-my-[4%]" />
                         </div>
                         <div className="w-full bg-black/40 border-y border-white/10 relative z-10">
                             <div
@@ -108,7 +108,7 @@ const Index = () => {
                         </div>
                     </nav>
                     {}
-                    <section className="relative h-[85vh] 2xl:h-[90vh] flex items-center overflow-hidden">
+                    <section className="relative flex-1 flex items-center overflow-hidden min-h-[500px]">
                         <div className="absolute inset-0 z-0">
                             <div
                                 className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent z-10" />
