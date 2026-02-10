@@ -31,6 +31,7 @@ import TestimonialsSection from "../components/TestimonialsSection";
 import FranchiseForm from "../components/FranchiseForm";
 import OrderForm from "../components/OrderForm";
 import HomeProductsSection from "../components/HomeProductsSection";
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 
 const Index = () => {
     const {
@@ -143,13 +144,15 @@ const Index = () => {
                                 <div className="flex flex-col md:flex-row gap-6">
                                     <a href="#produtos">
                                         <button
-                                            className="bg-brand-gold text-brand-charcoal px-12 py-5 rounded-full font-black uppercase tracking-widest hover:scale-105 transition-transform shadow-2xl w-full md:w-auto">Descobrir Coleção
-                                                          </button>
+                                            className="bg-brand-gold text-brand-charcoal px-8 md:px-12 py-3 md:py-5 rounded-full font-black uppercase tracking-widest hover:scale-105 transition-transform shadow-2xl w-full md:w-auto text-[11px] md:text-sm">
+                                          Descobrir Coleção
+                                        </button>
                                     </a>
                                     <FranchiseForm>
                                         <button
-                                            className="border border-white/20 backdrop-blur-md bg-white/5 px-12 py-5 rounded-full font-black uppercase tracking-widest hover:bg-white hover:text-brand-charcoal transition-all shadow-xl">Seja um Franqueado
-                                                          </button>
+                                            className="border border-white/20 backdrop-blur-md bg-white/5 px-8 md:px-12 py-3 md:py-5 rounded-full font-black uppercase tracking-widest hover:bg-white hover:text-brand-charcoal transition-all shadow-xl text-[11px] md:text-sm">
+                                          Seja um Franqueado
+                                        </button>
                                     </FranchiseForm>
                                 </div>
                             </motion.div>
@@ -226,59 +229,69 @@ const Index = () => {
                         </div>
 
                         <div className="relative z-10 max-w-7xl mx-auto px-8 mb-12">
-                            <div className="flex justify-between items-end">
-                                <div>
-                                    <h2 className="text-brand-gold uppercase tracking-widest text-sm mb-4">O Espaço</h2>
-                                    <h3 className="text-4xl font-serif">Nossas Carnes Selecionadas</h3>
-                                </div>
-                                <p className="text-brand-ivory/60 max-w-xs text-right hidden md:block">Qualidade que se vê. Sabor que se lembra. Visite as nossas lojas físicas.
-                                              </p>
+                          <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-4">
+                            <div>
+                              <h2 className="text-brand-gold uppercase tracking-widest text-[10px] md:text-sm mb-2 md:mb-4">O Espaço</h2>
+                              <h3 className="text-3xl md:text-4xl font-serif">Nossas Carnes Selecionadas</h3>
                             </div>
+                            <p className="text-brand-ivory/60 max-w-xs text-left md:text-right text-sm md:text-base">
+                              Qualidade que se vê. Sabor que se lembra. Visite as nossas lojas físicas.
+                            </p>
+                          </div>
                         </div>
-                        <div
-                            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 px-8 animate-fade-in max-w-7xl mx-auto">
+
+                        {/* Desktop Grid / Mobile Carousel */}
+                        <div className="relative z-10 max-w-7xl mx-auto px-4 md:px-8">
+                          <div className="hidden md:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 animate-fade-in">
                             <div className="h-96 rounded-2xl overflow-hidden shadow-xl">
-                                <img
-                                    src="/talho-real-1.jpeg"
-                                    className="w-full h-full object-cover hover:scale-110 transition-transform duration-700"
-                                    alt="Talho Real" />
+                              <img src="/talho-real-1.jpeg" className="w-full h-full object-cover hover:scale-110 transition-transform duration-700" alt="Talho Real" />
                             </div>
                             <div className="h-96 rounded-2xl overflow-hidden shadow-xl">
-                                <img
-                                    src="/montra-elite.jpeg"
-                                    className="w-full h-full object-cover hover:scale-110 transition-transform duration-700"
-                                    alt="Montra de Elite" />
+                              <img src="/montra-elite.jpeg" className="w-full h-full object-cover hover:scale-110 transition-transform duration-700" alt="Montra de Elite" />
                             </div>
                             <div className="h-96 rounded-2xl overflow-hidden shadow-xl">
-                                <img
-                                    src="/talho-real-2.jpeg"
-                                    className="w-full h-full object-cover hover:scale-110 transition-transform duration-700"
-                                    alt="Interior Loja" />
+                              <img src="/talho-real-2.jpeg" className="w-full h-full object-cover hover:scale-110 transition-transform duration-700" alt="Interior Loja" />
                             </div>
                             <div className="h-96 rounded-2xl overflow-hidden shadow-xl">
-                                <img
-                                    src="/montra-3.jpeg"
-                                    className="w-full h-full object-cover hover:scale-110 transition-transform duration-700"
-                                    alt="Carne Selecionada 1" />
+                              <img src="/montra-3.jpeg" className="w-full h-full object-cover hover:scale-110 transition-transform duration-700" alt="Carne Selecionada 1" />
                             </div>
                             <div className="h-96 rounded-2xl overflow-hidden shadow-xl">
-                                <img
-                                    src="/montra-4.jpeg"
-                                    className="w-full h-full object-cover hover:scale-110 transition-transform duration-700"
-                                    alt="Carne Selecionada 2" />
+                              <img src="/montra-4.jpeg" className="w-full h-full object-cover hover:scale-110 transition-transform duration-700" alt="Carne Selecionada 2" />
                             </div>
                             <div className="h-96 rounded-2xl overflow-hidden shadow-xl">
-                                <img
-                                    src="/montra-5.jpg"
-                                    className="w-full h-full object-cover hover:scale-110 transition-transform duration-700"
-                                    alt="Carne Selecionada 3" />
+                              <img src="/montra-5.jpg" className="w-full h-full object-cover hover:scale-110 transition-transform duration-700" alt="Carne Selecionada 3" />
                             </div>
                             <div className="h-96 rounded-2xl overflow-hidden shadow-xl lg:col-span-3">
-                                <img
-                                    src="/montra-6.jpeg"
-                                    className="w-full h-full object-cover hover:scale-110 transition-transform duration-700"
-                                    alt="Montra Completa" />
+                              <img src="/montra-6.jpeg" className="w-full h-full object-cover hover:scale-110 transition-transform duration-700" alt="Montra Completa" />
                             </div>
+                          </div>
+
+                          {/* Mobile Carousel - Only visible on small screens */}
+                          <div className="md:hidden">
+                            <Carousel opts={{ align: "start", loop: true }} className="w-full">
+                              <CarouselContent>
+                                {[
+                                  "/talho-real-1.jpeg",
+                                  "/montra-elite.jpeg",
+                                  "/talho-real-2.jpeg",
+                                  "/montra-3.jpeg",
+                                  "/montra-4.jpeg",
+                                  "/montra-5.jpg",
+                                  "/montra-6.jpeg"
+                                ].map((src, index) => (
+                                  <CarouselItem key={index}>
+                                    <div className="h-[450px] rounded-2xl overflow-hidden shadow-xl mx-2">
+                                      <img src={src} className="w-full h-full object-cover" alt={`Slide ${index}`} />
+                                    </div>
+                                  </CarouselItem>
+                                ))}
+                              </CarouselContent>
+                              <div className="flex justify-center gap-4 mt-6">
+                                <CarouselPrevious className="static translate-y-0 h-8 w-8" />
+                                <CarouselNext className="static translate-y-0 h-8 w-8" />
+                              </div>
+                            </Carousel>
+                          </div>
                         </div>
                     </section>
                     {}
