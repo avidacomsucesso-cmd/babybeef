@@ -324,9 +324,17 @@ const Index = () => {
           <div>
             <h5 className="text-brand-ivory font-bold mb-6 uppercase tracking-widest text-xs">Contacto</h5>
             <ul className="space-y-4 text-sm">
-              <li className="flex items-center gap-2"><MapPin size={16} className="text-brand-gold" /> R. Pulido Valente 12, 2675-670 Odivelas</li>
-              <li className="flex items-center gap-2"><Phone size={16} className="text-brand-gold" /> 21 354 8524</li>
-              <li className="flex items-center gap-2 underline text-brand-gold">geral@babybeef.pt</li>
+              <li className="flex items-start gap-2">
+                <MapPin size={16} className="text-brand-gold mt-1 flex-shrink-0" /> 
+                <span>Rua Polido Valente nº 12 - loja 3<br />2675-672 Colinas do Cruzeiro - Odivelas</span>
+              </li>
+              <li className="flex items-center gap-2">
+                <Phone size={16} className="text-brand-gold" /> 
+                219 335 677
+              </li>
+              <li className="flex items-center gap-2 underline text-brand-gold">
+                geral@babybeef.pt
+              </li>
             </ul>
           </div>
         </div>
