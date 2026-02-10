@@ -77,9 +77,9 @@ const Index = () => {
               <span className="text-brand-gold uppercase tracking-[0.5em] text-xs font-bold">Establecido em Portugal</span>
             </div>
             
-            <h1 className="text-7xl md:text-[120px] font-serif mb-8 leading-[0.9] drop-shadow-2xl">
-              O Churrasco <br /> 
-              <span className="italic text-brand-gold">tem um Rei.</span>
+            <h1 className="text-5xl md:text-[100px] font-serif mb-8 leading-[0.9] drop-shadow-2xl">
+              O Mundo do Talho <br /> 
+              <span className="italic text-brand-gold">agora tem um Rei.</span>
             </h1>
             
             <p className="text-xl md:text-2xl text-brand-ivory/80 font-light mb-12 max-w-xl leading-relaxed">
