@@ -105,9 +105,9 @@ const Index = () => {
       </section>
 
       {/* Brand Banner Horizontal */}
-      <section className="w-full bg-brand-charcoal py-12">
-        <div className="max-w-7xl mx-auto px-8">
-          <div className="rounded-2xl overflow-hidden shadow-2xl border border-brand-gold/20">
+      <section className="w-full bg-brand-charcoal py-6">
+        <div className="max-w-4xl mx-auto px-8">
+          <div className="rounded-2xl overflow-hidden shadow-2xl border border-brand-gold/20 scale-[0.6] origin-center">
             <img 
               src="/brand-banner-horizontal.png" 
               alt="Baby Beef & Co. Branding" 
@@ -165,6 +165,17 @@ const Index = () => {
             Qualidade que se vê. Sabor que se lembra. Visite as nossas lojas físicas.
           </p>
         </div>
+
+        <div className="max-w-3xl mx-auto px-8 mb-12">
+          <div className="rounded-2xl overflow-hidden shadow-xl border border-brand-gold/20">
+            <img 
+              src="/brand-banner-horizontal.png" 
+              alt="Baby Beef & Co. Branding" 
+              className="w-full h-auto object-cover"
+            />
+          </div>
+        </div>
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 px-8 animate-fade-in max-w-7xl mx-auto">
           <div className="h-96 rounded-2xl overflow-hidden shadow-xl">
             <img src="/talho-real-1.jpeg" className="w-full h-full object-cover hover:scale-110 transition-transform duration-700" alt="Talho Real" />
