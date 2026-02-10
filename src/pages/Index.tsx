@@ -343,10 +343,15 @@ const Index = () => {
             <div className="bg-white/5 p-6 rounded-xl border border-white/10 w-full">
               <p className="text-[10px] uppercase tracking-[0.2em] text-brand-ivory/60 mb-4 text-center md:text-left">Este talho está assegurado pela:</p>
               <div className="flex flex-col items-center md:items-start gap-2">
-                <img 
-                  src="/allianz-neon.png" 
-                  alt="Allianz Seguros" 
-                  className="h-16 w-full object-contain rounded-lg" 
+                <img
+                  src="/allianz-neon.png"
+                  alt="Allianz Seguros"
+                  className="h-16 w-full object-contain rounded-lg"
+                  onError={(e) => {
+                    const target = e.target as HTMLImageElement;
+                    target.src = "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Allianz_logo.svg/2560px-Allianz_logo.svg.png";
+                    target.style.filter = "brightness(0) invert(1)";
+                  }}
                 />
                 <div className="h-[1px] w-full bg-brand-gold/20 my-2" />
                 <p className="text-sm font-serif text-brand-gold italic">Com seguro Multirriscos</p>
