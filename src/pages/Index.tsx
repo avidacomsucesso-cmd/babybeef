@@ -83,7 +83,7 @@ const Index = () => {
             </h1>
             
             <p className="text-xl md:text-2xl text-brand-ivory/80 font-light mb-12 max-w-xl leading-relaxed">
-              Mestria, tradição e os melhores cortes do mundo, selecionados para a sua mesa.
+              Maestria, tradição e os melhores cortes do mundo, selecionados para a sua mesa.
             </p>
 
             <div className="flex flex-col md:flex-row gap-6">
