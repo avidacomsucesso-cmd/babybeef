@@ -31,15 +31,15 @@ const Index = () => {
       <div className="relative flex flex-col">
         {/* Navigation / Header - Posicionamento ultra-compacto baseado na referência */}
         <nav className="relative w-full z-40 flex flex-col items-center bg-black">
-          <div className="w-full max-w-4xl pt-4 px-6">
+          <div className="w-full max-w-4xl px-6 overflow-hidden">
             <img 
               src="/header-placa-premium.png" 
               alt="Baby Beef & Co. - O Rei do Talho" 
-              className="w-full h-auto object-contain drop-shadow-2xl"
+              className="w-full h-auto object-cover scale-[1.15] -my-[8%]"
             />
           </div>
           
-          <div className="w-full bg-black border-y border-white/10 mt-2">
+          <div className="w-full bg-black border-y border-white/10 relative z-10">
             <div className="flex flex-wrap justify-center items-center gap-6 md:gap-12 text-[11px] md:text-[13px] uppercase tracking-[0.3em] font-bold px-6 py-4">
               <a href="#marca" className="hover:text-brand-gold transition-colors text-white">A Marca</a>
               <a href="#produtos" className="hover:text-brand-gold transition-colors text-white">Os Nossos Cortes</a>
