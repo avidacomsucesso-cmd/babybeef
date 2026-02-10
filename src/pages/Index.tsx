@@ -27,26 +27,10 @@ const Index = () => {
 
       <FireParticles />
 
-      {/* Brand Header Panel */}
-      <div className="absolute top-0 w-full z-50 flex justify-center pointer-events-none">
-        <div className="relative w-full max-w-4xl h-32 md:h-48 overflow-hidden flex justify-center">
-          <img 
-            src="/header-panel-base.png" 
-            alt="Baby Beef Panel" 
-            className="h-full w-auto object-cover object-center scale-150 md:scale-125"
-            style={{ 
-              clipPath: 'inset(15% 25% 15% 25%)',
-              filter: 'drop-shadow(0 10px 20px rgba(0,0,0,0.5))'
-            }}
-          />
-        </div>
-      </div>
-
       {/* Navigation */}
-      <nav className="absolute top-24 md:top-32 w-full z-40 px-6 md:px-12 py-6 md:py-8 flex justify-between items-start bg-gradient-to-b from-black/80 to-transparent">
-        <div className="flex flex-col items-center gap-2 opacity-0 pointer-events-none">
-          {/* Logo original escondida para dar lugar ao novo painel superior */}
-          <img src="/logo-transparent.png" alt="Logo" className="h-32 w-32 md:h-60 md:w-60 object-contain" />
+      <nav className="absolute top-0 w-full z-40 px-6 md:px-12 py-6 md:py-8 flex justify-between items-start bg-gradient-to-b from-black/80 to-transparent">
+        <div className="flex flex-col items-center gap-2">
+          <img src="/logo-transparent.png" alt="Logo" className="h-32 w-32 md:h-60 md:w-60 object-contain drop-shadow-2xl" />
         </div>
         
         <div className="hidden md:flex gap-12 text-[13px] uppercase tracking-[0.3em] font-bold mt-8">
@@ -58,7 +42,7 @@ const Index = () => {
         </div>
 
         <OrderForm>
-          <button className="bg-brand-gold text-brand-charcoal px-6 md:px-8 py-2 md:py-3 rounded-full text-[11px] md:text-[13px] uppercase font-black tracking-widest hover:bg-white transition-all duration-300 shadow-lg mt-12 md:mt-24">
+          <button className="bg-brand-gold text-brand-charcoal px-6 md:px-8 py-2 md:py-3 rounded-full text-[11px] md:text-[13px] uppercase font-black tracking-widest hover:bg-white transition-all duration-300 shadow-lg mt-4 md:mt-8">
             Reservar
           </button>
         </OrderForm>
@@ -76,7 +60,7 @@ const Index = () => {
           />
         </div>
         
-        <div className="relative z-20 px-8 md:px-24 max-w-4xl pt-64 md:pt-80">
+        <div className="relative z-20 px-8 md:px-24 max-w-4xl pt-56 md:pt-64">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
