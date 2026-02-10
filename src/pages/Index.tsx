@@ -204,17 +204,17 @@ const Index = () => {
                     </div>
                 </section>
                 {}
-                <section className="pt-12 pb-24 bg-brand-muted/10 overflow-hidden">
-                    <div className="max-w-7xl mx-auto px-8 mb-12">
-                        <div className="max-w-2xl mx-auto mb-12">
-                            <div
-                                className="rounded-2xl overflow-hidden shadow-xl border border-brand-gold/20">
-                                <img
-                                    src="/brand-banner-horizontal.png"
-                                    alt="Baby Beef & Co. Branding"
-                                    className="w-full h-auto object-cover" />
-                            </div>
-                        </div>
+                <section className="pt-12 pb-24 overflow-hidden">
+                    <div className="absolute inset-0 z-0">
+                        <img 
+                            src="/vintage_film_bg.jpg" 
+                            alt="Background Texture" 
+                            className="w-full h-full object-cover opacity-40"
+                        />
+                        <div className="absolute inset-0 bg-brand-charcoal/60" />
+                    </div>
+
+                    <div className="relative z-10 max-w-7xl mx-auto px-8 mb-12">
                         <div className="flex justify-between items-end">
                             <div>
                                 <h2 className="text-brand-gold uppercase tracking-widest text-sm mb-4">O Espaço</h2>
