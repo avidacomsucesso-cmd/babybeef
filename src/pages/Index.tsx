@@ -154,14 +154,13 @@ const Index = () => {
                     </motion.div>
                 </section>
                 {}
-                <section id="marca" className="relative pt-24 pb-12 overflow-hidden">
+                <section id="marca" className="relative pt-24 pb-12 overflow-hidden bg-brand-charcoal">
                     <div className="absolute inset-0 z-0">
-                        <img 
-                            src="/vintage_film_bg.jpg" 
-                            alt="Background" 
-                            className="w-full h-full object-cover opacity-40"
-                        />
-                        <div className="absolute inset-0 bg-brand-charcoal/60" />
+                      <img 
+                        src="/vintage_film_bg.jpg" 
+                        alt="Background" 
+                        className="w-full h-full object-cover opacity-30 mix-blend-overlay"
+                      />
                     </div>
 
                     <div className="relative z-10 px-8 max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
@@ -204,14 +203,13 @@ const Index = () => {
                     </div>
                 </section>
                 {}
-                <section className="pt-12 pb-24 overflow-hidden">
+                <section className="pt-12 pb-24 overflow-hidden bg-brand-charcoal">
                     <div className="absolute inset-0 z-0">
-                        <img 
-                            src="/vintage_film_bg.jpg" 
-                            alt="Background Texture" 
-                            className="w-full h-full object-cover opacity-40"
-                        />
-                        <div className="absolute inset-0 bg-brand-charcoal/60" />
+                      <img 
+                        src="/vintage_film_bg.jpg" 
+                        alt="Background Texture" 
+                        className="w-full h-full object-cover opacity-30 mix-blend-overlay"
+                      />
                     </div>
 
                     <div className="relative z-10 max-w-7xl mx-auto px-8 mb-12">
@@ -271,14 +269,13 @@ const Index = () => {
                     </div>
                 </section>
                 {}
-                <section id="produtos" className="relative py-24 overflow-hidden">
+                <section id="produtos" className="relative py-24 overflow-hidden bg-brand-charcoal">
                     <div className="absolute inset-0 z-0">
                       <img 
                         src="/vintage_film_bg.jpg" 
                         alt="Background Texture" 
-                        className="w-full h-full object-cover opacity-20"
+                        className="w-full h-full object-cover opacity-30 mix-blend-overlay"
                       />
-                      <div className="absolute inset-0 bg-brand-charcoal/80" />
                     </div>
 
                     <div className="relative z-10 max-w-7xl mx-auto px-8">
