@@ -101,8 +101,8 @@ const Index = () => {
                                     className="hover:text-brand-gold transition-colors text-white">Contacto</a>
                                 <OrderForm>
                                     <button
-                                        className="bg-brand-gold text-brand-charcoal px-6 py-1.5 rounded-full text-[11px] md:text-[13px] uppercase font-black tracking-widest hover:bg-white transition-all duration-300 shadow-lg ml-4">Reservar
-                                                                                                                                                                                                                                                            </button>
+                                        className="hidden md:block bg-brand-gold text-brand-charcoal px-6 py-1.5 rounded-full text-[11px] md:text-[13px] uppercase font-black tracking-widest hover:bg-white transition-all duration-300 shadow-lg ml-4">Reservar
+                                                                                                                                                                                                                    </button>
                                 </OrderForm>
                             </div>
                         </div>
