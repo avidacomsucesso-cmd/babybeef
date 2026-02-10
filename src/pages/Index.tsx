@@ -170,7 +170,7 @@ const Index = () => {
             <img src="/talho-real-1.jpeg" className="w-full h-full object-cover hover:scale-110 transition-transform duration-700" alt="Talho Real" />
           </div>
           <div className="h-96 rounded-2xl overflow-hidden shadow-xl">
-            <img src="/montra-carne.jpeg" className="w-full h-full object-cover hover:scale-110 transition-transform duration-700" alt="Montra de Carne" />
+            <img src="/montra-elite.jpeg" className="w-full h-full object-cover hover:scale-110 transition-transform duration-700" alt="Montra de Elite" />
           </div>
           <div className="h-96 rounded-2xl overflow-hidden shadow-xl">
             <img src="/talho-real-2.jpeg" className="w-full h-full object-cover hover:scale-110 transition-transform duration-700" alt="Interior Loja" />
