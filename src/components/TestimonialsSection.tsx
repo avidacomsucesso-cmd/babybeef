@@ -42,7 +42,7 @@ const TestimonialsSection = () => {
   }, []);
 
   return (
-    <section className="py-24 bg-brand-charcoal overflow-hidden border-t border-brand-gold/10">
+    <section className="py-12 md:py-24 bg-brand-charcoal overflow-hidden border-t border-brand-gold/10">
       <div className="max-w-4xl mx-auto px-8 text-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -50,11 +50,11 @@ const TestimonialsSection = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="text-brand-gold uppercase tracking-widest text-sm mb-4 font-bold">Feedback</h2>
-          <h3 className="text-4xl md:text-5xl font-serif mb-16">O Que Dizem Nossos Clientes</h3>
+          <h2 className="text-brand-gold uppercase tracking-widest text-[10px] md:text-sm mb-2 md:mb-4 font-bold">Feedback</h2>
+          <h3 className="text-3xl md:text-5xl font-serif mb-8 md:mb-16">O Que Dizem Nossos Clientes</h3>
         </motion.div>
 
-        <div className="relative h-[300px] flex items-center justify-center">
+        <div className="relative h-[350px] md:h-[300px] flex items-center justify-center">
           <AnimatePresence mode="wait">
             <motion.div
               key={currentIndex}
