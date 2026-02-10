@@ -102,7 +102,7 @@ const Index = () => {
                                 <OrderForm>
                                     <button
                                         className="bg-brand-gold text-brand-charcoal px-6 py-1.5 rounded-full text-[11px] md:text-[13px] uppercase font-black tracking-widest hover:bg-white transition-all duration-300 shadow-lg ml-4">Reservar
-                                                                                                                                                                            </button>
+                                                                                                                                                                                                                    </button>
                                 </OrderForm>
                             </div>
                         </div>
@@ -144,17 +144,17 @@ const Index = () => {
                                 </h1>
                                 <p
                                     className="text-xl md:text-2xl text-brand-ivory/80 font-light mb-12 max-w-xl leading-relaxed">Maestria, tradição e os melhores cortes do mundo, selecionados para a sua mesa.
-                                                                                                                                                          </p>
+                                                                                                                                                                                              </p>
                                 <div className="flex flex-col md:flex-row gap-6">
                                     <a href="#produtos">
                                         <button
                                             className="bg-brand-gold text-brand-charcoal px-8 md:px-12 py-3 md:py-5 rounded-full font-black uppercase tracking-widest hover:scale-105 transition-transform shadow-2xl w-full md:w-auto text-[11px] md:text-sm">Descobrir Coleção
-                                                                                                                                                                            </button>
+                                                                                                                                                                                                                        </button>
                                     </a>
                                     <FranchiseForm>
                                         <button
                                             className="border border-white/20 backdrop-blur-md bg-white/5 px-8 md:px-12 py-3 md:py-5 rounded-full font-black uppercase tracking-widest hover:bg-white hover:text-brand-charcoal transition-all shadow-xl text-[11px] md:text-sm">Seja um Franqueado
-                                                                                                                                                                            </button>
+                                                                                                                                                                                                                        </button>
                                     </FranchiseForm>
                                 </div>
                             </motion.div>
@@ -198,10 +198,10 @@ const Index = () => {
                                 <h2 className="text-brand-gold uppercase tracking-widest text-sm mb-4">A Nossa Essência</h2>
                                 <h3 className="text-4xl md:text-5xl font-serif mb-8 leading-tight">O Diferencial Baby Beef</h3>
                                 <p className="text-brand-ivory/70 text-lg leading-relaxed mb-6">Na Baby Beef, acreditamos que a excelência começa na origem e se revela no corte.
-                                                                                                                                                      Não somos apenas um talho — somos especialistas em carne, movidos pela paixão pela mestria, pela tradição e pela qualidade absoluta.
-                                                                                                                                                    </p>
+                                                                                                                                                                                          Não somos apenas um talho — somos especialistas em carne, movidos pela paixão pela mestria, pela tradição e pela qualidade absoluta.
+                                                                                                                                                                                        </p>
                                 <p className="text-brand-ivory/70 text-lg leading-relaxed mb-8">Cada peça que chega ao nosso balcão é cuidadosamente selecionada segundo critérios rigorosos de raça, marmoreio, frescura e consistência, garantindo uma experiência superior desde a escolha até ao momento à mesa. Trabalhamos apenas com fornecedores certificados e processos controlados, respeitando a cadeia de frio e os mais elevados padrões de segurança alimentar.
-                                                                                                                                                      </p>
+                                                                                                                                                                                          </p>
                                 <div className="grid grid-cols-2 gap-8">
                                     <div>
                                         <div className="text-brand-gold mb-2 font-serif text-3xl font-bold">PT</div>
@@ -243,7 +243,7 @@ const Index = () => {
                                 </div>
                                 <p
                                     className="text-brand-ivory/60 max-w-xs text-left md:text-right text-sm md:text-base">Qualidade que se vê. Sabor que se lembra. Visite as nossas lojas físicas.
-                                                                                                                                        </p>
+                                                                                                                                                                            </p>
                             </div>
                         </div>
                         {}
@@ -338,11 +338,9 @@ const Index = () => {
                             <div className="text-center mb-16">
                                 <h2
                                     className="text-brand-gold uppercase tracking-widest text-[10px] md:text-sm mb-2 md:mb-4">A Seleção do Rei</h2>
-                                <h3 className="text-3xl md:text-6xl font-serif mb-8 leading-tight">Cortes Premium, esse é o nosso Compromissos</h3>
+                                <h3 className="text-3xl md:text-6xl font-serif mb-8 leading-tight">Cortes Premium, esse é o nosso Compromisso.</h3>
                                 <p
-                                    className="text-brand-ivory/70 text-sm md:text-lg max-w-3xl mx-auto leading-relaxed">Os Cortes Premium Baby Beef são pensados para quem reconhece e valoriza a diferença. 
-                                                                                                                                          Da picanha ao ribeye, do tomahawk aos cortes especiais preparados, cada peça é trabalhada com precisão por profissionais experientes que dominam a arte do talho moderno.
-                                                                                                                                        </p>
+                                    className="text-brand-ivory/70 text-sm md:text-lg max-w-3xl mx-auto leading-relaxed">Os Cortes Premium Baby Beef são pensados para quem reconhece e valoriza a diferença. Da picanha ao ribeye, do tomahawk aos cortes especiais preparados, cada peça é trabalhada com precisão por profissionais experientes que dominam a arte do talho moderno.</p>
                             </div>
                             {}
                             <div className="hidden md:grid md:grid-cols-3 gap-8 mb-16">
@@ -376,7 +374,7 @@ const Index = () => {
                                         <OrderForm>
                                             <button
                                                 className="w-full py-3 border border-brand-gold/30 rounded-lg text-xs uppercase font-bold tracking-widest hover:bg-brand-gold hover:text-brand-charcoal transition-all">Reservar Corte
-                                                                                                                                                                                    </button>
+                                                                                                                                                                                                                                    </button>
                                         </OrderForm>
                                     </div>
                                 </motion.div>))}
@@ -417,7 +415,7 @@ const Index = () => {
                                                     <OrderForm>
                                                         <button
                                                             className="w-full py-3 border border-brand-gold/30 rounded-lg text-xs uppercase font-bold tracking-widest hover:bg-brand-gold hover:text-brand-charcoal transition-all">Reservar Corte
-                                                                                                                                                                                                                              </button>
+                                                                                                                                                                                                                                                                                          </button>
                                                     </OrderForm>
                                                 </div>
                                             </div>
@@ -431,13 +429,13 @@ const Index = () => {
                             </div>
                             <div className="max-w-4xl mx-auto px-8 text-center">
                                 <p className="text-brand-ivory/70 text-lg leading-relaxed mb-8">Aqui, o corte não é apenas técnico — é estratégico. Respeitamos a anatomia da carne para preservar sabor, textura e suculência, oferecendo cortes ideais tanto para o churrasco perfeito como para preparações mais refinadas.
-                                                                                                                                                      </p>
+                                                                                                                                                                                          </p>
                                 <p className="text-brand-gold font-serif text-2xl mb-8 italic">"Porque quando a carne é realmente boa, não precisa de excessos. Precisa de respeito."
-                                                                                                                                                      </p>
+                                                                                                                                                                                          </p>
                                 <div className="pt-12 border-t border-brand-gold/10">
                                     <h4 className="text-3xl font-serif text-brand-gold mb-6">O Rei do Talho</h4>
                                     <p className="text-brand-ivory/80 text-lg mb-8">Na Baby Beef, elevamos o talho a um novo patamar. Unimos tradição e inovação, rigor e paixão, produto e experiência.
-                                                                                                                                                                  </p>
+                                                                                                                                                                                                          </p>
                                     <div className="inline-block px-8 py-4 border border-brand-gold/30 rounded-lg">
                                         <p className="text-brand-gold font-black uppercase tracking-[0.2em] text-sm">O MUNDO DO TALHO TEM UM REI, E O REI DO TALHO CHAMA-SE BABY BEEF.</p>
                                     </div>
@@ -454,16 +452,16 @@ const Index = () => {
                         className="py-12 md:py-24 bg-brand-charcoal overflow-hidden border-t border-brand-gold/10">
                         <div className="max-w-4xl mx-auto px-8 text-center">
                             <p className="text-brand-ivory/70 text-lg leading-relaxed mb-8">Aqui, o corte não é apenas técnico — é estratégico. Respeitamos a anatomia da carne para preservar sabor, textura e suculência, oferecendo cortes ideais tanto para o churrasco perfeito como para preparações mais refinadas.
-                                                                                                                                          </p>
+                                                                                                                                                                          </p>
                             <p className="text-brand-gold font-serif text-2xl mb-8 italic">"Porque quando a carne é realmente boa, não precisa de excessos. Precisa de respeito."
-                                                                                                                                          </p>
+                                                                                                                                                                          </p>
                             <div className="pt-12 border-t border-brand-gold/10">
                                 <h4 className="text-3xl font-serif text-brand-gold mb-6">O Rei do Talho</h4>
                                 <p className="text-brand-ivory/80 text-lg mb-8">Na Baby Beef, elevamos o talho a um novo patamar. Unimos tradição e inovação, rigor e paixão, produto e experiência.
-                                                                                                                                                      </p>
+                                                                                                                                                                                          </p>
                                 <div className="inline-block px-8 py-4 border border-brand-gold/30 rounded-lg">
                                     <p className="text-brand-gold font-black uppercase tracking-[0.2em] text-sm">O Churrasco tem um Rei. E o Rei do Talho chama-se Baby Beef.
-                                                                                                                                                                          </p>
+                                                                                                                                                                                                                  </p>
                                 </div>
                             </div>
                         </div>
@@ -486,7 +484,7 @@ const Index = () => {
                                 <ShieldCheck size={40} className="text-brand-gold mb-6" />
                                 <h3 className="text-4xl font-serif mb-6">Qualidade & Distribuição Refrigerada</h3>
                                 <p className="text-brand-ivory/70 text-lg mb-8">Garantimos a integridade de cada corte através da nossa própria rede de logística. Controle total da cadeia de frio, desde a origem até à porta do franqueado ou do cliente.
-                                                                                                                                                      </p>
+                                                                                                                                                                                          </p>
                                 <div className="flex gap-4">
                                     <img
                                         src="/carro-smart.jpeg"
@@ -527,7 +525,7 @@ const Index = () => {
                                 <TrendingUp size={48} className="mx-auto mb-8" />
                                 <h2 className="text-5xl md:text-6xl font-serif mb-8 leading-tight">Expanda o Reinado. <br />Seja um Franqueado.</h2>
                                 <p className="text-xl mb-12 opacity-80 max-w-2xl mx-auto">A Baby Beef & Co. oferece um modelo de negócio estruturado, logística de frio premium e uma marca com autoridade imediata no mercado.
-                                                                                                                                                      </p>
+                                                                                                                                                                                          </p>
                                 <div className="grid md:grid-cols-3 gap-12 text-left mb-16">
                                     <div className="border-l-2 border-brand-charcoal/20 pl-6">
                                         <h5 className="font-bold text-lg mb-2">Suporte 360º</h5>
@@ -545,7 +543,7 @@ const Index = () => {
                                 <FranchiseForm>
                                     <button
                                         className="bg-brand-charcoal text-brand-gold px-12 py-5 rounded-full font-bold uppercase tracking-widest hover:scale-105 transition-transform shadow-xl">Solicitar Dossier de Investimento
-                                                                                                                                                                            </button>
+                                                                                                                                                                                                                    </button>
                                 </FranchiseForm>
                             </div>
                         </div>
@@ -558,7 +556,7 @@ const Index = () => {
                                     className="text-3xl font-serif font-bold tracking-tighter text-brand-gold mb-6">BABY BEEF <span className="text-brand-ivory font-light">& CO.</span>
                                 </div>
                                 <p className="text-lg max-w-md mb-8">Elevando o padrão do talho em Portugal através da mestria e da paixão pelo fogo.
-                                                                                                                                                      </p>
+                                                                                                                                                                                          </p>
                                 <div className="flex gap-4">
                                     <a
                                         href="#"
@@ -592,9 +590,9 @@ const Index = () => {
                                     </li>
                                     <li className="flex items-center gap-2">
                                         <Phone size={16} className="text-brand-gold" />219 335 677
-                                                                                                                                                                            </li>
+                                                                                                                                                                                                                    </li>
                                     <li className="flex items-center gap-2 underline text-brand-gold">geral@babybeef.pt
-                                                                                                                                                                            </li>
+                                                                                                                                                                                                                    </li>
                                 </ul>
                             </div>
                             <div className="flex flex-col items-center md:items-start">
@@ -613,7 +611,7 @@ const Index = () => {
                         </div>
                         <div
                             className="max-w-7xl mx-auto px-8 pt-12 border-t border-brand-ivory/10 text-center text-xs tracking-widest uppercase">© 2024 Baby Beef | O Mundo do Talho agora tem um Rei.
-                                                                                                                      </div>
+                                                                                                                                                  </div>
                     </footer>
                 </div>
             </div>
