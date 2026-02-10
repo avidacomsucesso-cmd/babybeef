@@ -461,12 +461,18 @@ const Index = () => {
                     <TestimonialsSection />
                     {}
                     <section
-                        className="py-12 md:py-24 bg-brand-charcoal overflow-hidden border-t border-brand-gold/10">
-                        <div className="max-w-4xl mx-auto px-8 text-center">
+                        className="py-12 md:py-24 relative overflow-hidden bg-brand-charcoal border-t border-brand-gold/10">
+                        <div className="absolute inset-0 z-0">
+                            <img
+                                src="/vintage_film_bg.jpg"
+                                alt="Background Texture"
+                                className="w-full h-full object-cover opacity-30 mix-blend-overlay" />
+                        </div>
+                        <div className="relative z-10 max-w-4xl mx-auto px-8 text-center">
                             <p className="text-brand-ivory/70 text-lg leading-relaxed mb-8">Aqui, o corte não é apenas técnico — é estratégico. Respeitamos a anatomia da carne para preservar sabor, textura e suculência, oferecendo cortes ideais tanto para o churrasco perfeito como para preparações mais refinadas.
-                                                                                                                                                                                                          </p>
+                                                                                                                                                                          </p>
                             <p className="text-brand-gold font-serif text-2xl mb-8 italic">"Porque quando a carne é realmente boa, não precisa de excessos. Precisa de respeito."
-                                                                                                                                                                                                          </p>
+                                                                                                                                                                          </p>
                             <div className="pt-12 border-t border-brand-gold/10">
                                 <h4 className="text-3xl font-serif text-brand-gold mb-6">O Rei do Talho</h4>
                                 <p className="text-brand-ivory/80 text-lg mb-8">Na Baby Beef, elevamos o talho a um novo patamar. Unimos tradição e inovação, rigor e paixão, produto e experiência.
@@ -480,9 +486,15 @@ const Index = () => {
                     </section>
                     {}
                     <section
-                        className="py-12 md:py-24 bg-brand-charcoal border-y border-brand-gold/10">
+                        className="relative py-12 md:py-24 bg-brand-charcoal border-y border-brand-gold/10 overflow-hidden">
+                        <div className="absolute inset-0 z-0">
+                            <img
+                                src="/vintage_film_bg.jpg"
+                                alt="Background Texture"
+                                className="w-full h-full object-cover opacity-30 mix-blend-overlay" />
+                        </div>
                         <div
-                            className="max-w-7xl mx-auto px-8 grid md:grid-cols-2 gap-16 items-center">
+                            className="relative z-10 max-w-7xl mx-auto px-8 grid md:grid-cols-2 gap-16 items-center">
                             <div
                                 className="order-2 md:order-1 relative h-[500px] rounded-2xl overflow-hidden shadow-2xl">
                                 <img

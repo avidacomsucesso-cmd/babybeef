@@ -23,8 +23,14 @@ const homeProducts = [
 
 const HomeProductsSection = () => {
   return (
-    <section className="py-24 bg-brand-charcoal overflow-hidden">
-      <div className="max-w-7xl mx-auto px-8">
+    <section className="relative py-24 bg-brand-charcoal overflow-hidden">
+      <div className="absolute inset-0 z-0">
+        <img
+          src="/vintage_film_bg.jpg"
+          alt="Background Texture"
+          className="w-full h-full object-cover opacity-30 mix-blend-overlay" />
+      </div>
+      <div className="relative z-10 max-w-7xl mx-auto px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
