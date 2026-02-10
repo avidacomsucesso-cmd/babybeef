@@ -356,7 +356,7 @@ const Index = () => {
         </div>
         
         <div className="max-w-7xl mx-auto px-8 pt-12 border-t border-brand-ivory/10 text-center text-xs tracking-widest uppercase">
-          © 2024 Baby Beef & Co. | O Churrasco tem um Rei.
+          © 2024 Baby Beef | O Mundo do Talho agora tem um Rei.
         </div>
       </footer>
     </div>
