@@ -71,8 +71,8 @@ const HomeProductsSection = () => {
             ))}
           </CarouselContent>
           <div className="flex justify-center gap-4 mt-12">
-            <CarouselPrevious className="static translate-y-0 border-brand-gold/30 bg-transparent text-brand-gold hover:bg-brand-gold hover:text-brand-charcoal" />
-            <CarouselNext className="static translate-y-0 border-brand-gold/30 bg-transparent text-brand-gold hover:bg-brand-gold hover:text-brand-charcoal" />
+            <CarouselPrevious className="static translate-y-0 h-10 w-10 bg-brand-gold border-brand-gold text-brand-charcoal hover:bg-brand-ivory hover:text-brand-charcoal transition-colors shadow-lg" />
+            <CarouselNext className="static translate-y-0 h-10 w-10 bg-brand-gold border-brand-gold text-brand-charcoal hover:bg-brand-ivory hover:text-brand-charcoal transition-colors shadow-lg" />
           </div>
         </Carousel>
       </div>

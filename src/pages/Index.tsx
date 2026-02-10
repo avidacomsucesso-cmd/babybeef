@@ -317,8 +317,8 @@ const Index = () => {
                                         </CarouselItem>))}
                                     </CarouselContent>
                                     <div className="flex justify-center gap-4 mt-6">
-                                        <CarouselPrevious className="static translate-y-0 h-8 w-8" />
-                                        <CarouselNext className="static translate-y-0 h-8 w-8" />
+                                        <CarouselPrevious className="static translate-y-0 h-10 w-10 bg-brand-gold border-brand-gold text-brand-charcoal hover:bg-brand-ivory hover:text-brand-charcoal transition-colors shadow-lg" />
+                                        <CarouselNext className="static translate-y-0 h-10 w-10 bg-brand-gold border-brand-gold text-brand-charcoal hover:bg-brand-ivory hover:text-brand-charcoal transition-colors shadow-lg" />
                                     </div>
                                 </Carousel>
                             </div>
@@ -430,8 +430,8 @@ const Index = () => {
                                         </CarouselItem>))}
                                     </CarouselContent>
                                     <div className="flex justify-center gap-4 mt-6">
-                                        <CarouselPrevious className="static translate-y-0 h-8 w-8" />
-                                        <CarouselNext className="static translate-y-0 h-8 w-8" />
+                                        <CarouselPrevious className="static translate-y-0 h-10 w-10 bg-brand-gold border-brand-gold text-brand-charcoal hover:bg-brand-ivory hover:text-brand-charcoal transition-colors shadow-lg" />
+                                        <CarouselNext className="static translate-y-0 h-10 w-10 bg-brand-gold border-brand-gold text-brand-charcoal hover:bg-brand-ivory hover:text-brand-charcoal transition-colors shadow-lg" />
                                     </div>
                                 </Carousel>
                             </div>
