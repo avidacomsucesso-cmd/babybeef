@@ -75,7 +75,7 @@ const Index = () => {
                                 alt="Background"
                                 className="w-full h-full object-cover opacity-30 mix-blend-overlay" />
                         </div>
-                        <div className="w-full max-w-4xl px-6 overflow-hidden relative z-10">
+                        <div className="w-full max-w-5xl px-6 overflow-hidden relative z-10">
                             <img
                                 src="/header-placa-premium.png"
                                 alt="Baby Beef & Co. - O Rei do Talho"
@@ -83,7 +83,7 @@ const Index = () => {
                         </div>
                         <div className="w-full bg-black/40 border-y border-white/10 relative z-10">
                             <div
-                                className="flex flex-wrap justify-center items-center gap-6 md:gap-12 text-[11px] md:text-[13px] uppercase tracking-[0.3em] font-bold px-6 py-4">
+                                className="flex flex-wrap justify-center items-center gap-6 md:gap-16 text-[11px] md:text-[14px] 2xl:text-[16px] uppercase tracking-[0.3em] font-bold px-6 py-4 md:py-6">
                                 <a
                                     href="#marca"
                                     className="hover:text-brand-gold transition-colors text-white">A Marca</a>
@@ -108,7 +108,7 @@ const Index = () => {
                         </div>
                     </nav>
                     {}
-                    <section className="relative h-[80vh] flex items-center overflow-hidden">
+                    <section className="relative h-[85vh] 2xl:h-[90vh] flex items-center overflow-hidden">
                         <div className="absolute inset-0 z-0">
                             <div
                                 className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent z-10" />
@@ -120,7 +120,7 @@ const Index = () => {
                                     imageRendering: "auto"
                                 }} />
                         </div>
-                        <div className="relative z-20 px-8 md:px-24 max-w-4xl py-20 md:pt-1 md:pb-20">
+                        <div className="relative z-20 px-8 md:px-24 2xl:px-32 max-w-6xl py-20 md:pt-1 md:pb-20">
                             <motion.div
                                 initial={{
                                     opacity: 0,
@@ -136,15 +136,15 @@ const Index = () => {
                                 }}>
                                 <div className="flex items-center gap-4 mb-6">
                                     <div className="h-[1px] w-12 bg-brand-gold" />
-                                    <span className="text-brand-gold uppercase tracking-[0.5em] text-xs font-bold">ESTABELECIDO EM PORTUGAL</span>
+                                    <span className="text-brand-gold uppercase tracking-[0.5em] text-xs md:text-sm font-bold">Establecido em Portugal</span>
                                 </div>
                                 <h1
-                                    className="text-5xl md:text-[100px] font-serif mb-8 leading-[0.9] drop-shadow-2xl">O Mundo do Talho <br />
+                                    className="text-5xl md:text-[100px] 2xl:text-[130px] font-serif mb-8 leading-[0.9] drop-shadow-2xl">O Mundo do Talho <br />
                                     <span className="italic text-brand-gold">agora tem um Rei.</span>
                                 </h1>
                                 <p
-                                    className="text-xl md:text-2xl text-brand-ivory/80 font-light mb-12 max-w-xl leading-relaxed">Maestria, tradição e os melhores cortes do mundo, selecionados para a sua mesa.
-                                                                                                                                                                                                                                  </p>
+                                    className="text-xl md:text-2xl 2xl:text-3xl text-brand-ivory/80 font-light mb-12 max-w-2xl leading-relaxed">Maestria, tradição e os melhores cortes do mundo, selecionados para a sua mesa.
+                                                                                                                                                                                              </p>
                                 <div className="flex flex-col md:flex-row gap-6">
                                     <a href="#produtos">
                                         <button
@@ -174,7 +174,7 @@ const Index = () => {
                     {}
                     <section
                         id="marca"
-                        className="relative pt-12 md:pt-24 pb-6 md:pb-12 overflow-hidden bg-brand-charcoal">
+                        className="relative pt-12 md:pt-32 pb-6 md:pb-24 overflow-hidden bg-brand-charcoal">
                         <div className="absolute inset-0 z-0">
                             <img
                                 src="/vintage_film_bg.jpg"
@@ -182,7 +182,7 @@ const Index = () => {
                                 className="w-full h-full object-cover opacity-30 mix-blend-overlay" />
                         </div>
                         <div
-                            className="relative z-10 px-8 max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+                            className="relative z-10 px-8 max-w-7xl 2xl:max-w-[1600px] mx-auto grid md:grid-cols-2 gap-16 2xl:gap-32 items-center">
                             <motion.div
                                 whileInView={{
                                     opacity: 1,
@@ -214,7 +214,7 @@ const Index = () => {
                                 </div>
                             </motion.div>
                             <div
-                                className="relative h-[600px] rounded-2xl overflow-hidden shadow-2xl shadow-black bg-brand-muted/20">
+                                className="relative h-[600px] 2xl:h-[800px] rounded-2xl overflow-hidden shadow-2xl shadow-black bg-brand-muted/20">
                                 <img
                                     src="/staff-premium.jpeg"
                                     alt="Equipa Premium"
@@ -233,13 +233,13 @@ const Index = () => {
                                 alt="Background Texture"
                                 className="w-full h-full object-cover opacity-30 mix-blend-overlay" />
                         </div>
-                        <div className="relative z-10 max-w-7xl mx-auto px-8 mb-12">
+                        <div className="relative z-10 max-w-7xl 2xl:max-w-[1600px] mx-auto px-8 mb-12">
                             <div
                                 className="flex flex-col md:flex-row justify-between items-start md:items-end gap-4">
                                 <div>
                                     <h2
-                                        className="text-brand-gold uppercase tracking-widest text-[10px] md:text-sm mb-2 md:mb-4">O Espaço</h2>
-                                    <h3 className="text-3xl md:text-4xl font-serif">Nossas Carnes Selecionadas</h3>
+                                        className="text-brand-gold uppercase tracking-widest text-[10px] md:text-sm 2xl:text-base mb-2 md:mb-4">O Espaço</h2>
+                                    <h3 className="text-3xl md:text-4xl 2xl:text-6xl font-serif">Nossas Carnes Selecionadas</h3>
                                 </div>
                                 <p
                                     className="text-brand-ivory/60 max-w-xs text-left md:text-right text-sm md:text-base">Qualidade que se vê. Sabor que se lembra. Visite as nossas lojas físicas.
@@ -247,46 +247,46 @@ const Index = () => {
                             </div>
                         </div>
                         {}
-                        <div className="relative z-10 max-w-7xl mx-auto px-4 md:px-8">
+                        <div className="relative z-10 max-w-7xl 2xl:max-w-[1600px] mx-auto px-4 md:px-8">
                             <div
-                                className="hidden md:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 animate-fade-in">
-                                <div className="h-96 rounded-2xl overflow-hidden shadow-xl">
+                                className="hidden md:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 2xl:gap-8 animate-fade-in">
+                                <div className="h-96 2xl:h-[500px] rounded-2xl overflow-hidden shadow-xl">
                                     <img
                                         src="/talho-real-1.jpeg"
                                         className="w-full h-full object-cover hover:scale-110 transition-transform duration-700"
                                         alt="Talho Real" />
                                 </div>
-                                <div className="h-96 rounded-2xl overflow-hidden shadow-xl">
+                                <div className="h-96 2xl:h-[500px] rounded-2xl overflow-hidden shadow-xl">
                                     <img
                                         src="/montra-elite.jpeg"
                                         className="w-full h-full object-cover hover:scale-110 transition-transform duration-700"
                                         alt="Montra de Elite" />
                                 </div>
-                                <div className="h-96 rounded-2xl overflow-hidden shadow-xl">
+                                <div className="h-96 2xl:h-[500px] rounded-2xl overflow-hidden shadow-xl">
                                     <img
                                         src="/talho-real-2.jpeg"
                                         className="w-full h-full object-cover hover:scale-110 transition-transform duration-700"
                                         alt="Interior Loja" />
                                 </div>
-                                <div className="h-96 rounded-2xl overflow-hidden shadow-xl">
+                                <div className="h-96 2xl:h-[500px] rounded-2xl overflow-hidden shadow-xl">
                                     <img
                                         src="/montra-3.jpeg"
                                         className="w-full h-full object-cover hover:scale-110 transition-transform duration-700"
                                         alt="Carne Selecionada 1" />
                                 </div>
-                                <div className="h-96 rounded-2xl overflow-hidden shadow-xl">
+                                <div className="h-96 2xl:h-[500px] rounded-2xl overflow-hidden shadow-xl">
                                     <img
                                         src="/montra-4.jpeg"
                                         className="w-full h-full object-cover hover:scale-110 transition-transform duration-700"
                                         alt="Carne Selecionada 2" />
                                 </div>
-                                <div className="h-96 rounded-2xl overflow-hidden shadow-xl">
+                                <div className="h-96 2xl:h-[500px] rounded-2xl overflow-hidden shadow-xl">
                                     <img
                                         src="/montra-5.jpg"
                                         className="w-full h-full object-cover hover:scale-110 transition-transform duration-700"
                                         alt="Carne Selecionada 3" />
                                 </div>
-                                <div className="h-96 rounded-2xl overflow-hidden shadow-xl lg:col-span-3">
+                                <div className="h-96 2xl:h-[500px] rounded-2xl overflow-hidden shadow-xl lg:col-span-3">
                                     <img
                                         src="/montra-6.jpeg"
                                         className="w-full h-full object-cover hover:scale-110 transition-transform duration-700"
@@ -329,18 +329,18 @@ const Index = () => {
                     {}
                     <section
                         id="produtos"
-                        className="relative py-12 md:py-24 overflow-hidden bg-brand-charcoal">
+                        className="relative py-12 md:py-32 overflow-hidden bg-brand-charcoal">
                         <div className="absolute inset-0 z-0">
                             <img
                                 src="/vintage_film_bg.jpg"
                                 alt="Background Texture"
                                 className="w-full h-full object-cover opacity-30 mix-blend-overlay" />
                         </div>
-                        <div className="relative z-10 max-w-7xl mx-auto px-8">
-                            <div className="text-center mb-16">
+                        <div className="relative z-10 max-w-7xl 2xl:max-w-[1600px] mx-auto px-8">
+                            <div className="text-center mb-24">
                                 <h2
-                                    className="text-brand-gold uppercase tracking-widest text-[10px] md:text-sm mb-2 md:mb-4">A Seleção do Rei</h2>
-                                <h3 className="text-3xl md:text-6xl font-serif mb-8 leading-tight">Cortes Premium, esse é o nosso Compromisso.</h3>
+                                    className="text-brand-gold uppercase tracking-widest text-[10px] md:text-sm 2xl:text-base mb-2 md:mb-4">A Seleção do Rei</h2>
+                                <h3 className="text-3xl md:text-6xl 2xl:text-8xl font-serif mb-8 leading-tight">Cortes Premium, esse é o nosso Compromisso.</h3>
                                 <p
                                     className="text-brand-ivory/70 text-sm md:text-lg max-w-3xl mx-auto leading-relaxed">Os Cortes Premium Baby Beef são pensados para quem reconhece e valoriza a diferença. Da picanha ao ribeye, do tomahawk aos cortes especiais preparados, cada peça é trabalhada com precisão por profissionais experientes que dominam a arte do talho moderno.</p>
                             </div>

@@ -23,23 +23,23 @@ const homeProducts = [
 
 const HomeProductsSection = () => {
   return (
-    <section className="relative py-24 bg-brand-charcoal overflow-hidden">
+    <section className="relative py-24 md:py-32 bg-brand-charcoal overflow-hidden">
       <div className="absolute inset-0 z-0">
         <img
           src="/vintage_film_bg.jpg"
           alt="Background Texture"
           className="w-full h-full object-cover opacity-30 mix-blend-overlay" />
       </div>
-      <div className="relative z-10 max-w-7xl mx-auto px-8">
+      <div className="relative z-10 max-w-7xl 2xl:max-w-[1600px] mx-auto px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center mb-16"
+          className="text-center mb-20"
         >
-          <h2 className="text-brand-gold uppercase tracking-widest text-sm mb-4 font-bold">Estilo de Vida</h2>
-          <h3 className="text-4xl md:text-5xl font-serif mb-6">Leve Baby Beef para casa</h3>
-          <p className="text-brand-ivory/60 max-w-2xl mx-auto italic">
+          <h2 className="text-brand-gold uppercase tracking-widest text-sm 2xl:text-base mb-4 font-bold">Estilo de Vida</h2>
+          <h3 className="text-4xl md:text-5xl 2xl:text-7xl font-serif mb-6">Leve Baby Beef para casa</h3>
+          <p className="text-brand-ivory/60 max-w-2xl 2xl:max-w-4xl mx-auto italic 2xl:text-xl">
             A experiência do Rei não termina no talho. Descubra a nossa linha exclusiva de acessórios, vestuário e complementos premium para o seu churrasco.
           </p>
         </motion.div>
@@ -49,7 +49,7 @@ const HomeProductsSection = () => {
             align: "start",
             loop: true,
           }}
-          className="w-full max-w-5xl mx-auto"
+          className="w-full max-w-5xl 2xl:max-w-7xl mx-auto"
         >
           <CarouselContent className="-ml-4">
             {homeProducts.map((product, index) => (
