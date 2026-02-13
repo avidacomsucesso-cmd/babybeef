@@ -79,12 +79,12 @@ const Index = () => {
                     <section className="relative flex flex-col md:items-center overflow-hidden bg-black">
                         {}
                         <div className="hidden md:block absolute top-[42%] left-0 w-full z-[100] pointer-events-none">
-                            <div className="max-w-7xl mx-auto px-10 flex justify-between items-center text-[13px] lg:text-[15px] 2xl:text-[18px] font-bold uppercase tracking-[0.15em] text-brand-gold">
-                                <div className="flex items-center gap-10 lg:gap-16 pointer-events-auto">
+                            <div className="max-w-[1920px] mx-auto px-10 flex justify-between items-center text-[13px] lg:text-[15px] 2xl:text-[18px] font-bold uppercase tracking-[0.15em] text-brand-gold">
+                                <div className="flex items-center gap-12 lg:gap-20 pointer-events-auto pl-[2%]">
                                     <a href="#marca" className="hover:text-white transition-all cursor-pointer relative z-[110]">A MARCA</a>
                                     <a href="#produtos" className="hover:text-white transition-all cursor-pointer relative z-[110]">CORTES PREMIUM</a>
                                 </div>
-                                <div className="flex items-center gap-10 lg:gap-16 pointer-events-auto">
+                                <div className="flex items-center gap-12 lg:gap-20 pointer-events-auto pr-[2%]">
                                     <a href="#lojas" className="hover:text-white transition-all cursor-pointer relative z-[110]">LOJAS</a>
                                     <a href="#franquias" className="hover:text-white transition-all cursor-pointer relative z-[110]">FRANQUIAS</a>
                                     <OrderForm>
