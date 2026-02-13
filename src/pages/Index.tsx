@@ -76,82 +76,101 @@ const Index = () => {
                     </nav>
 
                     {}
-                    <section className="relative flex flex-col md:items-center overflow-hidden bg-black">
+                    <section className="relative flex flex-col items-center overflow-hidden bg-black">
                         {}
-                        <div className="hidden md:block absolute top-[42%] left-0 w-full z-[100] pointer-events-none">
-                            <div className="max-w-7xl mx-auto px-10 flex justify-between items-center text-[13px] lg:text-[15px] 2xl:text-[18px] font-bold uppercase tracking-[0.15em] text-brand-gold">
-                                <div className="flex items-center gap-10 lg:gap-16 pointer-events-auto">
-                                    <a href="#marca" className="hover:text-white transition-all cursor-pointer relative z-[110]">A MARCA</a>
-                                    <a href="#produtos" className="hover:text-white transition-all cursor-pointer relative z-[110]">CORTES PREMIUM</a>
-                                </div>
-                                <div className="flex items-center gap-10 lg:gap-16 pointer-events-auto">
-                                    <a href="#lojas" className="hover:text-white transition-all cursor-pointer relative z-[110]">LOJAS</a>
-                                    <a href="#franquias" className="hover:text-white transition-all cursor-pointer relative z-[110]">FRANQUIAS</a>
-                                    <OrderForm>
-                                        <button className="bg-brand-gold/90 text-brand-charcoal py-2 px-8 rounded-full cursor-pointer font-black hover:bg-white transition-all relative z-[110]">RESERVAR</button>
-                                    </OrderForm>
+                        <div className="w-full relative">
+                            {}
+                            <div className="w-full aspect-[21/9] md:aspect-[3/1] lg:aspect-[4/1] overflow-hidden">
+                                <img
+                                    src="/banner-superior.jpg"
+                                    alt="Baby Beef Banner Superior"
+                                    className="w-full h-full object-cover object-center"
+                                />
+                            </div>
+
+                            {}
+                            <div className="absolute top-[40%] md:top-[42%] left-0 w-full z-[100] pointer-events-none px-4">
+                                <div className="max-w-7xl mx-auto flex justify-between items-center text-[10px] md:text-[13px] lg:text-[15px] 2xl:text-[18px] font-bold uppercase tracking-[0.15em] text-brand-gold">
+                                    <div className="flex items-center gap-4 md:gap-10 lg:gap-16 pointer-events-auto">
+                                        <a href="#marca" className="hover:text-white transition-all cursor-pointer relative z-[110]">A MARCA</a>
+                                        <a href="#produtos" className="hover:text-white transition-all cursor-pointer relative z-[110]">CORTES PREMIUM</a>
+                                    </div>
+                                    <div className="flex items-center gap-4 md:gap-10 lg:gap-16 pointer-events-auto">
+                                        <a href="#lojas" className="hover:text-white transition-all cursor-pointer relative z-[110]">LOJAS</a>
+                                        <a href="#franquias" className="hover:text-white transition-all cursor-pointer relative z-[110]">FRANQUIAS</a>
+                                        <OrderForm>
+                                            <button className="bg-brand-gold/90 text-brand-charcoal py-1 md:py-2 px-4 md:px-8 rounded-full cursor-pointer font-black hover:bg-white transition-all relative z-[110] text-[10px] md:text-xs">RESERVAR</button>
+                                        </OrderForm>
+                                    </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div className="absolute inset-0 z-0">
-                            <img
-                                src="/hero-concept-clean.jpg"
-                                alt="Baby Beef Concept"
-                                className="w-full h-full object-contain object-top"
-                            />
-                        </div>
-                        <div className="relative z-20 px-6 sm:px-12 md:px-24 2xl:px-32 w-full max-w-[1920px] mx-auto pt-[28vh] md:pt-[55vh] pb-4 md:pb-12">
-                            <motion.div
-                                initial={{
-                                    opacity: 0,
-                                    x: -50
-                                }}
-                                animate={{
-                                    opacity: 1,
-                                    x: 0
-                                }}
-                                transition={{
-                                    duration: 1.2,
-                                    delay: 0.3
-                                }}
-                                className="max-w-4xl"
-                            >
-                                <h1
-                                    className="text-4xl sm:text-5xl md:text-[65px] lg:text-[80px] 2xl:text-[104px] font-serif mb-6 md:mb-8 leading-[1.1] md:leading-[0.9] drop-shadow-2xl">
-                                    O Mundo do Talho <br />
-                                    <span className="italic text-brand-gold">agora <span className="text-white">tem um</span> <span className="text-white">Rei.</span></span>
-                                </h1>
-                                <p
-                                    className="text-base md:text-2xl 2xl:text-3xl text-brand-ivory/80 font-light mb-10 md:mb-12 max-w-2xl leading-relaxed">
-                                    Maestria, tradição e os melhores cortes do mundo, selecionados para a sua mesa.
-                                </p>
-                                <div className="flex flex-col sm:flex-row gap-4 md:gap-6">
-                                    <a href="#produtos">
-                                        <button
-                                            className="bg-brand-gold text-brand-charcoal px-8 md:px-12 py-4 md:py-5 rounded-full font-black uppercase tracking-widest hover:scale-105 transition-transform shadow-2xl w-full md:w-auto text-[12px] md:text-sm">
-                                            Cortes Premium
-                                        </button>
-                                    </a>
-                                    <FranchiseForm>
-                                        <button
-                                            className="border border-white/20 backdrop-blur-md bg-white/5 px-8 md:px-12 py-4 md:py-5 rounded-full font-black uppercase tracking-widest hover:bg-white hover:text-brand-charcoal transition-all shadow-xl text-[12px] md:text-sm w-full md:w-auto">
-                                            Seja um Franqueado
-                                        </button>
-                                    </FranchiseForm>
+                        {}
+                        <div className="w-full relative">
+                            <div className="w-full aspect-[16/10] md:aspect-[16/9] lg:h-[60vh] overflow-hidden">
+                                <img
+                                    src="/banner-rotativo.jpg"
+                                    alt="Baby Beef Cortes"
+                                    className="w-full h-full object-cover object-top"
+                                />
+                            </div>
+
+                            {}
+                            <div className="absolute inset-0 z-20 flex items-center bg-black/20">
+                                <div className="px-6 sm:px-12 md:px-24 2xl:px-32 w-full max-w-[1920px] mx-auto py-8">
+                                    <motion.div
+                                        initial={{
+                                            opacity: 0,
+                                            x: -50
+                                        }}
+                                        animate={{
+                                            opacity: 1,
+                                            x: 0
+                                        }}
+                                        transition={{
+                                            duration: 1.2,
+                                            delay: 0.3
+                                        }}
+                                        className="max-w-4xl"
+                                    >
+                                        <h1
+                                            className="text-3xl sm:text-4xl md:text-[65px] lg:text-[80px] 2xl:text-[104px] font-serif mb-6 md:mb-8 leading-[1.1] md:leading-[0.9] drop-shadow-2xl text-white">
+                                            O Mundo do Talho <br />
+                                            <span className="italic text-brand-gold">agora <span className="text-white">tem um</span> <span className="text-white">Rei.</span></span>
+                                        </h1>
+                                        <p
+                                            className="text-base md:text-2xl 2xl:text-3xl text-brand-ivory/80 font-light mb-10 md:mb-12 max-w-2xl leading-relaxed">
+                                            Maestria, tradição e os melhores cortes do mundo, selecionados para a sua mesa.
+                                        </p>
+                                        <div className="flex flex-col sm:flex-row gap-4 md:gap-6">
+                                            <a href="#produtos">
+                                                <button
+                                                    className="bg-brand-gold text-brand-charcoal px-8 md:px-12 py-4 md:py-5 rounded-full font-black uppercase tracking-widest hover:scale-105 transition-transform shadow-2xl w-full md:w-auto text-[12px] md:text-sm">
+                                                    Cortes Premium
+                                                </button>
+                                            </a>
+                                            <FranchiseForm>
+                                                <button
+                                                    className="border border-white/20 backdrop-blur-md bg-white/5 px-8 md:px-12 py-4 md:py-5 rounded-full font-black uppercase tracking-widest hover:bg-white hover:text-brand-charcoal transition-all shadow-xl text-[12px] md:text-sm w-full md:w-auto">
+                                                    Seja um Franqueado
+                                                </button>
+                                            </FranchiseForm>
+                                        </div>
+                                    </motion.div>
+                                    <motion.div
+                                        animate={{
+                                            y: [0, 10, 0]
+                                        }}
+                                        transition={{
+                                            repeat: Infinity,
+                                            duration: 2
+                                        }}
+                                        className="flex justify-center text-brand-gold mt-6 md:mt-10 md:absolute md:bottom-10 md:left-1/2 md:-translate-x-1/2">
+                                        <ChevronDown size={32} />
+                                    </motion.div>
                                 </div>
-                            </motion.div>
-                            <motion.div
-                                animate={{
-                                    y: [0, 10, 0]
-                                }}
-                                transition={{
-                                    repeat: Infinity,
-                                    duration: 2
-                                }}
-                                className="flex justify-center text-brand-gold mt-6 md:mt-10 md:absolute md:bottom-10 md:left-1/2 md:-translate-x-1/2">
-                                <ChevronDown size={32} />
-                            </motion.div>
+                            </div>
                         </div>
                     </section>
                     {}
