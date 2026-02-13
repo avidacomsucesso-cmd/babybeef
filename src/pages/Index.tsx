@@ -450,8 +450,7 @@ const Index = () => {
                                     <p className="text-brand-ivory/80 text-lg md:text-2xl mb-8">Na Baby Beef, elevamos o talho a um novo patamar. Unimos tradição e inovação, rigor e paixão, produto e experiência.
                                                                                                                                                                                                                               </p>
                                     <div className="inline-block px-8 py-4 border border-brand-gold/30 rounded-lg">
-                                        <p className="text-brand-gold font-black uppercase tracking-[0.2em] text-sm md:text-xl">O Churrasco tem um Rei. E o Rei do Talho chama-se Baby Beef.
-                                                                                                                                                                                                                                                          </p>
+                                        <p className="text-brand-gold font-black uppercase tracking-[0.2em] text-sm md:text-xl">O MUNDO DO TALHO TEM UM REI, E O REI DO TALHO CHAMA-SE BABY BEEF.</p>
                                     </div>
                                 </div>
                             </div>
