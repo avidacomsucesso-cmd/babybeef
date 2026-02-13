@@ -66,7 +66,8 @@ const Index = () => {
                 {}
                 <div className="relative flex flex-col w-full">
                     {}
-                    <div className="absolute top-0 left-0 w-full h-[30vh] bg-gradient-to-b from-white/20 to-transparent z-10 pointer-events-none md:hidden" />
+                    <div className="absolute top-0 left-0 w-full h-[35vh] bg-gradient-to-b from-white/25 via-white/10 to-transparent z-10 pointer-events-none md:hidden" />
+                    <div className="hidden md:block absolute top-0 left-0 w-full h-[50vh] bg-gradient-to-b from-white/15 to-transparent z-10 pointer-events-none" />
                     
                     <nav className="relative w-full z-40 flex flex-col items-center bg-black/90 border-b border-brand-gold/20 py-4 px-4 md:hidden">
                         <div className="flex flex-wrap justify-center gap-x-6 gap-y-3 text-[11px] uppercase tracking-widest font-bold text-brand-gold">
