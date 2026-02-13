@@ -223,7 +223,7 @@ const Index = () => {
                                 <img
                                     src="/staff-premium.jpeg"
                                     alt="Equipa Premium"
-                                    className="w-full h-full object-contain md:object-contain object-center" />
+                                    className="w-full h-full object-contain md:object-contain object-center blur-[6px]" />
                                 <div
                                     className="absolute inset-0 bg-gradient-to-t from-brand-charcoal/40 via-transparent to-transparent opacity-60 pointer-events-none" />
                             </div>
