@@ -99,7 +99,7 @@ const Index = () => {
                     {}
                     <section className="relative h-screen flex items-center overflow-hidden bg-black">
                         {}
-                        <div className="hidden md:block absolute top-[43%] left-0 w-full z-[100] pointer-events-none">
+                        <div className="hidden md:block absolute top-[42%] left-0 w-full z-[100] pointer-events-none">
                             <div className="max-w-[1920px] mx-auto px-10 flex justify-center items-center gap-[1%] lg:gap-[2%] 2xl:gap-[3%] text-[15px] lg:text-[17px] 2xl:text-[20px] font-bold uppercase tracking-[0.15em] text-brand-gold">
                                 <div className="flex items-center gap-[4vw] pointer-events-auto whitespace-nowrap">
                                     <a href="#marca" className="hover:text-white py-4 px-2 transition-all cursor-pointer relative z-[110] whitespace-nowrap">A MARCA</a>
