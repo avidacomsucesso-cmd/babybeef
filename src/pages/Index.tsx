@@ -78,9 +78,9 @@ const Index = () => {
                     {}
                     <section className="relative flex flex-col items-center overflow-hidden bg-black">
                         {}
-                        <div className="w-full relative">
+                        <div className="w-full relative flex justify-center bg-black py-4">
                             {}
-                            <div className="w-full overflow-hidden">
+                            <div className="w-1/2 overflow-hidden">
                                 <img
                                     src="/banner-superior.jpg"
                                     alt="Baby Beef Banner Superior"
@@ -90,7 +90,7 @@ const Index = () => {
 
                             {}
                             <div className="absolute top-[48%] md:top-[50%] left-0 w-full z-[100] pointer-events-none px-4">
-                                <div className="max-w-7xl mx-auto flex justify-between items-center text-[8px] sm:text-[10px] md:text-[13px] lg:text-[15px] 2xl:text-[18px] font-bold uppercase tracking-[0.15em] text-brand-gold">
+                                <div className="max-w-7xl mx-auto flex justify-between items-center text-[7px] sm:text-[9px] md:text-[11px] lg:text-[13px] 2xl:text-[16px] font-bold uppercase tracking-[0.15em] text-brand-gold">
                                     <div className="flex items-center gap-4 md:gap-10 lg:gap-16 pointer-events-auto">
                                         <a href="#marca" className="hover:text-white transition-all cursor-pointer relative z-[110]">A MARCA</a>
                                         <a href="#produtos" className="hover:text-white transition-all cursor-pointer relative z-[110]">CORTES PREMIUM</a>
