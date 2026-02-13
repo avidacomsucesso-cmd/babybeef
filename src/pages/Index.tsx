@@ -289,7 +289,7 @@ const Index = () => {
                                 </div>
                                 <div className="h-96 2xl:h-[500px] rounded-2xl overflow-hidden shadow-xl lg:col-span-3">
                                     <img
-                                        src="/montra-6.jpeg"
+                                        src="/montra-6-blurred.jpeg"
                                         className="w-full h-full object-cover hover:scale-110 transition-transform duration-700"
                                         alt="Montra Completa" />
                                 </div>
@@ -310,7 +310,7 @@ const Index = () => {
                                             "/montra-3.jpeg",
                                             "/montra-4.jpeg",
                                             "/montra-5.jpg",
-                                            "/montra-6.jpeg"
+                                            "/montra-6-blurred.jpeg"
                                         ].map((src, index) => (<CarouselItem key={index}>
                                             <div className="h-[450px] rounded-2xl overflow-hidden shadow-xl mx-2">
                                                 <img src={src} className="w-full h-full object-cover" alt={`Slide ${index}`} />
