@@ -80,7 +80,7 @@ const Index = () => {
                         {}
                         <div className="w-full relative">
                             {}
-                            <div className="w-full max-w-5xl mx-auto overflow-hidden">
+                            <div className="w-full overflow-hidden">
                                 <img
                                     src="/banner-superior.jpg"
                                     alt="Baby Beef Banner Superior"
@@ -89,17 +89,17 @@ const Index = () => {
                             </div>
 
                             {}
-                            <div className="absolute top-[52%] left-0 w-full z-[100] pointer-events-none px-4 md:px-10 lg:px-20">
-                                <div className="max-w-[1200px] mx-auto flex justify-between items-center text-[7px] sm:text-[9px] md:text-[12px] lg:text-[14px] 2xl:text-[16px] font-bold uppercase tracking-[0.12em] text-brand-gold">
-                                    <div className="flex items-center gap-3 md:gap-8 lg:gap-12 pointer-events-auto">
+                            <div className="absolute top-[48%] md:top-[50%] left-0 w-full z-[100] pointer-events-none px-4">
+                                <div className="max-w-7xl mx-auto flex justify-between items-center text-[8px] sm:text-[10px] md:text-[13px] lg:text-[15px] 2xl:text-[18px] font-bold uppercase tracking-[0.15em] text-brand-gold">
+                                    <div className="flex items-center gap-4 md:gap-10 lg:gap-16 pointer-events-auto">
                                         <a href="#marca" className="hover:text-white transition-all cursor-pointer relative z-[110]">A MARCA</a>
                                         <a href="#produtos" className="hover:text-white transition-all cursor-pointer relative z-[110]">CORTES PREMIUM</a>
                                     </div>
-                                    <div className="flex items-center gap-3 md:gap-8 lg:gap-12 pointer-events-auto">
+                                    <div className="flex items-center gap-4 md:gap-10 lg:gap-16 pointer-events-auto">
                                         <a href="#lojas" className="hover:text-white transition-all cursor-pointer relative z-[110]">LOJAS</a>
                                         <a href="#franquias" className="hover:text-white transition-all cursor-pointer relative z-[110]">FRANQUIAS</a>
                                         <OrderForm>
-                                            <button className="bg-brand-gold/90 text-brand-charcoal py-1 md:py-1.5 px-3 md:px-6 rounded-full cursor-pointer font-black hover:bg-white transition-all relative z-[110] text-[7px] md:text-[11px]">RESERVAR</button>
+                                            <button className="bg-brand-gold/90 text-brand-charcoal py-1 md:py-2 px-4 md:px-8 rounded-full cursor-pointer font-black hover:bg-white transition-all relative z-[110] text-[10px] md:text-xs">RESERVAR</button>
                                         </OrderForm>
                                     </div>
                                 </div>
