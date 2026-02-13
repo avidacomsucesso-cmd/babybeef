@@ -67,7 +67,7 @@ const Index = () => {
                 <div className="relative flex flex-col w-full">
                     {}
                     <nav
-                        className="relative w-full z-40 flex flex-col items-center bg-brand-charcoal overflow-hidden">
+                        className="relative w-full z-40 flex flex-col items-center bg-brand-charcoal overflow-hidden md:hidden">
                         {}
                         <div className="absolute inset-0 z-0">
                             <img
@@ -99,28 +99,37 @@ const Index = () => {
                                 <a
                                     href="#contacto"
                                     className="hover:text-brand-gold transition-colors text-white whitespace-nowrap">Contacto</a>
-                                <OrderForm>
-                                    <button
-                                        className="hidden md:block bg-brand-gold text-brand-charcoal px-6 py-1.5 rounded-full text-[11px] md:text-[13px] uppercase font-black tracking-widest hover:bg-white transition-all duration-300 shadow-lg ml-4 whitespace-nowrap">Reservar
-                                    </button>
-                                </OrderForm>
                             </div>
                         </div>
                     </nav>
                     {}
-                    <section className="relative min-h-[70vh] md:h-[85vh] 2xl:h-[90vh] flex items-center overflow-hidden">
+                    <section className="relative min-h-[70vh] md:h-screen flex items-center overflow-hidden">
                         <div className="absolute inset-0 z-0">
-                            <div
-                                className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent z-10" />
                             <img
-                                src="/hero-master-cut.png"
-                                alt="Master Butcher Cut"
-                                className="w-full h-full object-cover object-center"
-                                style={{
-                                    imageRendering: "auto"
-                                }} />
+                                src="/hero-new-concept.png"
+                                alt="Baby Beef Concept"
+                                className="w-full h-full object-cover object-top"
+                            />
+                            {}
+                            <div className="hidden md:block absolute top-[43.5%] left-0 w-full z-30">
+                                <div className="max-w-[1920px] mx-auto px-10 flex justify-center items-center gap-[1%] lg:gap-[2%] 2xl:gap-[3%] text-[11px] lg:text-[13px] 2xl:text-[15px] font-bold uppercase tracking-[0.15em]">
+                                    <div className="flex items-center gap-[2vw]">
+                                        <a href="#marca" className="hover:bg-white/10 py-4 px-6 rounded-md transition-all cursor-pointer pointer-events-auto text-transparent select-none">UMA MARCA</a>
+                                        <a href="#produtos" className="hover:bg-white/10 py-4 px-6 rounded-md transition-all cursor-pointer pointer-events-auto text-transparent select-none">OS NOSSOS CORTES</a>
+                                    </div>
+                                    {}
+                                    <div className="w-[18vw] lg:w-[15vw] 2xl:w-[12vw]" />
+                                    <div className="flex items-center gap-[2vw]">
+                                        <a href="#lojas" className="hover:bg-white/10 py-4 px-6 rounded-md transition-all cursor-pointer pointer-events-auto text-transparent select-none">LOJAS</a>
+                                        <a href="#franquias" className="hover:bg-white/10 py-4 px-6 rounded-md transition-all cursor-pointer pointer-events-auto text-transparent select-none">FRANQUIAS</a>
+                                        <OrderForm>
+                                            <button className="py-4 px-12 rounded-full cursor-pointer pointer-events-auto text-transparent select-none">RESERVAR</button>
+                                        </OrderForm>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div className="relative z-20 px-6 sm:px-12 md:px-24 2xl:px-32 w-full max-w-[1920px] mx-auto py-12 md:pt-1 md:pb-20">
+                        <div className="relative z-20 px-6 sm:px-12 md:px-24 2xl:px-32 w-full max-w-[1920px] mx-auto py-12 pt-[45vh] md:pt-[55vh]">
                             <motion.div
                                 initial={{
                                     opacity: 0,
