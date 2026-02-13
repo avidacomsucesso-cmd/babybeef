@@ -81,12 +81,12 @@ const Index = () => {
                     <section className="relative flex flex-col md:items-center overflow-hidden bg-black">
                         {}
                         <div className="hidden md:block absolute top-[42%] left-0 w-full z-[100] pointer-events-none">
-                            <div className="max-w-7xl mx-auto px-10 flex justify-between items-center text-[13px] lg:text-[15px] 2xl:text-[18px] font-bold uppercase tracking-[0.15em] text-brand-gold">
+                            <div className="max-w-[1600px] 2xl:max-w-[1800px] mx-auto px-10 flex justify-between items-center text-[13px] lg:text-[15px] 2xl:text-[18px] font-bold uppercase tracking-[0.15em] text-brand-gold">
                                 <div className="flex items-center gap-10 lg:gap-16 pointer-events-auto">
                                     <a href="#marca" className="hover:text-white transition-all cursor-pointer relative z-[110]">A MARCA</a>
                                     <a href="#produtos" className="hover:text-white transition-all cursor-pointer relative z-[110]">CORTES PREMIUM</a>
                                 </div>
-                                <div className="flex items-center gap-10 lg:gap-16 pointer-events-auto">
+                                <div className="flex items-center gap-8 lg:gap-12 2xl:gap-16 pointer-events-auto">
                                     <a href="#lojas" className="hover:text-white transition-all cursor-pointer relative z-[110]">LOJAS</a>
                                     <a href="#franquias" className="hover:text-white transition-all cursor-pointer relative z-[110]">FRANQUIAS</a>
                                     <OrderForm>
