@@ -139,7 +139,7 @@ const Index = () => {
                                 className="max-w-4xl"
                             >
                                 <h1
-                                    className="text-4xl sm:text-5xl md:text-[80px] lg:text-[100px] 2xl:text-[130px] font-serif mb-6 md:mb-8 leading-[1] md:leading-[0.9] drop-shadow-2xl">O Mundo do Talho <br />
+                                    className="text-3xl sm:text-4xl md:text-[65px] lg:text-[80px] 2xl:text-[104px] font-serif mb-6 md:mb-8 leading-[1] md:leading-[0.9] drop-shadow-2xl">O Mundo do Talho <br />
                                     <span className="italic text-brand-gold">agora tem um <span className="text-white">Rei.</span></span>
                                 </h1>
                                 <p
