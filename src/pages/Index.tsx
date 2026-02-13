@@ -463,6 +463,72 @@ const Index = () => {
                     {}
                     <HomeProductsSection />
                     {}
+                    <section id="lojas" className="relative py-24 bg-brand-charcoal overflow-hidden border-t border-brand-gold/10">
+                        <div className="absolute inset-0 z-0">
+                            <img
+                                src="/vintage_film_bg.jpg"
+                                alt="Background Texture"
+                                className="w-full h-full object-cover opacity-60 mix-blend-overlay" />
+                        </div>
+                        <div className="relative z-10 max-w-7xl mx-auto px-8">
+                            <div className="text-center mb-16">
+                                <h2 className="text-brand-gold uppercase tracking-widest text-sm mb-4 font-bold">Onde Estamos</h2>
+                                <h3 className="text-4xl md:text-5xl font-serif mb-6">Nossas Lojas</h3>
+                                <p className="text-brand-ivory/60 max-w-2xl mx-auto italic">
+                                    Visite as nossas boutiques de carnes e descubra o padrão de excelência Baby Beef de perto.
+                                </p>
+                            </div>
+
+                            <div className="grid md:grid-cols-2 gap-12">
+                                <motion.div 
+                                    whileHover={{ y: -10 }}
+                                    className="group relative overflow-hidden rounded-2xl shadow-2xl bg-black/20 border border-brand-gold/20"
+                                >
+                                    <div className="aspect-[4/3] overflow-hidden">
+                                        <img src="/loja-1.jpeg" alt="Baby Beef Loja 1" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                                    </div>
+                                    <div className="p-8 border-t border-brand-gold/10">
+                                        <h4 className="text-2xl font-serif text-brand-gold mb-4">Baby Beef Loja 1</h4>
+                                        <div className="flex items-start gap-3 text-brand-ivory/80">
+                                            <MapPin size={20} className="text-brand-gold shrink-0 mt-1" />
+                                            <a 
+                                                href="https://www.google.com/maps/search/?api=1&query=BabyBeef+Rua+Pulido+Valente+12+Odivelas" 
+                                                target="_blank" 
+                                                rel="noopener noreferrer"
+                                                className="hover:text-brand-gold transition-colors text-lg"
+                                            >
+                                                Rua Pulido Valente 12 - 2675-672<br />Colinas do Cruzeiro - Odivelas
+                                            </a>
+                                        </div>
+                                    </div>
+                                </motion.div>
+
+                                <motion.div 
+                                    whileHover={{ y: -10 }}
+                                    className="group relative overflow-hidden rounded-2xl shadow-2xl bg-black/20 border border-brand-gold/20"
+                                >
+                                    <div className="aspect-[4/3] overflow-hidden">
+                                        <img src="/loja-2.jpeg" alt="Baby Beef Loja 2" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                                    </div>
+                                    <div className="p-8 border-t border-brand-gold/10">
+                                        <h4 className="text-2xl font-serif text-brand-gold mb-4">Baby Beef Loja 2</h4>
+                                        <div className="flex items-start gap-3 text-brand-ivory/80">
+                                            <MapPin size={20} className="text-brand-gold shrink-0 mt-1" />
+                                            <a 
+                                                href="https://www.google.com/maps/search/?api=1&query=BabyBeef+Rua+de+Cabo+Verde+n+5+Prior+Velho+Lisboa" 
+                                                target="_blank" 
+                                                rel="noopener noreferrer"
+                                                className="hover:text-brand-gold transition-colors text-lg"
+                                            >
+                                                Rua de Cabo Verde, n. 5 Loja<br />2685-316, Prior Velho, Lisboa
+                                            </a>
+                                        </div>
+                                    </div>
+                                </motion.div>
+                            </div>
+                        </div>
+                    </section>
+                    {}
                     <TestimonialsSection />
                     {}
                     <section
