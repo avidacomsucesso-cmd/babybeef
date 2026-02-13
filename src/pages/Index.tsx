@@ -140,7 +140,7 @@ const Index = () => {
                             >
                                 <h1
                                     className="text-3xl sm:text-4xl md:text-[65px] lg:text-[80px] 2xl:text-[104px] font-serif mb-6 md:mb-8 leading-[1] md:leading-[0.9] drop-shadow-2xl">O Mundo do Talho <br />
-                                    <span className="italic text-brand-gold">agora tem um <span className="text-white">Rei.</span></span>
+                                    <span className="italic text-brand-gold">agora <span className="text-white">tem um</span> <span className="text-white">Rei.</span></span>
                                 </h1>
                                 <p
                                     className="text-lg md:text-2xl 2xl:text-3xl text-brand-ivory/80 font-light mb-8 md:mb-12 max-w-2xl leading-relaxed">Maestria, tradição e os melhores cortes do mundo, selecionados para a sua mesa.
