@@ -75,12 +75,6 @@ const Index = () => {
                                 alt="Background"
                                 className="w-full h-full object-cover opacity-60 mix-blend-overlay" />
                         </div>
-                        <div className="w-full max-w-[90vw] md:max-w-5xl px-6 overflow-hidden relative z-10 flex justify-center">
-                            <img
-                                src="/header-placa-premium.png"
-                                alt="Baby Beef & Co. - O Rei do Talho"
-                                className="w-full h-auto max-h-[30vh] object-contain scale-[1.15] md:-mb-[6%] mb-[-4%]" />
-                        </div>
                         <div className="w-full bg-black/40 border-y border-white/10 relative z-10">
                             <div
                                 className="flex flex-wrap justify-center items-center gap-4 md:gap-16 text-[10px] sm:text-[11px] md:text-[14px] 2xl:text-[16px] uppercase tracking-[0.2em] md:tracking-[0.3em] font-bold px-4 md:px-6 py-3 md:py-6">
