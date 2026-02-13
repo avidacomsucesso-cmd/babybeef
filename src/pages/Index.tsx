@@ -56,7 +56,7 @@ const Index = () => {
             className="bg-brand-charcoal text-brand-ivory font-sans selection:bg-brand-gold selection:text-brand-charcoal min-h-screen">
             {}
             <motion.div
-                className="fixed top-0 left-0 right-0 h-1 bg-brand-gold z-50 origin-left"
+                className="fixed top-0 left-0 right-0 h-1 bg-brand-gold z-[100] origin-left"
                 style={{
                     scaleX
                 }} />
@@ -66,38 +66,18 @@ const Index = () => {
                 {}
                 <div className="relative flex flex-col w-full">
                     {}
-                    <nav
-                        className="relative w-full z-40 flex flex-col items-center bg-brand-charcoal overflow-hidden md:hidden">
-                        {}
-                        <div className="absolute inset-0 z-0">
-                            <img
-                                src="/vintage_film_bg.jpg"
-                                alt="Background"
-                                className="w-full h-full object-cover opacity-60 mix-blend-overlay" />
-                        </div>
-                        <div className="w-full bg-black/40 border-y border-white/10 relative z-10">
-                            <div
-                                className="flex flex-wrap justify-center items-center gap-4 md:gap-16 text-[10px] sm:text-[11px] md:text-[14px] 2xl:text-[16px] uppercase tracking-[0.2em] md:tracking-[0.3em] font-bold px-4 md:px-6 py-3 md:py-6">
-                                <a
-                                    href="#marca"
-                                    className="hover:text-brand-gold transition-colors text-white whitespace-nowrap">A Marca</a>
-                                <a
-                                    href="#produtos"
-                                    className="hover:text-brand-gold transition-colors text-white whitespace-nowrap">Os Nossos Cortes</a>
-                                <a
-                                    href="#lojas"
-                                    className="hover:text-brand-gold transition-colors text-white whitespace-nowrap">Lojas</a>
-                                <a
-                                    href="#franquias"
-                                    className="hover:text-brand-gold transition-colors text-white whitespace-nowrap">Franquias</a>
-                                <a
-                                    href="#contacto"
-                                    className="hover:text-brand-gold transition-colors text-white whitespace-nowrap">Contacto</a>
-                            </div>
+                    <nav className="absolute top-0 left-0 w-full z-50 py-4 px-4 md:hidden">
+                        <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 text-[10px] uppercase tracking-widest font-bold text-white/90">
+                            <a href="#marca" className="hover:text-brand-gold transition-colors">A Marca</a>
+                            <a href="#produtos" className="hover:text-brand-gold transition-colors">Cortes</a>
+                            <a href="#lojas" className="hover:text-brand-gold transition-colors">Lojas</a>
+                            <a href="#franquias" className="hover:text-brand-gold transition-colors">Franquias</a>
+                            <a href="#contacto" className="hover:text-brand-gold transition-colors">Contacto</a>
                         </div>
                     </nav>
+
                     {}
-                    <section className="relative h-screen flex items-center overflow-hidden bg-black">
+                    <section className="relative min-h-[100svh] flex flex-col md:items-center overflow-hidden bg-black">
                         {}
                         <div className="hidden md:block absolute top-[42%] left-0 w-full z-[100] pointer-events-none">
                             <div className="max-w-7xl mx-auto px-10 flex justify-between items-center text-[13px] lg:text-[15px] 2xl:text-[18px] font-bold uppercase tracking-[0.15em] text-brand-gold">
@@ -122,7 +102,7 @@ const Index = () => {
                                 className="w-full h-full object-contain object-top"
                             />
                         </div>
-                        <div className="relative z-20 px-6 sm:px-12 md:px-24 2xl:px-32 w-full max-w-[1920px] mx-auto py-12 pt-[22vh] md:pt-[55vh]">
+                        <div className="relative z-20 px-6 sm:px-12 md:px-24 2xl:px-32 w-full max-w-[1920px] mx-auto py-12 pt-[28vh] md:pt-[55vh]">
                             <motion.div
                                 initial={{
                                     opacity: 0,
@@ -139,21 +119,25 @@ const Index = () => {
                                 className="max-w-4xl"
                             >
                                 <h1
-                                    className="text-3xl sm:text-4xl md:text-[65px] lg:text-[80px] 2xl:text-[104px] font-serif mb-6 md:mb-8 leading-[1] md:leading-[0.9] drop-shadow-2xl">O Mundo do Talho <br />
+                                    className="text-4xl sm:text-5xl md:text-[65px] lg:text-[80px] 2xl:text-[104px] font-serif mb-6 md:mb-8 leading-[1.1] md:leading-[0.9] drop-shadow-2xl">
+                                    O Mundo do Talho <br />
                                     <span className="italic text-brand-gold">agora <span className="text-white">tem um</span> <span className="text-white">Rei.</span></span>
                                 </h1>
                                 <p
-                                    className="text-lg md:text-2xl 2xl:text-3xl text-brand-ivory/80 font-light mb-8 md:mb-12 max-w-2xl leading-relaxed">Maestria, tradição e os melhores cortes do mundo, selecionados para a sua mesa.
+                                    className="text-base md:text-2xl 2xl:text-3xl text-brand-ivory/80 font-light mb-10 md:mb-12 max-w-2xl leading-relaxed">
+                                    Maestria, tradição e os melhores cortes do mundo, selecionados para a sua mesa.
                                 </p>
                                 <div className="flex flex-col sm:flex-row gap-4 md:gap-6">
                                     <a href="#produtos">
                                         <button
-                                            className="bg-brand-gold text-brand-charcoal px-8 md:px-12 py-3 md:py-5 rounded-full font-black uppercase tracking-widest hover:scale-105 transition-transform shadow-2xl w-full md:w-auto text-[11px] md:text-sm">Cortes Premium
+                                            className="bg-brand-gold text-brand-charcoal px-8 md:px-12 py-4 md:py-5 rounded-full font-black uppercase tracking-widest hover:scale-105 transition-transform shadow-2xl w-full md:w-auto text-[12px] md:text-sm">
+                                            Cortes Premium
                                         </button>
                                     </a>
                                     <FranchiseForm>
                                         <button
-                                            className="border border-white/20 backdrop-blur-md bg-white/5 px-8 md:px-12 py-3 md:py-5 rounded-full font-black uppercase tracking-widest hover:bg-white hover:text-brand-charcoal transition-all shadow-xl text-[11px] md:text-sm w-full md:w-auto">Seja um Franqueado
+                                            className="border border-white/20 backdrop-blur-md bg-white/5 px-8 md:px-12 py-4 md:py-5 rounded-full font-black uppercase tracking-widest hover:bg-white hover:text-brand-charcoal transition-all shadow-xl text-[12px] md:text-sm w-full md:w-auto">
+                                            Seja um Franqueado
                                         </button>
                                     </FranchiseForm>
                                 </div>
@@ -174,7 +158,7 @@ const Index = () => {
                     {}
                     <section
                         id="marca"
-                        className="relative pt-12 md:pt-32 pb-6 md:pb-24 overflow-hidden bg-brand-charcoal">
+                        className="relative pt-12 md:pt-32 pb-12 md:pb-24 overflow-hidden bg-brand-charcoal">
                         <div className="absolute inset-0 z-0">
                             <img
                                 src="/vintage_film_bg.jpg"
@@ -182,7 +166,7 @@ const Index = () => {
                                 className="w-full h-full object-cover opacity-60 mix-blend-overlay" />
                         </div>
                         <div
-                            className="relative z-10 px-8 max-w-7xl 2xl:max-w-[1600px] mx-auto grid md:grid-cols-2 gap-16 2xl:gap-32 items-center">
+                            className="relative z-10 px-6 md:px-8 max-w-7xl 2xl:max-w-[1600px] mx-auto grid md:grid-cols-2 gap-12 md:gap-16 2xl:gap-32 items-center">
                             <motion.div
                                 whileInView={{
                                     opacity: 1,
@@ -195,26 +179,26 @@ const Index = () => {
                                 transition={{
                                     duration: 0.8
                                 }}>
-                                <h2 className="text-brand-gold uppercase tracking-widest text-sm md:text-xl mb-4">A Nossa Essência</h2>
-                                <h3 className="text-4xl md:text-7xl font-serif mb-8 leading-tight">O Diferencial Baby Beef</h3>
-                                <p className="text-brand-ivory/70 text-lg md:text-2xl leading-relaxed mb-6">Na Baby Beef, acreditamos que a excelência começa na origem e se revela no corte.
-                                                                                                                                                                                                                              Não somos apenas um talho — somos especialistas em carne, movidos pela paixão pela mestria, pela tradição e pela qualidade absoluta.
-                                                                                                                                                                                                                            </p>
-                                <p className="text-brand-ivory/70 text-lg md:text-2xl leading-relaxed mb-8">Cada peça que chega ao nosso balcão é cuidadosamente selecionada segundo critérios rigorosos de raça, marmoreio, frescura e consistência, garantindo uma experiência superior desde a escolha até ao momento à mesa. Trabalhamos apenas com fornecedores certificados e processos controlados, respeitando a cadeia de frio e os mais elevados padrões de segurança alimentar.
-                                                                                                                                                                                                                              </p>
-                                <div className="grid grid-cols-2 gap-8">
+                                <h2 className="text-brand-gold uppercase tracking-widest text-xs md:text-xl mb-4">A Nossa Essência</h2>
+                                <h3 className="text-3xl md:text-7xl font-serif mb-6 md:mb-8 leading-tight">O Diferencial Baby Beef</h3>
+                                <p className="text-brand-ivory/70 text-base md:text-2xl leading-relaxed mb-6">Na Baby Beef, acreditamos que a excelência começa na origem e se revela no corte.
+                                    Não somos apenas um talho — somos especialistas em carne, movidos pela paixão pela mestria, pela tradição e pela qualidade absoluta.
+                                </p>
+                                <p className="text-brand-ivory/70 text-base md:text-2xl leading-relaxed mb-8">Cada peça que chega ao nosso balcão é cuidadosamente selecionada segundo critérios rigorosos de raça, marmoreio, frescura e consistência, garantindo uma experiência superior desde a escolha até ao momento à mesa.
+                                </p>
+                                <div className="grid grid-cols-2 gap-6 md:gap-8">
                                     <div>
-                                        <div className="text-brand-gold mb-2 font-serif text-3xl md:text-5xl font-bold">PT</div>
-                                        <p className="text-xs md:text-base uppercase tracking-wider text-brand-ivory/50">ADN Português</p>
+                                        <div className="text-brand-gold mb-1 md:mb-2 font-serif text-2xl md:text-5xl font-bold">PT</div>
+                                        <p className="text-[10px] md:text-base uppercase tracking-wider text-brand-ivory/50 font-bold">ADN Português</p>
                                     </div>
                                     <div>
-                                        <div className="text-brand-gold mb-2 font-serif text-3xl md:text-5xl font-bold">21+</div>
-                                        <p className="text-xs md:text-base uppercase tracking-wider text-brand-ivory/50">Dias de Maturação</p>
+                                        <div className="text-brand-gold mb-1 md:mb-2 font-serif text-2xl md:text-5xl font-bold">21+</div>
+                                        <p className="text-[10px] md:text-base uppercase tracking-wider text-brand-ivory/50 font-bold">Dias de Maturação</p>
                                     </div>
                                 </div>
                             </motion.div>
                             <div
-                                className="relative h-[600px] 2xl:h-[800px] rounded-2xl overflow-hidden shadow-2xl shadow-black bg-brand-muted/20">
+                                className="relative h-[400px] md:h-[600px] 2xl:h-[800px] rounded-2xl overflow-hidden shadow-2xl shadow-black bg-brand-muted/20">
                                 <img
                                     src="/essencia-collage.jpeg"
                                     alt="Diferencial Baby Beef"
