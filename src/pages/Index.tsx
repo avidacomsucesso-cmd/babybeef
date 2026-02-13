@@ -100,7 +100,7 @@ const Index = () => {
                     <section className="relative h-screen flex items-center overflow-hidden bg-black">
                         {}
                         <div className="hidden md:block absolute top-[43.5%] left-0 w-full z-[100] pointer-events-none">
-                            <div className="max-w-[1920px] mx-auto px-10 flex justify-center items-center gap-[1%] lg:gap-[2%] 2xl:gap-[3%] text-[11px] lg:text-[13px] 2xl:text-[15px] font-bold uppercase tracking-[0.15em] text-brand-gold">
+                            <div class="max-w-[1920px] mx-auto px-10 flex justify-center items-center gap-[1%] lg:gap-[2%] 2xl:gap-[3%] text-[15px] lg:text-[17px] 2xl:text-[20px] font-bold uppercase tracking-[0.15em] text-brand-gold">
                                 <div className="flex items-center gap-[4vw] pointer-events-auto">
                                     <a href="#marca" className="hover:text-white py-4 px-2 transition-all cursor-pointer relative z-[110]">A MARCA</a>
                                     <a href="#produtos" className="hover:text-white py-4 px-2 transition-all cursor-pointer relative z-[110]">CORTES PREMIUM</a>
@@ -120,7 +120,7 @@ const Index = () => {
                             <img
                                 src="/hero-concept-clean.jpg"
                                 alt="Baby Beef Concept"
-                                className="w-full h-full object-cover object-top"
+                                className="w-full h-full object-contain object-top"
                             />
                         </div>
                         <div className="relative z-20 px-6 sm:px-12 md:px-24 2xl:px-32 w-full max-w-[1920px] mx-auto py-12 pt-[45vh] md:pt-[55vh]">
