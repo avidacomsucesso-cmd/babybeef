@@ -66,13 +66,13 @@ const Index = () => {
                 {}
                 <div className="relative flex flex-col w-full">
                     {}
-                    <nav className="absolute top-0 left-0 w-full z-50 py-4 px-4 md:hidden">
-                        <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 text-[10px] uppercase tracking-widest font-bold text-white/90">
-                            <a href="#marca" className="hover:text-brand-gold transition-colors">A Marca</a>
-                            <a href="#produtos" className="hover:text-brand-gold transition-colors">Cortes</a>
-                            <a href="#lojas" className="hover:text-brand-gold transition-colors">Lojas</a>
-                            <a href="#franquias" className="hover:text-brand-gold transition-colors">Franquias</a>
-                            <a href="#contacto" className="hover:text-brand-gold transition-colors">Contacto</a>
+                    <nav className="relative w-full z-40 flex flex-col items-center bg-black/90 border-b border-brand-gold/20 py-4 px-4 md:hidden">
+                        <div className="flex flex-wrap justify-center gap-x-6 gap-y-3 text-[11px] uppercase tracking-widest font-bold text-brand-gold">
+                            <a href="#marca" className="hover:text-white transition-colors">A Marca</a>
+                            <a href="#produtos" className="hover:text-white transition-colors">Cortes</a>
+                            <a href="#lojas" className="hover:text-white transition-colors">Lojas</a>
+                            <a href="#franquias" className="hover:text-white transition-colors">Franquias</a>
+                            <a href="#contacto" className="hover:text-white transition-colors">Contacto</a>
                         </div>
                     </nav>
 
