@@ -139,10 +139,6 @@ const Index = () => {
                                 }}
                                 className="max-w-4xl"
                             >
-                                <div className="flex items-center gap-4 mb-4 md:mb-6">
-                                    <div className="h-[1px] w-8 md:w-12 bg-brand-gold" />
-                                    <span className="text-brand-gold uppercase tracking-[0.3em] md:tracking-[0.5em] text-[10px] md:text-sm font-bold">Establecido em Portugal</span>
-                                </div>
                                 <h1
                                     className="text-4xl sm:text-5xl md:text-[80px] lg:text-[100px] 2xl:text-[130px] font-serif mb-6 md:mb-8 leading-[1] md:leading-[0.9] drop-shadow-2xl">O Mundo do Talho <br />
                                     <span className="italic text-brand-gold">agora tem um Rei.</span>
