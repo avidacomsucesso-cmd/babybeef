@@ -98,7 +98,7 @@ const Index = () => {
                             <img
                                 src="/hero-concept-clean.jpg"
                                 alt="Baby Beef Concept"
-                                className="w-full h-full object-contain object-top md:scale-[1.15]"
+                                className="w-full h-full object-contain object-center md:scale-[1.15]"
                             />
                         </div>
                         <div className="relative z-20 px-6 sm:px-12 md:px-24 2xl:px-32 w-full max-w-[1920px] mx-auto pt-[28vh] md:pt-[55vh] pb-4 md:pb-12">
