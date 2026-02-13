@@ -105,19 +105,19 @@ const Index = () => {
                                 className="w-full h-full object-cover object-top"
                             />
                             {}
-                            <div className="hidden md:block absolute top-[43.5%] left-0 w-full z-30">
+                            <div className="hidden md:block absolute top-[43.5%] left-0 w-full z-50 pointer-events-none">
                                 <div className="max-w-[1920px] mx-auto px-10 flex justify-center items-center gap-[1%] lg:gap-[2%] 2xl:gap-[3%] text-[11px] lg:text-[13px] 2xl:text-[15px] font-bold uppercase tracking-[0.15em] text-brand-gold">
-                                    <div className="flex items-center gap-[4vw]">
-                                        <a href="#marca" className="hover:text-white py-4 px-2 transition-all cursor-pointer pointer-events-auto relative z-40">A MARCA</a>
-                                        <a href="#produtos" className="hover:text-white py-4 px-2 transition-all cursor-pointer pointer-events-auto relative z-40">CORTES PREMIUM</a>
+                                    <div className="flex items-center gap-[4vw] pointer-events-auto">
+                                        <a href="#marca" className="hover:text-white py-4 px-2 transition-all cursor-pointer relative z-50">A MARCA</a>
+                                        <a href="#produtos" className="hover:text-white py-4 px-2 transition-all cursor-pointer relative z-50">CORTES PREMIUM</a>
                                     </div>
                                     {}
-                                    <div className="w-[22vw] lg:w-[20vw] 2xl:w-[18vw]" />
-                                    <div className="flex items-center gap-[4vw]">
-                                        <a href="#lojas" className="hover:text-white py-4 px-2 transition-all cursor-pointer pointer-events-auto relative z-40">LOJAS</a>
-                                        <a href="#franquias" className="hover:text-white py-4 px-2 transition-all cursor-pointer pointer-events-auto relative z-40">FRANQUIAS</a>
+                                    <div className="w-[30vw] lg:w-[28vw] 2xl:w-[26vw]" />
+                                    <div className="flex items-center gap-[4vw] pointer-events-auto">
+                                        <a href="#lojas" className="hover:text-white py-4 px-2 transition-all cursor-pointer relative z-50">LOJAS</a>
+                                        <a href="#franquias" className="hover:text-white py-4 px-2 transition-all cursor-pointer relative z-50">FRANQUIAS</a>
                                         <OrderForm>
-                                            <button className="bg-brand-gold/90 text-brand-charcoal py-3 px-10 rounded-full cursor-pointer pointer-events-auto font-black hover:bg-white transition-all ml-4 relative z-40">RESERVAR</button>
+                                            <button className="bg-brand-gold/90 text-brand-charcoal py-3 px-10 rounded-full cursor-pointer font-black hover:bg-white transition-all ml-4 relative z-50">RESERVAR</button>
                                         </OrderForm>
                                     </div>
                                 </div>
