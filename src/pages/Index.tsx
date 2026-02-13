@@ -642,7 +642,7 @@ const Index = () => {
                                     <li className="flex items-center gap-2">
                                         <Phone size={16} className="text-brand-gold" />219 335 677
                                                                                                                                                                                                                     </li>
-                                    <li className="flex items-center gap-2 underline text-brand-gold">geral@babybeef.pt
+                                    <li className="flex items-center gap-2 underline text-brand-gold">adm@babybeef.pt
                                                                                                                                                                                                                     </li>
                                 </ul>
                             </div>

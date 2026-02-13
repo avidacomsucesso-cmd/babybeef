@@ -28,7 +28,7 @@ const FranchiseForm = ({ children }: { children: React.ReactNode }) => {
       setLoading(false);
       setOpen(false);
       toast.success("Pedido enviado com sucesso! Entraremos em contacto em breve.", {
-        description: "Enviado para: geral@babybeef.pt",
+        description: "Enviado para: adm@babybeef.pt",
       });
     }, 1500);
   };
