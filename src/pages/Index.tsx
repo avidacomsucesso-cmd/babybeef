@@ -614,16 +614,36 @@ const Index = () => {
                             <div>
                                 <h5
                                     className="text-brand-ivory font-bold mb-6 uppercase tracking-widest text-xs">Contacto</h5>
-                                <ul className="space-y-4 text-sm">
+                                <ul className="space-y-6 text-sm">
                                     <li className="flex items-start gap-2">
                                         <MapPin size={16} className="text-brand-gold mt-1 flex-shrink-0" />
-                                        <span>Rua Polido Valente nº 12 - loja 3<br />2675-672 Colinas do Cruzeiro - Odivelas</span>
+                                        <a
+                                            href="https://www.google.com/maps/search/?api=1&query=BabyBeef+Rua+Pulido+Valente+12+Odivelas"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="hover:text-brand-gold transition-colors"
+                                        >
+                                            <span className="font-bold text-brand-gold">BabyBeef Loja 1</span><br />
+                                            Rua Pulido Valente 12 - 2675-672 - Colinas do Cruzeiro - Odivelas
+                                        </a>
+                                    </li>
+                                    <li className="flex items-start gap-2">
+                                        <MapPin size={16} className="text-brand-gold mt-1 flex-shrink-0" />
+                                        <a
+                                            href="https://www.google.com/maps/search/?api=1&query=BabyBeef+Rua+de+Cabo+Verde+n+5+Prior+Velho+Lisboa"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="hover:text-brand-gold transition-colors"
+                                        >
+                                            <span className="font-bold text-brand-gold">BabyBeef Loja 2</span><br />
+                                            Rua de Cabo Verde, n. 5 Loja - 2685-316, Prior Velho, Lisboa
+                                        </a>
                                     </li>
                                     <li className="flex items-center gap-2">
                                         <Phone size={16} className="text-brand-gold" />219 335 677
-                                                                                                                                                                                                                                                            </li>
+                                                                                                                                                                                                                    </li>
                                     <li className="flex items-center gap-2 underline text-brand-gold">geral@babybeef.pt
-                                                                                                                                                                                                                                                            </li>
+                                                                                                                                                                                                                    </li>
                                 </ul>
                             </div>
                             <div className="flex flex-col items-center md:items-start">
