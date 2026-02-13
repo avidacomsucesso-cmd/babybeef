@@ -66,9 +66,6 @@ const Index = () => {
                 {}
                 <div className="relative flex flex-col w-full">
                     {}
-                    <div className="absolute top-0 left-0 w-full h-[35vh] bg-gradient-to-b from-white/25 via-white/10 to-transparent z-10 pointer-events-none md:hidden" />
-                    <div className="hidden md:block absolute top-0 left-0 w-full h-[50vh] bg-gradient-to-b from-white/15 to-transparent z-10 pointer-events-none" />
-                    
                     <nav className="relative w-full z-40 flex flex-col items-center bg-black/90 border-b border-brand-gold/20 py-4 px-4 md:hidden">
                         <div className="flex flex-wrap justify-center gap-x-6 gap-y-3 text-[11px] uppercase tracking-widest font-bold text-brand-gold">
                             <a href="#marca" className="hover:text-white transition-colors">A Marca</a>
@@ -82,16 +79,16 @@ const Index = () => {
                     <section className="relative flex flex-col md:items-center overflow-hidden bg-black">
                         {}
                         <div className="hidden md:block absolute top-[42%] left-0 w-full z-[100] pointer-events-none">
-                            <div className="w-full max-w-[95%] xl:max-w-[90%] 2xl:max-w-[1800px] mx-auto px-4 sm:px-10 flex justify-between items-center text-[11px] lg:text-[14px] xl:text-[15px] 2xl:text-[18px] font-bold uppercase tracking-[0.1em] xl:tracking-[0.15em] text-brand-gold">
-                                <div className="flex items-center gap-6 lg:gap-10 xl:gap-16 pointer-events-auto">
-                                    <a href="#marca" className="hover:text-white transition-all cursor-pointer relative z-[110] whitespace-nowrap">A MARCA</a>
-                                    <a href="#produtos" className="hover:text-white transition-all cursor-pointer relative z-[110] whitespace-nowrap">CORTES PREMIUM</a>
+                            <div className="max-w-7xl mx-auto px-10 flex justify-between items-center text-[13px] lg:text-[15px] 2xl:text-[18px] font-bold uppercase tracking-[0.15em] text-brand-gold">
+                                <div className="flex items-center gap-10 lg:gap-16 pointer-events-auto">
+                                    <a href="#marca" className="hover:text-white transition-all cursor-pointer relative z-[110]">A MARCA</a>
+                                    <a href="#produtos" className="hover:text-white transition-all cursor-pointer relative z-[110]">CORTES PREMIUM</a>
                                 </div>
-                                <div className="flex items-center gap-6 lg:gap-8 xl:gap-12 2xl:gap-16 pointer-events-auto">
-                                    <a href="#lojas" className="hover:text-white transition-all cursor-pointer relative z-[110] whitespace-nowrap">LOJAS</a>
-                                    <a href="#franquias" className="hover:text-white transition-all cursor-pointer relative z-[110] whitespace-nowrap">FRANQUIAS</a>
+                                <div className="flex items-center gap-10 lg:gap-16 pointer-events-auto">
+                                    <a href="#lojas" className="hover:text-white transition-all cursor-pointer relative z-[110]">LOJAS</a>
+                                    <a href="#franquias" className="hover:text-white transition-all cursor-pointer relative z-[110]">FRANQUIAS</a>
                                     <OrderForm>
-                                        <button className="bg-brand-gold/90 text-brand-charcoal py-2 px-6 lg:px-8 rounded-full cursor-pointer font-black hover:bg-white transition-all relative z-[110] whitespace-nowrap">RESERVAR</button>
+                                        <button className="bg-brand-gold/90 text-brand-charcoal py-2 px-8 rounded-full cursor-pointer font-black hover:bg-white transition-all relative z-[110]">RESERVAR</button>
                                     </OrderForm>
                                 </div>
                             </div>
@@ -101,7 +98,7 @@ const Index = () => {
                             <img
                                 src="/hero-concept-clean.jpg"
                                 alt="Baby Beef Concept"
-                                className="w-full h-full object-cover object-top md:object-center lg:object-top"
+                                className="w-full h-full object-contain object-top"
                             />
                         </div>
                         <div className="relative z-20 px-6 sm:px-12 md:px-24 2xl:px-32 w-full max-w-[1920px] mx-auto pt-[28vh] md:pt-[55vh] pb-4 md:pb-12">
