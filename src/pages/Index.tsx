@@ -123,7 +123,7 @@ const Index = () => {
                                 className="w-full h-full object-contain object-top"
                             />
                         </div>
-                        <div className="relative z-20 px-6 sm:px-12 md:px-24 2xl:px-32 w-full max-w-[1920px] mx-auto py-12 pt-[45vh] md:pt-[55vh]">
+                        <div className="relative z-20 px-6 sm:px-12 md:px-24 2xl:px-32 w-full max-w-[1920px] mx-auto py-12 pt-[30vh] md:pt-[55vh]">
                             <motion.div
                                 initial={{
                                     opacity: 0,
