@@ -72,7 +72,6 @@ const Index = () => {
                             <a href="#produtos" className="hover:text-white transition-colors">Cortes</a>
                             <a href="#lojas" className="hover:text-white transition-colors">Lojas</a>
                             <a href="#franquias" className="hover:text-white transition-colors">Franquias</a>
-                            <a href="#contacto" className="hover:text-white transition-colors">Contacto</a>
                         </div>
                     </nav>
 
