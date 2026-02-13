@@ -197,11 +197,11 @@ const Index = () => {
                                 </div>
                             </motion.div>
                             <div
-                                className="relative h-[400px] md:h-[600px] 2xl:h-[800px] rounded-2xl overflow-hidden shadow-2xl shadow-black bg-brand-muted/20">
+                                className="relative rounded-2xl overflow-hidden shadow-2xl shadow-black bg-brand-muted/20">
                                 <img
                                     src="/essencia-collage.jpeg"
                                     alt="Diferencial Baby Beef"
-                                    className="w-full h-full object-cover object-center" />
+                                    className="w-full h-auto object-contain block" />
                                 <div
                                     className="absolute inset-0 bg-gradient-to-t from-brand-charcoal/40 via-transparent to-transparent opacity-60 pointer-events-none" />
                             </div>
