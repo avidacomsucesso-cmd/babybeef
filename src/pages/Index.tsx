@@ -97,12 +97,12 @@ const Index = () => {
                         </div>
                     </nav>
                     {}
-                    <section className="relative min-h-[70vh] md:h-screen flex items-center overflow-hidden">
+                    <section className="relative h-screen flex items-center overflow-hidden bg-black">
                         <div className="absolute inset-0 z-0">
                             <img
                                 src="/hero-new-concept.png"
                                 alt="Baby Beef Concept"
-                                className="w-full h-full object-cover object-top"
+                                className="w-full h-full object-contain md:object-cover 2xl:object-contain object-top"
                             />
                             {}
                             <div className="hidden md:block absolute top-[43.5%] left-0 w-full z-30">
