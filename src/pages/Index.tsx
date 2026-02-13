@@ -217,9 +217,9 @@ const Index = () => {
                             <div
                                 className="relative h-[600px] 2xl:h-[800px] rounded-2xl overflow-hidden shadow-2xl shadow-black bg-brand-muted/20">
                                 <img
-                                    src="/staff-premium-blurred.jpeg"
+                                    src="/staff-premium.jpeg"
                                     alt="Equipa Premium"
-                                    className="w-full h-full object-contain md:object-contain object-center" />
+                                    className="w-full h-full object-contain md:object-contain object-center blur-[6px]" />
                                 <div
                                     className="absolute inset-0 bg-gradient-to-t from-brand-charcoal/40 via-transparent to-transparent opacity-60 pointer-events-none" />
                             </div>
