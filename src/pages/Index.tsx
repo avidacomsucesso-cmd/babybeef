@@ -53,7 +53,7 @@ const Index = () => {
 
     return (
         <div
-            className="bg-brand-charcoal text-brand-ivory font-sans selection:bg-brand-gold selection:text-brand-charcoal">
+            className="bg-brand-charcoal text-brand-ivory font-sans selection:bg-brand-gold selection:text-brand-charcoal min-h-screen">
             {}
             <motion.div
                 className="fixed top-0 left-0 right-0 h-1 bg-brand-gold z-50 origin-left"
@@ -62,9 +62,9 @@ const Index = () => {
                 }} />
             <FireParticles />
             {}
-            <div className="relative flex flex-col">
+            <div className="relative flex flex-col w-full overflow-x-hidden">
                 {}
-                <div className="relative flex flex-col">
+                <div className="relative flex flex-col w-full">
                     {}
                     <nav
                         className="relative w-full z-40 flex flex-col items-center bg-brand-charcoal overflow-hidden">
@@ -75,52 +75,52 @@ const Index = () => {
                                 alt="Background"
                                 className="w-full h-full object-cover opacity-60 mix-blend-overlay" />
                         </div>
-                        <div className="w-full max-w-5xl px-6 overflow-hidden relative z-10">
+                        <div className="w-full max-w-[90vw] md:max-w-5xl px-6 overflow-hidden relative z-10 flex justify-center">
                             <img
                                 src="/header-placa-premium.png"
                                 alt="Baby Beef & Co. - O Rei do Talho"
-                                className="w-full h-auto object-cover scale-[1.15] -my-[8%] md:-mb-[10%]" />
+                                className="w-full h-auto max-h-[30vh] object-contain scale-[1.15] -my-[4%] md:-mb-[10%]" />
                         </div>
                         <div className="w-full bg-black/40 border-y border-white/10 relative z-10">
                             <div
-                                className="flex flex-wrap justify-center items-center gap-6 md:gap-16 text-[11px] md:text-[14px] 2xl:text-[16px] uppercase tracking-[0.3em] font-bold px-6 py-4 md:py-6">
+                                className="flex flex-wrap justify-center items-center gap-4 md:gap-16 text-[10px] sm:text-[11px] md:text-[14px] 2xl:text-[16px] uppercase tracking-[0.2em] md:tracking-[0.3em] font-bold px-4 md:px-6 py-3 md:py-6">
                                 <a
                                     href="#marca"
-                                    className="hover:text-brand-gold transition-colors text-white">A Marca</a>
+                                    className="hover:text-brand-gold transition-colors text-white whitespace-nowrap">A Marca</a>
                                 <a
                                     href="#produtos"
-                                    className="hover:text-brand-gold transition-colors text-white">Os Nossos Cortes</a>
+                                    className="hover:text-brand-gold transition-colors text-white whitespace-nowrap">Os Nossos Cortes</a>
                                 <a
                                     href="#lojas"
-                                    className="hover:text-brand-gold transition-colors text-white">Lojas</a>
+                                    className="hover:text-brand-gold transition-colors text-white whitespace-nowrap">Lojas</a>
                                 <a
                                     href="#franquias"
-                                    className="hover:text-brand-gold transition-colors text-white">Franquias</a>
+                                    className="hover:text-brand-gold transition-colors text-white whitespace-nowrap">Franquias</a>
                                 <a
                                     href="#contacto"
-                                    className="hover:text-brand-gold transition-colors text-white">Contacto</a>
+                                    className="hover:text-brand-gold transition-colors text-white whitespace-nowrap">Contacto</a>
                                 <OrderForm>
                                     <button
-                                        className="hidden md:block bg-brand-gold text-brand-charcoal px-6 py-1.5 rounded-full text-[11px] md:text-[13px] uppercase font-black tracking-widest hover:bg-white transition-all duration-300 shadow-lg ml-4">Reservar
-                                                                                                                                                                                                                    </button>
+                                        className="hidden md:block bg-brand-gold text-brand-charcoal px-6 py-1.5 rounded-full text-[11px] md:text-[13px] uppercase font-black tracking-widest hover:bg-white transition-all duration-300 shadow-lg ml-4 whitespace-nowrap">Reservar
+                                    </button>
                                 </OrderForm>
                             </div>
                         </div>
                     </nav>
                     {}
-                    <section className="relative h-[85vh] 2xl:h-[90vh] flex items-center overflow-hidden">
+                    <section className="relative min-h-[70vh] md:h-[85vh] 2xl:h-[90vh] flex items-center overflow-hidden">
                         <div className="absolute inset-0 z-0">
                             <div
                                 className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent z-10" />
                             <img
                                 src="/hero-master-cut.png"
                                 alt="Master Butcher Cut"
-                                className="w-full h-full object-cover object-center scale-105"
+                                className="w-full h-full object-cover object-center"
                                 style={{
                                     imageRendering: "auto"
                                 }} />
                         </div>
-                        <div className="relative z-20 px-8 md:px-24 2xl:px-32 max-w-6xl py-20 md:pt-1 md:pb-20">
+                        <div className="relative z-20 px-6 sm:px-12 md:px-24 2xl:px-32 w-full max-w-[1920px] mx-auto py-12 md:pt-1 md:pb-20">
                             <motion.div
                                 initial={{
                                     opacity: 0,
@@ -133,28 +133,30 @@ const Index = () => {
                                 transition={{
                                     duration: 1.2,
                                     delay: 0.3
-                                }}>
-                                <div className="flex items-center gap-4 mb-6">
-                                    <div className="h-[1px] w-12 bg-brand-gold" />
-                                    <span className="text-brand-gold uppercase tracking-[0.5em] text-xs md:text-sm font-bold">Establecido em Portugal</span>
+                                }}
+                                className="max-w-4xl"
+                            >
+                                <div className="flex items-center gap-4 mb-4 md:mb-6">
+                                    <div className="h-[1px] w-8 md:w-12 bg-brand-gold" />
+                                    <span className="text-brand-gold uppercase tracking-[0.3em] md:tracking-[0.5em] text-[10px] md:text-sm font-bold">Establecido em Portugal</span>
                                 </div>
                                 <h1
-                                    className="text-5xl md:text-[100px] 2xl:text-[130px] font-serif mb-8 leading-[0.9] drop-shadow-2xl">O Mundo do Talho <br />
+                                    className="text-4xl sm:text-5xl md:text-[80px] lg:text-[100px] 2xl:text-[130px] font-serif mb-6 md:mb-8 leading-[1] md:leading-[0.9] drop-shadow-2xl">O Mundo do Talho <br />
                                     <span className="italic text-brand-gold">agora tem um Rei.</span>
                                 </h1>
                                 <p
-                                    className="text-xl md:text-2xl 2xl:text-3xl text-brand-ivory/80 font-light mb-12 max-w-2xl leading-relaxed">Maestria, tradição e os melhores cortes do mundo, selecionados para a sua mesa.
-                                                                                                                                                                                              </p>
-                                <div className="flex flex-col md:flex-row gap-6">
+                                    className="text-lg md:text-2xl 2xl:text-3xl text-brand-ivory/80 font-light mb-8 md:mb-12 max-w-2xl leading-relaxed">Maestria, tradição e os melhores cortes do mundo, selecionados para a sua mesa.
+                                </p>
+                                <div className="flex flex-col sm:flex-row gap-4 md:gap-6">
                                     <a href="#produtos">
                                         <button
                                             className="bg-brand-gold text-brand-charcoal px-8 md:px-12 py-3 md:py-5 rounded-full font-black uppercase tracking-widest hover:scale-105 transition-transform shadow-2xl w-full md:w-auto text-[11px] md:text-sm">Descobrir Coleção
-                                                                                                                                                                                                                                                                    </button>
+                                        </button>
                                     </a>
                                     <FranchiseForm>
                                         <button
-                                            className="border border-white/20 backdrop-blur-md bg-white/5 px-8 md:px-12 py-3 md:py-5 rounded-full font-black uppercase tracking-widest hover:bg-white hover:text-brand-charcoal transition-all shadow-xl text-[11px] md:text-sm">Seja um Franqueado
-                                                                                                                                                                                                                                                                    </button>
+                                            className="border border-white/20 backdrop-blur-md bg-white/5 px-8 md:px-12 py-3 md:py-5 rounded-full font-black uppercase tracking-widest hover:bg-white hover:text-brand-charcoal transition-all shadow-xl text-[11px] md:text-sm w-full md:w-auto">Seja um Franqueado
+                                        </button>
                                     </FranchiseForm>
                                 </div>
                             </motion.div>
@@ -302,7 +304,7 @@ const Index = () => {
                                     }}
                                     className="w-full">
                                     <CarouselContent>
-                                        {[
+                                        {[ 
                                             "/talho-real-1.jpeg",
                                             "/montra-elite.jpeg",
                                             "/talho-real-2.jpeg",
@@ -346,7 +348,7 @@ const Index = () => {
                             </div>
                             {}
                             <div className="hidden md:grid md:grid-cols-3 gap-8 mb-16">
-                                {[
+                                {[ 
                                     {
                                         title: "Kits Grelhados",
                                         img: "/kit-premium-2.jpeg",
@@ -394,7 +396,7 @@ const Index = () => {
                                     }}
                                     className="w-full">
                                     <CarouselContent>
-                                        {[
+                                        {[ 
                                             {
                                                 title: "Kits Grelhados",
                                                 img: "/kit-premium-2.jpeg",
