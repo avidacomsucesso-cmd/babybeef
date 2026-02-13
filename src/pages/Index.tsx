@@ -79,7 +79,7 @@ const Index = () => {
                             <img
                                 src="/header-placa-premium.png"
                                 alt="Baby Beef & Co. - O Rei do Talho"
-                                className="w-full h-auto max-h-[30vh] object-contain scale-[1.15] -my-[4%] md:-mb-[10%]" />
+                                className="w-full h-auto max-h-[30vh] object-contain scale-[1.15] md:-mb-[6%] mb-[-4%]" />
                         </div>
                         <div className="w-full bg-black/40 border-y border-white/10 relative z-10">
                             <div
