@@ -76,7 +76,7 @@ const Index = () => {
                     </nav>
 
                     {}
-                    <section className="relative min-h-[100svh] flex flex-col md:items-center overflow-hidden bg-black">
+                    <section className="relative min-h-[100svh] md:h-screen flex flex-col md:items-center overflow-hidden bg-black">
                         {}
                         <div className="hidden md:block absolute top-[42%] left-0 w-full z-[100] pointer-events-none">
                             <div className="max-w-7xl mx-auto px-10 flex justify-between items-center text-[13px] lg:text-[15px] 2xl:text-[18px] font-bold uppercase tracking-[0.15em] text-brand-gold">
@@ -101,7 +101,7 @@ const Index = () => {
                                 className="w-full h-full object-contain object-top"
                             />
                         </div>
-                        <div className="relative z-20 px-6 sm:px-12 md:px-24 2xl:px-32 w-full max-w-[1920px] mx-auto py-12 pt-[28vh] md:pt-[55vh]">
+                        <div className="relative z-20 px-6 sm:px-12 md:px-24 2xl:px-32 w-full max-w-[1920px] mx-auto py-8 md:py-12 pt-[28vh] md:pt-[55vh]">
                             <motion.div
                                 initial={{
                                     opacity: 0,
@@ -150,7 +150,7 @@ const Index = () => {
                                 repeat: Infinity,
                                 duration: 2
                             }}
-                            className="absolute bottom-4 md:bottom-10 left-1/2 -translate-x-1/2 z-20 text-brand-gold">
+                            className="relative md:absolute bottom-4 md:bottom-10 left-1/2 -translate-x-1/2 z-20 text-brand-gold mt-4 md:mt-0">
                             <ChevronDown size={32} />
                         </motion.div>
                     </section>
