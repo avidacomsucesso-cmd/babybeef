@@ -80,17 +80,17 @@ const Index = () => {
                         {}
                         <div className="w-full relative">
                             {}
-                            <div className="w-full aspect-[21/9] md:aspect-[3/1] lg:aspect-[4/1] overflow-hidden">
+                            <div className="w-full overflow-hidden">
                                 <img
                                     src="/banner-superior.jpg"
                                     alt="Baby Beef Banner Superior"
-                                    className="w-full h-full object-cover object-center"
+                                    className="w-full h-auto object-contain"
                                 />
                             </div>
 
                             {}
-                            <div className="absolute top-[40%] md:top-[42%] left-0 w-full z-[100] pointer-events-none px-4">
-                                <div className="max-w-7xl mx-auto flex justify-between items-center text-[10px] md:text-[13px] lg:text-[15px] 2xl:text-[18px] font-bold uppercase tracking-[0.15em] text-brand-gold">
+                            <div className="absolute top-[48%] md:top-[50%] left-0 w-full z-[100] pointer-events-none px-4">
+                                <div className="max-w-7xl mx-auto flex justify-between items-center text-[8px] sm:text-[10px] md:text-[13px] lg:text-[15px] 2xl:text-[18px] font-bold uppercase tracking-[0.15em] text-brand-gold">
                                     <div className="flex items-center gap-4 md:gap-10 lg:gap-16 pointer-events-auto">
                                         <a href="#marca" className="hover:text-white transition-all cursor-pointer relative z-[110]">A MARCA</a>
                                         <a href="#produtos" className="hover:text-white transition-all cursor-pointer relative z-[110]">CORTES PREMIUM</a>
@@ -107,17 +107,17 @@ const Index = () => {
                         </div>
 
                         {}
-                        <div className="w-full relative">
-                            <div className="w-full aspect-[16/10] md:aspect-[16/9] lg:h-[60vh] overflow-hidden">
+                        <div className="w-full relative bg-black">
+                            <div className="w-full overflow-hidden">
                                 <img
                                     src="/banner-rotativo.jpg"
                                     alt="Baby Beef Cortes"
-                                    className="w-full h-full object-cover object-top"
+                                    className="w-full h-auto object-contain"
                                 />
                             </div>
 
                             {}
-                            <div className="absolute inset-0 z-20 flex items-center bg-black/20">
+                            <div className="absolute inset-0 z-20 flex items-center bg-black/10">
                                 <div className="px-6 sm:px-12 md:px-24 2xl:px-32 w-full max-w-[1920px] mx-auto py-8">
                                     <motion.div
                                         initial={{
