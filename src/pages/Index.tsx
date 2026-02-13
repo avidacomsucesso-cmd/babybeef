@@ -196,21 +196,21 @@ const Index = () => {
                                 transition={{
                                     duration: 0.8
                                 }}>
-                                <h2 className="text-brand-gold uppercase tracking-widest text-sm mb-4">A Nossa Essência</h2>
-                                <h3 className="text-4xl md:text-5xl font-serif mb-8 leading-tight">O Diferencial Baby Beef</h3>
-                                <p className="text-brand-ivory/70 text-lg leading-relaxed mb-6">Na Baby Beef, acreditamos que a excelência começa na origem e se revela no corte.
+                                <h2 className="text-brand-gold uppercase tracking-widest text-sm md:text-xl mb-4">A Nossa Essência</h2>
+                                <h3 className="text-4xl md:text-7xl font-serif mb-8 leading-tight">O Diferencial Baby Beef</h3>
+                                <p className="text-brand-ivory/70 text-lg md:text-2xl leading-relaxed mb-6">Na Baby Beef, acreditamos que a excelência começa na origem e se revela no corte.
                                                                                                                                                                                                                               Não somos apenas um talho — somos especialistas em carne, movidos pela paixão pela mestria, pela tradição e pela qualidade absoluta.
                                                                                                                                                                                                                             </p>
-                                <p className="text-brand-ivory/70 text-lg leading-relaxed mb-8">Cada peça que chega ao nosso balcão é cuidadosamente selecionada segundo critérios rigorosos de raça, marmoreio, frescura e consistência, garantindo uma experiência superior desde a escolha até ao momento à mesa. Trabalhamos apenas com fornecedores certificados e processos controlados, respeitando a cadeia de frio e os mais elevados padrões de segurança alimentar.
+                                <p className="text-brand-ivory/70 text-lg md:text-2xl leading-relaxed mb-8">Cada peça que chega ao nosso balcão é cuidadosamente selecionada segundo critérios rigorosos de raça, marmoreio, frescura e consistência, garantindo uma experiência superior desde a escolha até ao momento à mesa. Trabalhamos apenas com fornecedores certificados e processos controlados, respeitando a cadeia de frio e os mais elevados padrões de segurança alimentar.
                                                                                                                                                                                                                               </p>
                                 <div className="grid grid-cols-2 gap-8">
                                     <div>
-                                        <div className="text-brand-gold mb-2 font-serif text-3xl font-bold">PT</div>
-                                        <p className="text-xs uppercase tracking-wider text-brand-ivory/50">ADN Português</p>
+                                        <div className="text-brand-gold mb-2 font-serif text-3xl md:text-5xl font-bold">PT</div>
+                                        <p className="text-xs md:text-base uppercase tracking-wider text-brand-ivory/50">ADN Português</p>
                                     </div>
                                     <div>
-                                        <div className="text-brand-gold mb-2 font-serif text-3xl font-bold">21+</div>
-                                        <p className="text-xs uppercase tracking-wider text-brand-ivory/50">Dias de Maturação</p>
+                                        <div className="text-brand-gold mb-2 font-serif text-3xl md:text-5xl font-bold">21+</div>
+                                        <p className="text-xs md:text-base uppercase tracking-wider text-brand-ivory/50">Dias de Maturação</p>
                                     </div>
                                 </div>
                             </motion.div>
@@ -441,16 +441,17 @@ const Index = () => {
                                 </Carousel>
                             </div>
                             <div className="max-w-4xl mx-auto px-8 text-center">
-                                <p className="text-brand-ivory/70 text-lg leading-relaxed mb-8">Aqui, o corte não é apenas técnico — é estratégico. Respeitamos a anatomia da carne para preservar sabor, textura e suculência, oferecendo cortes ideais tanto para o churrasco perfeito como para preparações mais refinadas.
-                                                                                                                                                                                                                              </p>
-                                <p className="text-brand-gold font-serif text-2xl mb-8 italic">"Porque quando a carne é realmente boa, não precisa de excessos. Precisa de respeito."
-                                                                                                                                                                                                                              </p>
+                                <p className="text-brand-ivory/70 text-lg md:text-2xl leading-relaxed mb-8">Aqui, o corte não é apenas técnico — é estratégico. Respeitamos a anatomia da carne para preservar sabor, textura e suculência, oferecendo cortes ideais tanto para o churrasco perfeito como para preparações mais refinadas.
+                                                                                                                                                                          </p>
+                                <p className="text-brand-gold font-serif text-2xl md:text-4xl mb-8 italic">"Porque quando a carne é realmente boa, não precisa de excessos. Precisa de respeito."
+                                                                                                                                                                          </p>
                                 <div className="pt-12 border-t border-brand-gold/10">
-                                    <h4 className="text-3xl font-serif text-brand-gold mb-6">O Rei do Talho</h4>
-                                    <p className="text-brand-ivory/80 text-lg mb-8">Na Baby Beef, elevamos o talho a um novo patamar. Unimos tradição e inovação, rigor e paixão, produto e experiência.
-                                                                                                                                                                                                                                                  </p>
+                                    <h4 className="text-3xl md:text-5xl font-serif text-brand-gold mb-6">O Rei do Talho</h4>
+                                    <p className="text-brand-ivory/80 text-lg md:text-2xl mb-8">Na Baby Beef, elevamos o talho a um novo patamar. Unimos tradição e inovação, rigor e paixão, produto e experiência.
+                                                                                                                                                                                                                              </p>
                                     <div className="inline-block px-8 py-4 border border-brand-gold/30 rounded-lg">
-                                        <p className="text-brand-gold font-black uppercase tracking-[0.2em] text-sm">O MUNDO DO TALHO TEM UM REI, E O REI DO TALHO CHAMA-SE BABY BEEF.</p>
+                                        <p className="text-brand-gold font-black uppercase tracking-[0.2em] text-sm md:text-xl">O Churrasco tem um Rei. E o Rei do Talho chama-se Baby Beef.
+                                                                                                                                                                                                                                                          </p>
                                     </div>
                                 </div>
                             </div>
@@ -646,9 +647,9 @@ const Index = () => {
                         <div className="max-w-7xl mx-auto px-8 grid md:grid-cols-4 gap-12 mb-20">
                             <div className="md:col-span-2">
                                 <div
-                                    className="text-3xl font-serif font-bold tracking-tighter text-brand-gold mb-6">BABY BEEF <span className="text-brand-ivory font-light">& CO.</span>
+                                    className="text-3xl md:text-4xl font-serif font-bold tracking-tighter text-brand-gold mb-6">BABY BEEF <span className="text-brand-ivory font-light">& CO.</span>
                                 </div>
-                                <p className="text-lg max-w-md mb-8">Elevando o padrão do talho em Portugal através da mestria e da paixão pelo fogo.
+                                <p className="text-lg md:text-2xl max-w-md mb-8">Elevando o padrão do talho em Portugal através da mestria e da paixão pelo fogo.
                                                                                                                                                                                                                               </p>
                                 <div className="flex gap-4">
                                     <a
@@ -665,8 +666,8 @@ const Index = () => {
                             </div>
                             <div>
                                 <h5
-                                    className="text-brand-ivory font-bold mb-6 uppercase tracking-widest text-xs">Menu</h5>
-                                <ul className="space-y-4 text-sm">
+                                    className="text-brand-ivory font-bold mb-6 uppercase tracking-widest text-xs md:text-base">Menu</h5>
+                                <ul className="space-y-4 text-sm md:text-lg">
                                     <li><a href="#marca" className="hover:text-brand-gold">A Marca</a></li>
                                     <li><a href="#produtos" className="hover:text-brand-gold">Os Nossos Cortes</a></li>
                                     <li><a href="#franquias" className="hover:text-brand-gold">Franquias</a></li>
@@ -675,8 +676,8 @@ const Index = () => {
                             </div>
                             <div>
                                 <h5
-                                    className="text-brand-ivory font-bold mb-6 uppercase tracking-widest text-xs">Contacto</h5>
-                                <ul className="space-y-6 text-sm">
+                                    className="text-brand-ivory font-bold mb-6 uppercase tracking-widest text-xs md:text-base">Contacto</h5>
+                                <ul className="space-y-6 text-sm md:text-lg">
                                     <li className="flex items-start gap-2">
                                         <MapPin size={16} className="text-brand-gold mt-1 flex-shrink-0" />
                                         <a
@@ -710,14 +711,14 @@ const Index = () => {
                             </div>
                             <div className="flex flex-col items-center md:items-start">
                                 <h5
-                                    className="text-brand-ivory font-bold mb-4 uppercase tracking-widest text-xs">Segurança</h5>
+                                    className="text-brand-ivory font-bold mb-4 uppercase tracking-widest text-xs md:text-base">Segurança</h5>
                                 <div className="bg-white/5 p-6 rounded-xl border border-white/10 w-full">
                                     <p
-                                        className="text-[10px] uppercase tracking-[0.2em] text-brand-ivory/60 mb-4 text-center md:text-left">Este talho está assegurado pela:</p>
+                                        className="text-[10px] md:text-sm uppercase tracking-[0.2em] text-brand-ivory/60 mb-4 text-center md:text-left">Este talho está assegurado pela:</p>
                                     <div className="flex flex-col items-center md:items-start gap-2">
-                                        <span className="text-3xl font-serif font-bold text-white tracking-tight">Allianz</span>
+                                        <span className="text-3xl md:text-5xl font-serif font-bold text-white tracking-tight">Allianz</span>
                                         <div className="h-[1px] w-full bg-brand-gold/20 my-2" />
-                                        <p className="text-sm font-serif text-brand-gold italic">Com seguro Multirriscos</p>
+                                        <p className="text-sm md:text-lg font-serif text-brand-gold italic">Com seguro Multirriscos</p>
                                     </div>
                                 </div>
                             </div>
