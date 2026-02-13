@@ -150,7 +150,7 @@ const Index = () => {
                                 repeat: Infinity,
                                 duration: 2
                             }}
-                            className="absolute bottom-10 left-1/2 -translate-x-1/2 z-20 text-brand-gold">
+                            className="absolute bottom-4 md:bottom-10 left-1/2 -translate-x-1/2 z-20 text-brand-gold">
                             <ChevronDown size={32} />
                         </motion.div>
                     </section>
