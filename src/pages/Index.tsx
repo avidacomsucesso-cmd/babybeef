@@ -97,11 +97,11 @@ const Index = () => {
                             </div>
                         </div>
 
-                        <div className="absolute inset-0 z-0 bg-black">
+                        <div className="absolute inset-0 z-0">
                             <img
                                 src="/hero-concept-clean.jpg"
                                 alt="Baby Beef Concept"
-                                className="w-full h-full object-cover object-top scale-[0.7] origin-top"
+                                className="w-full h-full object-cover object-top md:object-center lg:object-top"
                             />
                         </div>
                         <div className="relative z-20 px-6 sm:px-12 md:px-24 2xl:px-32 w-full max-w-[1920px] mx-auto pt-[28vh] md:pt-[55vh] pb-4 md:pb-12">
