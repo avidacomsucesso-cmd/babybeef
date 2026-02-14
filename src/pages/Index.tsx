@@ -120,7 +120,7 @@ const Index = () => {
                             <div className="absolute inset-0 bg-black/40" />
                         </div>
 
-                        <div className="relative z-20 px-6 sm:px-12 md:px-24 2xl:px-32 w-full max-w-[1920px] mx-auto pt-12 md:pt-[15vh] pb-12">
+                        <div className="relative z-20 px-6 sm:px-12 md:px-24 2xl:px-32 w-full max-w-[1920px] mx-auto pt-4 md:pt-[10vh] pb-12">
                             <motion.div
                                 initial={{
                                     opacity: 0,
