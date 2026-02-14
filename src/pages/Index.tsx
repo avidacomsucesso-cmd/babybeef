@@ -82,7 +82,7 @@ const Index = () => {
                         {/* Menu Desktop - Agora dentro do quadro superior */}
                         <div className="hidden md:block absolute bottom-0 left-0 w-full z-50 py-6 bg-gradient-to-t from-black/80 to-transparent">
                             <div className="max-w-[1920px] mx-auto px-10 flex justify-between items-center text-[13px] lg:text-[15px] 2xl:text-[18px] font-bold uppercase tracking-[0.15em] text-brand-gold">
-                                <div className="flex items-center gap-12 lg:gap-20 pl-[2%]">
+                                <div className="flex items-center gap-12 lg:gap-20 pl-[6%] lg:pl-[8%] 2xl:pl-[10%]">
                                     <a href="#marca" className="hover:text-white transition-all cursor-pointer">A MARCA</a>
                                     <a href="#produtos" className="hover:text-white transition-all cursor-pointer">CORTES PREMIUM</a>
                                 </div>
