@@ -71,7 +71,7 @@ const Index = () => {
                         {/* Imagem do Banner Superior */}
                         <div className="w-full relative flex items-center justify-center bg-[#1a0f0a]">
                             <img
-                                src="/novo_banner2.png"
+                                src="/banner_1920x280.png"
                                 alt="Baby Beef Logo Banner"
                                 className="w-full h-[150px] md:h-[280px] object-cover md:object-fill block"
                             />
