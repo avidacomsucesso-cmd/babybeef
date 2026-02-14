@@ -66,42 +66,61 @@ const Index = () => {
                 {}
                 <div className="relative flex flex-col w-full">
                     {}
-                    <nav className="relative w-full z-40 flex flex-col items-center bg-black/90 border-b border-brand-gold/20 py-4 px-4 md:hidden">
-                        <div className="flex flex-wrap justify-center gap-x-6 gap-y-3 text-[11px] uppercase tracking-widest font-bold text-brand-gold">
-                            <a href="#marca" className="hover:text-white transition-colors">A Marca</a>
-                            <a href="#produtos" className="hover:text-white transition-colors">Cortes</a>
-                            <a href="#lojas" className="hover:text-white transition-colors">Lojas</a>
-                            <a href="#franquias" className="hover:text-white transition-colors">Franquias</a>
+                    {/* NOVO QUADRO SUPERIOR: Banner fixo com Menu integrado */}
+                    <div className="relative w-full bg-black overflow-hidden border-b border-brand-gold/30">
+                        {/* Imagem do Banner Superior */}
+                        <div className="w-full h-[180px] md:h-[280px] lg:h-[350px] relative">
+                            <img 
+                                src="/banner-superior.png" 
+                                alt="Baby Beef Logo Banner" 
+                                className="w-full h-full object-cover object-center md:scale-105"
+                            />
+                            {/* Overlay subtil para garantir contraste do menu */}
+                            <div className="absolute inset-0 bg-black/20" />
                         </div>
-                    </nav>
 
-                    {}
-                    <section className="relative flex flex-col md:items-center overflow-hidden bg-black">
-                        {}
-                        <div className="hidden md:block absolute top-[42%] left-0 w-full z-[100] pointer-events-none">
+                        {/* Menu Desktop - Agora dentro do quadro superior */}
+                        <div className="hidden md:block absolute bottom-0 left-0 w-full z-50 py-6 bg-gradient-to-t from-black/80 to-transparent">
                             <div className="max-w-[1920px] mx-auto px-10 flex justify-between items-center text-[13px] lg:text-[15px] 2xl:text-[18px] font-bold uppercase tracking-[0.15em] text-brand-gold">
-                                <div className="flex items-center gap-12 lg:gap-20 pointer-events-auto pl-[2%]">
-                                    <a href="#marca" className="hover:text-white transition-all cursor-pointer relative z-[110]">A MARCA</a>
-                                    <a href="#produtos" className="hover:text-white transition-all cursor-pointer relative z-[110]">CORTES PREMIUM</a>
+                                <div className="flex items-center gap-12 lg:gap-20 pl-[2%]">
+                                    <a href="#marca" className="hover:text-white transition-all cursor-pointer">A MARCA</a>
+                                    <a href="#produtos" className="hover:text-white transition-all cursor-pointer">CORTES PREMIUM</a>
                                 </div>
-                                <div className="flex items-center gap-12 lg:gap-20 pointer-events-auto pr-[2%]">
-                                    <a href="#lojas" className="hover:text-white transition-all cursor-pointer relative z-[110]">LOJAS</a>
-                                    <a href="#franquias" className="hover:text-white transition-all cursor-pointer relative z-[110]">FRANQUIAS</a>
+                                <div className="flex items-center gap-12 lg:gap-20 pr-[2%]">
+                                    <a href="#lojas" className="hover:text-white transition-all cursor-pointer">LOJAS</a>
+                                    <a href="#franquias" className="hover:text-white transition-all cursor-pointer">FRANQUIAS</a>
                                     <OrderForm>
-                                        <button className="bg-brand-gold/90 text-brand-charcoal py-2 px-8 rounded-full cursor-pointer font-black hover:bg-white transition-all relative z-[110]">RESERVAR</button>
+                                        <button className="bg-brand-gold/90 text-brand-charcoal py-2 px-8 rounded-full cursor-pointer font-black hover:bg-white transition-all">RESERVAR</button>
                                     </OrderForm>
                                 </div>
                             </div>
                         </div>
 
+                        {/* Menu Mobile - Logo abaixo do banner */}
+                        <nav className="relative w-full z-40 flex flex-col items-center bg-black py-4 px-4 md:hidden border-t border-brand-gold/10">
+                            <div className="flex flex-wrap justify-center gap-x-6 gap-y-3 text-[11px] uppercase tracking-widest font-bold text-brand-gold">
+                                <a href="#marca" className="hover:text-white transition-colors">A Marca</a>
+                                <a href="#produtos" className="hover:text-white transition-colors">Cortes</a>
+                                <a href="#lojas" className="hover:text-white transition-colors">Lojas</a>
+                                <a href="#franquias" className="hover:text-white transition-colors">Franquias</a>
+                            </div>
+                        </nav>
+                    </div>
+
+                    {}
+                    {/* QUADRO INFERIOR: Secção de Destaque com Imagem Trocável */}
+                    <section className="relative min-h-[60vh] md:h-screen flex flex-col md:items-center overflow-hidden bg-black">
                         <div className="absolute inset-0 z-0">
                             <img
                                 src="/hero-concept-clean.jpg"
-                                alt="Baby Beef Concept"
-                                className="w-full h-full object-contain object-top md:scale-[1.15]"
+                                alt="Destaque Baby Beef"
+                                className="w-full h-full object-cover object-center"
                             />
+                            {/* Filtro para legibilidade do texto */}
+                            <div className="absolute inset-0 bg-black/40" />
                         </div>
-                        <div className="relative z-20 px-6 sm:px-12 md:px-24 2xl:px-32 w-full max-w-[1920px] mx-auto pt-[28vh] md:pt-[55vh] pb-4 md:pb-12">
+
+                        <div className="relative z-20 px-6 sm:px-12 md:px-24 2xl:px-32 w-full max-w-[1920px] mx-auto pt-12 md:pt-[15vh] pb-12">
                             <motion.div
                                 initial={{
                                     opacity: 0,
