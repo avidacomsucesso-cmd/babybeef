@@ -70,10 +70,10 @@ const Index = () => {
                     <div className="relative w-full bg-black overflow-hidden border-b border-brand-gold/30">
                         {/* Imagem do Banner Superior */}
                         <div className="w-full relative flex items-center justify-center bg-[#1a0f0a]">
-                            <img 
-                                src="/novo_banner2.png" 
-                                alt="Baby Beef Logo Banner" 
-                                className="w-full h-[60px] md:h-[280px] object-cover md:object-fill block"
+                            <img
+                                src="/novo_banner2.png"
+                                alt="Baby Beef Logo Banner"
+                                className="w-full h-[150px] md:h-[280px] object-cover md:object-fill block"
                             />
                             {/* Overlay subtil para garantir contraste do menu */}
                             <div className="absolute inset-0 bg-black/10 pointer-events-none" />
