@@ -112,7 +112,7 @@ const Index = () => {
                     <section className="relative min-h-[60vh] md:h-screen flex flex-col md:items-center overflow-hidden bg-black">
                         <div className="absolute inset-0 z-0">
                             <img
-                                src="/hero-concept-clean.jpg"
+                                src="/hero-destaque.png"
                                 alt="Destaque Baby Beef"
                                 className="w-full h-full object-cover object-center"
                             />
