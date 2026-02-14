@@ -69,18 +69,18 @@ const Index = () => {
                     {/* NOVO QUADRO SUPERIOR: Banner fixo com Menu integrado */}
                     <div className="relative w-full bg-black overflow-hidden border-b border-brand-gold/30">
                         {/* Imagem do Banner Superior */}
-                        <div className="w-full relative flex items-center justify-center bg-[#1a0f0a] h-[80px] md:h-[120px] lg:h-[160px]">
+                        <div className="w-full relative flex items-center justify-center bg-[#1a0f0a]">
                             <img 
                                 src="/novo_banner2.png" 
                                 alt="Baby Beef Logo Banner" 
-                                className="w-full h-full object-cover object-center"
+                                className="w-full h-auto object-cover md:object-fill block min-h-[60px] md:min-h-[100px] lg:min-h-[140px]"
                             />
                             {/* Overlay subtil para garantir contraste do menu */}
                             <div className="absolute inset-0 bg-black/10 pointer-events-none" />
                         </div>
 
                         {/* Menu Desktop - Agora dentro do quadro superior */}
-                        <div className="hidden md:block absolute bottom-0 left-0 w-full z-50 py-3 bg-gradient-to-t from-black/90 via-black/40 to-transparent">
+                        <div className="hidden md:block absolute bottom-0 left-0 w-full z-50 py-6 bg-gradient-to-t from-black/80 to-transparent">
                             <div className="max-w-[1920px] mx-auto px-10 flex justify-between items-center text-[13px] lg:text-[15px] 2xl:text-[18px] font-bold uppercase tracking-[0.15em] text-brand-gold">
                                 <div className="flex items-center gap-12 lg:gap-20 pl-[2%]">
                                     <a href="#marca" className="hover:text-white transition-all cursor-pointer">A MARCA</a>
