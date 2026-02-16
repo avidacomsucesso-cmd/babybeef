@@ -80,7 +80,7 @@ const Index = () => {
                         </div>
 
                         {/* Menu Desktop - Agora dentro do quadro superior */}
-                        <div className="hidden md:flex absolute bottom-0 left-0 w-full z-50 py-4 bg-gradient-to-t from-black/80 to-transparent items-center">
+                        <div className="hidden md:flex absolute bottom-0 left-0 w-full z-50 py-6 bg-gradient-to-t from-black/80 to-transparent items-center">
                             <div className="w-full max-w-[1920px] mx-auto px-6 md:px-10 lg:px-12 flex justify-between items-center text-[13px] lg:text-[15px] 2xl:text-[18px] font-bold uppercase tracking-[0.15em] text-brand-gold">
                                 <div className="flex items-center gap-8 lg:gap-12 2xl:gap-20 pl-[4%] lg:pl-[6%] 2xl:pl-[8%] pointer-events-auto">
                                     <a href="#marca" className="hover:text-white transition-all cursor-pointer whitespace-nowrap">A MARCA</a>
@@ -97,7 +97,7 @@ const Index = () => {
                         </div>
 
                         {/* Menu Mobile - Logo abaixo do banner */}
-                        <nav className="relative w-full z-40 flex flex-col items-center bg-black py-4 px-4 md:hidden border-t border-brand-gold/10 landscape:hidden">
+                        <nav className="relative w-full z-40 flex flex-col items-center bg-black py-4 px-4 md:hidden border-t border-brand-gold/10">
                             <div className="flex flex-wrap justify-center gap-x-6 gap-y-3 text-[11px] uppercase tracking-widest font-bold text-brand-gold">
                                 <a href="#marca" className="hover:text-white transition-colors">A Marca</a>
                                 <a href="#produtos" className="hover:text-white transition-colors">Cortes</a>
