@@ -105,7 +105,7 @@ const Index = () => {
                         </div>
 
                         {/* Menu Mobile - Logo abaixo do banner */}
-                        <nav className="relative w-full z-40 flex flex-col items-center bg-black py-4 px-4 md:hidden border-t border-brand-gold/10">
+                        <nav className="relative w-full z-40 flex flex-col items-center bg-black py-4 px-4 md:hidden border-t border-brand-gold/10" style={{ position: 'relative', display: 'flex' }}>
                             <div className="flex flex-wrap justify-center gap-x-6 gap-y-3 text-[11px] uppercase tracking-widest font-bold text-brand-gold">
                                 <a href="#marca" className="hover:text-white transition-colors">A Marca</a>
                                 <a href="#produtos" className="hover:text-white transition-colors">Cortes</a>
