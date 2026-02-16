@@ -69,11 +69,15 @@ const Index = () => {
                     {/* NOVO QUADRO SUPERIOR: Banner fixo com Menu integrado */}
                     <div className="relative w-full bg-black overflow-hidden border-b border-brand-gold/30 shrink-0">
                         {/* Imagem do Banner Superior */}
-                        <div className="w-full relative flex items-center justify-center bg-[#1a0f0a]">
+                        <div className="w-full relative flex items-center justify-center bg-[#1a0f0a] overflow-hidden">
                             <img 
                                 src="/banner_1920x280.png" 
                                 alt="Baby Beef Logo Banner" 
-                                className="w-full h-[150px] md:h-[280px] object-contain md:object-fill block"
+                                className="w-full h-auto min-h-[150px] md:h-[280px] object-contain md:object-fill block touch-none select-none"
+                                style={{
+                                    WebkitUserSelect: 'none',
+                                    WebkitTouchCallout: 'none'
+                                }}
                             />
                             {/* Overlay subtil para garantir contraste do menu */}
                             <div className="absolute inset-0 bg-black/10 pointer-events-none" />
