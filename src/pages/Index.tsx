@@ -73,11 +73,14 @@ const Index = () => {
                             <img 
                                 src="/banner_1920x280.png" 
                                 alt="Baby Beef Logo Banner" 
-                                className="w-full h-[150px] md:h-[280px] object-cover md:object-fill block touch-none select-none"
+                                className="w-full h-[150px] md:h-[280px] block touch-none select-none"
                                 style={{
                                     WebkitUserSelect: 'none',
                                     WebkitTouchCallout: 'none',
-                                    objectPosition: 'center'
+                                    objectFit: 'cover',
+                                    objectPosition: 'center',
+                                    width: '100%',
+                                    aspectRatio: 'auto'
                                 }}
                             />
                             {/* Overlay subtil para garantir contraste do menu */}
