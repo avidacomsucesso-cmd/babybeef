@@ -153,13 +153,13 @@ const Index = () => {
                                 <div className="flex flex-col sm:flex-row gap-4 md:gap-6">
                                     <a href="#produtos">
                                         <button
-                                            className="bg-brand-gold text-brand-charcoal px-8 md:px-12 py-3 md:py-5 rounded-full font-black uppercase tracking-widest hover:scale-105 transition-transform shadow-2xl w-full md:w-auto text-[12px] md:text-sm">
+                                            className="bg-brand-gold text-brand-charcoal px-8 md:px-12 py-4 md:py-5 rounded-full font-black uppercase tracking-widest hover:scale-105 transition-transform shadow-2xl w-full md:w-auto text-[12px] md:text-sm">
                                             Cortes Premium
                                         </button>
                                     </a>
                                     <FranchiseForm>
                                         <button
-                                            className="border border-white/20 backdrop-blur-md bg-white/5 px-8 md:px-12 py-3 md:py-5 rounded-full font-black uppercase tracking-widest hover:bg-white hover:text-brand-charcoal transition-all shadow-xl text-[12px] md:text-sm w-full md:w-auto">
+                                            className="border border-white/20 backdrop-blur-md bg-white/5 px-8 md:px-12 py-4 md:py-5 rounded-full font-black uppercase tracking-widest hover:bg-white hover:text-brand-charcoal transition-all shadow-xl text-[12px] md:text-sm w-full md:w-auto">
                                             Seja um Franqueado
                                         </button>
                                     </FranchiseForm>
