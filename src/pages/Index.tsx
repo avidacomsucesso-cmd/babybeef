@@ -73,7 +73,7 @@ const Index = () => {
                             <img 
                                 src="/banner_1920x280.png" 
                                 alt="Baby Beef Logo Banner" 
-                                className="w-full h-[150px] md:h-[280px] object-cover md:object-fill block"
+                                className="w-full h-[150px] md:h-[280px] object-contain md:object-fill block"
                             />
                             {/* Overlay subtil para garantir contraste do menu */}
                             <div className="absolute inset-0 bg-black/10 pointer-events-none" />
