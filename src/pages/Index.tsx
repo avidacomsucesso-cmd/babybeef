@@ -69,29 +69,31 @@ const Index = () => {
                     {/* NOVO QUADRO SUPERIOR: Banner fixo com Menu integrado */}
                     <div className="relative w-full bg-black overflow-hidden border-b border-brand-gold/30">
                         {/* Imagem do Banner Superior */}
-                        <div className="w-full relative flex items-center justify-center bg-[#1a0f0a]">
-                            <img
-                                src="/banner_1920x280.png"
-                                alt="Baby Beef Logo Banner"
-                                className="w-full h-[150px] md:h-[280px] object-cover md:object-fill block"
+                        <div className="w-full relative flex items-center justify-center bg-[#1a0f0a] min-h-[150px] md:h-[280px]">
+                            <img 
+                                src="/banner_1920x280.png" 
+                                alt="Baby Beef Logo Banner" 
+                                className="w-full h-full object-cover md:object-fill block"
                             />
                             {/* Overlay subtil para garantir contraste do menu */}
                             <div className="absolute inset-0 bg-black/10 pointer-events-none" />
                         </div>
 
-                        {/* Menu Desktop - Agora dentro do quadro superior */}
-                        <div className="hidden md:block absolute bottom-0 left-0 w-full z-50 py-6 bg-gradient-to-t from-black/80 to-transparent">
-                            <div className="max-w-[1920px] mx-auto px-10 flex justify-between items-center text-[13px] lg:text-[15px] 2xl:text-[18px] font-bold uppercase tracking-[0.15em] text-brand-gold">
-                                <div className="flex items-center gap-12 lg:gap-20 pl-[6%] lg:pl-[8%] 2xl:pl-[10%]">
-                                    <a href="#marca" className="hover:text-white transition-all cursor-pointer">A MARCA</a>
-                                    <a href="#produtos" className="hover:text-white transition-all cursor-pointer">CORTES PREMIUM</a>
-                                </div>
-                                <div className="flex items-center gap-12 lg:gap-20 pr-[2%]">
-                                    <a href="#lojas" className="hover:text-white transition-all cursor-pointer">LOJAS</a>
-                                    <a href="#franquias" className="hover:text-white transition-all cursor-pointer">FRANQUIAS</a>
-                                    <OrderForm>
-                                        <button className="bg-brand-gold/90 text-brand-charcoal py-2 px-8 rounded-full cursor-pointer font-black hover:bg-white transition-all">RESERVAR</button>
-                                    </OrderForm>
+                        {/* Menu Desktop - Layout Robusto com Flexbox */}
+                        <div className="hidden md:block absolute bottom-0 left-0 w-full z-50 bg-gradient-to-t from-black/90 to-transparent">
+                            <div className="w-full max-w-[1920px] mx-auto px-6 lg:px-12 2xl:px-24">
+                                <div className="flex justify-between items-center h-20 text-[13px] lg:text-[15px] 2xl:text-[17px] font-bold uppercase tracking-[0.15em] text-brand-gold">
+                                    <div className="flex items-center gap-8 lg:gap-12 2xl:gap-16">
+                                        <a href="#marca" className="hover:text-white transition-all whitespace-nowrap">A MARCA</a>
+                                        <a href="#produtos" className="hover:text-white transition-all whitespace-nowrap">CORTES PREMIUM</a>
+                                    </div>
+                                    <div className="flex items-center gap-8 lg:gap-12 2xl:gap-16">
+                                        <a href="#lojas" className="hover:text-white transition-all whitespace-nowrap">LOJAS</a>
+                                        <a href="#franquias" className="hover:text-white transition-all whitespace-nowrap">FRANQUIAS</a>
+                                        <OrderForm>
+                                            <button className="bg-brand-gold/90 text-brand-charcoal py-2.5 px-8 rounded-full cursor-pointer font-black hover:bg-white transition-all shadow-lg whitespace-nowrap">RESERVAR</button>
+                                        </OrderForm>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -120,7 +122,7 @@ const Index = () => {
                             <div className="absolute inset-0 bg-black/40" />
                         </div>
 
-                        <div className="relative z-20 px-6 sm:px-12 md:px-24 2xl:px-32 w-full max-w-[1920px] mx-auto pt-4 md:pt-[10vh] pb-12">
+                        <div className="relative z-20 px-6 sm:px-12 md:px-24 2xl:px-32 w-full max-w-[1920px] mx-auto pt-8 md:pt-[8vh] pb-12 flex flex-col items-start">
                             <motion.div
                                 initial={{
                                     opacity: 0,
