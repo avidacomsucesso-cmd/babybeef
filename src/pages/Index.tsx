@@ -1,22 +1,3 @@
-/* Progress Bar */
-/* Hero Section Container */
-/* Navigation / Header - Posicionamento ultra-compacto baseado na referência */
-/* Hero Content Section - Começa imediatamente após o menu */
-/* A Marca Section */
-/* Montra Real Section */
-/* Produtos Highlights */
-/* Leve Baby Beef para casa Section */
-/* Testimonials Section */
-/* Logística Section (Franchise Focus) */
-/* Franquias Section */
-/* Footer / Contacto */
-/* Hero Section Container */
-/* Navigation / Header - Posicionamento ultra-compacto baseado na referência */
-/* Background Image para o Topo */
-/* Desktop Grid / Mobile Carousel */
-/* Mobile Carousel - Only visible on small screens */
-/* Desktop Grid / Mobile Carousel for Cortes Premium */
-/* Mobile Carousel for Cortes Premium */
 "use client";
 import React, { useEffect, useState } from "react";
 import { motion, useScroll, useSpring } from "framer-motion";
