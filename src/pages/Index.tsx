@@ -642,9 +642,12 @@ const Index = () => {
                                                                                                                                                                                                                               </p>
                                 <div className="flex gap-4">
                                     <a
-                                        href="#"
-                                        className="w-12 h-12 rounded-full border border-brand-ivory/20 flex items-center justify-center hover:bg-brand-gold hover:text-brand-charcoal transition-all">
-                                        <Instagram size={20} />
+                                        href="https://www.instagram.com/babybeef_oficial?igsh=MWM2OHI4NnlxY2xqMg%3D%3D&utm_source=qr"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="w-12 h-12 rounded-full bg-gradient-to-tr from-[#FF8C00] via-[#E1306C] to-[#833AB4] text-white border-none flex items-center justify-center hover:scale-110 transition-all shadow-lg hover:shadow-pink-500/30"
+                                        aria-label="Instagram">
+                                        <Instagram size={22} />
                                     </a>
                                     <a
                                         href="#"
