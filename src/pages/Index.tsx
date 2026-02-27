@@ -55,6 +55,26 @@ const Index = () => {
                 style={{
                     scaleX
                 }} />
+            
+            {/* Botão Flutuante Instagram */}
+            <motion.a
+                href="https://www.instagram.com/babybeef_oficial?igsh=MWM2OHI4NnlxY2xqMg%3D%3D&utm_source=qr"
+                target="_blank"
+                rel="noopener noreferrer"
+                initial={{ opacity: 0, scale: 0 }}
+                animate={{ opacity: 1, scale: 1 }}
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+                className="fixed bottom-8 right-8 z-[100] w-16 h-16 rounded-full bg-gradient-to-tr from-[#FF8C00] via-[#E1306C] to-[#833AB4] text-white flex items-center justify-center shadow-[0_10px_30px_rgba(225,48,108,0.4)] border-2 border-white/20"
+                aria-label="Seguir no Instagram"
+            >
+                <Instagram size={32} />
+                <span className="absolute -top-2 -right-2 flex h-4 w-4">
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75"></span>
+                    <span className="relative inline-flex rounded-full h-4 w-4 bg-white"></span>
+                </span>
+            </motion.a>
+
             <FireParticles />
             {}
             <div className="relative flex flex-col w-full overflow-x-hidden">
