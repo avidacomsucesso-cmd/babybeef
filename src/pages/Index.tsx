@@ -22,6 +22,20 @@ import HomeProductsSection from "../components/HomeProductsSection";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 
 const Index = () => {
+    const preparedImages = [
+        "/preparado-2.jpeg", "/preparado-3.jpeg", "/preparado-4.jpeg", "/preparado-5.jpeg",
+        "/preparado-6.jpeg", "/preparado-7.jpeg", "/preparado-8.jpeg", "/preparado-9.jpeg",
+        "/preparado-11.jpeg", "/preparado-12.jpeg", "/preparado-13.jpeg", "/preparado-14.jpeg",
+        "/preparado-15.jpeg", "/preparado-16.jpeg", "/preparado-17.jpeg", "/preparado-18.jpeg",
+        "/preparado-19.jpeg", "/preparado-20.jpeg", "/preparado-21.jpeg", "/preparado-22.jpeg"
+    ];
+
+    // Chunk images into groups of 8
+    const chunkedImages = [];
+    for (let i = 0; i < preparedImages.length; i += 8) {
+        chunkedImages.push(preparedImages.slice(i, i + 8));
+    }
+
     const {
         scrollYProgress
     } = useScroll();
@@ -444,6 +458,61 @@ const Index = () => {
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                    </section>
+                    {}
+                    <section
+                        id="preparados"
+                        className="relative py-12 md:py-32 overflow-hidden bg-brand-charcoal border-t border-brand-gold/10">
+                        <div className="absolute inset-0 z-0">
+                            <img
+                                src="/vintage_film_bg.jpg"
+                                alt="Background Texture"
+                                className="w-full h-full object-cover opacity-60 mix-blend-overlay" />
+                        </div>
+                        <div className="relative z-10 max-w-[1920px] mx-auto px-4 md:px-8">
+                            <div className="text-center mb-16">
+                                <h2 className="text-brand-gold uppercase tracking-widest text-[10px] md:text-sm 2xl:text-base mb-2 md:mb-4">Prontos para Cozinhar</h2>
+                                <h3 className="text-3xl md:text-6xl font-serif mb-6">Nossos Preparados</h3>
+                                <p className="text-brand-ivory/70 text-sm md:text-lg max-w-3xl mx-auto">
+                                    A conveniência do talho gourmet na sua cozinha. Descubra a nossa variedade de preparados artesanais, feitos diariamente com os melhores ingredientes.
+                                </p>
+                            </div>
+
+                            <Carousel
+                                opts={{
+                                    align: "start",
+                                    loop: true
+                                }}
+                                className="w-full"
+                            >
+                                <CarouselContent>
+                                    {chunkedImages.map((chunk, chunkIdx) => (
+                                        <CarouselItem key={chunkIdx} className="w-full">
+                                            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 p-2">
+                                                {chunk.map((img, imgIdx) => (
+                                                    <motion.div
+                                                        key={imgIdx}
+                                                        whileHover={{ scale: 1.02 }}
+                                                        className="aspect-[3/4] rounded-xl overflow-hidden shadow-2xl border border-brand-gold/10"
+                                                    >
+                                                        <img
+                                                            src={img}
+                                                            alt={`Preparado ${chunkIdx * 8 + imgIdx + 1}`}
+                                                            className="w-full h-full object-cover"
+                                                            loading="lazy"
+                                                        />
+                                                    </motion.div>
+                                                ))}
+                                            </div>
+                                        </CarouselItem>
+                                    ))}
+                                </CarouselContent>
+                                <div className="flex justify-center gap-6 mt-12">
+                                    <CarouselPrevious className="static translate-y-0 h-12 w-12 bg-brand-gold border-brand-gold text-brand-charcoal hover:bg-white hover:text-brand-charcoal transition-all shadow-xl" />
+                                    <CarouselNext className="static translate-y-0 h-12 w-12 bg-brand-gold border-brand-gold text-brand-charcoal hover:bg-white hover:text-brand-charcoal transition-all shadow-xl" />
+                                </div>
+                            </Carousel>
                         </div>
                     </section>
                     {}
