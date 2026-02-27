@@ -92,47 +92,20 @@ const Index = () => {
                                 <div className="flex items-center gap-8 lg:gap-12 2xl:gap-20 pr-[2%] pointer-events-auto">
                                     <a href="#lojas" className="hover:text-white transition-all cursor-pointer whitespace-nowrap">LOJAS</a>
                                     <a href="#franquias" className="hover:text-white transition-all cursor-pointer whitespace-nowrap">FRANQUIAS</a>
-                                    <div className="flex items-center gap-4">
-                                        <a 
-                                            href="https://www.instagram.com/babybeef_oficial?igsh=MWM2OHI4NnlxY2xqMg%3D%3D&utm_source=qr" 
-                                            target="_blank" 
-                                            rel="noopener noreferrer"
-                                            className="w-10 h-10 rounded-full bg-gradient-to-tr from-[#FF8C00] via-[#E1306C] to-[#833AB4] text-white flex items-center justify-center hover:scale-110 transition-all shadow-lg"
-                                            aria-label="Instagram"
-                                        >
-                                            <Instagram size={20} />
-                                        </a>
-                                        <OrderForm>
-                                            <button className="bg-brand-gold/90 text-brand-charcoal py-2 px-6 lg:px-8 rounded-full cursor-pointer font-black hover:bg-white transition-all whitespace-nowrap">RESERVAR</button>
-                                        </OrderForm>
-                                    </div>
+                                    <OrderForm>
+                                        <button className="bg-brand-gold/90 text-brand-charcoal py-2 px-6 lg:px-8 rounded-full cursor-pointer font-black hover:bg-white transition-all whitespace-nowrap">RESERVAR</button>
+                                    </OrderForm>
                                 </div>
                             </div>
                         </div>
 
                         {/* Menu Mobile - Logo abaixo do banner */}
                         <nav className="relative w-full z-40 flex flex-col items-center bg-black py-4 px-4 md:hidden border-t border-brand-gold/10">
-                            <div className="flex items-center gap-6 mb-4">
-                                <div className="flex flex-wrap justify-center gap-x-6 gap-y-3 text-[11px] uppercase tracking-widest font-bold text-brand-gold">
-                                    <a href="#marca" className="hover:text-white transition-colors">A Marca</a>
-                                    <a href="#produtos" className="hover:text-white transition-colors">Cortes</a>
-                                    <a href="#lojas" className="hover:text-white transition-colors">Lojas</a>
-                                    <a href="#franquias" className="hover:text-white transition-colors">Franquias</a>
-                                </div>
-                            </div>
-                            <div className="flex items-center gap-4">
-                                <a 
-                                    href="https://www.instagram.com/babybeef_oficial?igsh=MWM2OHI4NnlxY2xqMg%3D%3D&utm_source=qr" 
-                                    target="_blank" 
-                                    rel="noopener noreferrer"
-                                    className="w-8 h-8 rounded-full bg-gradient-to-tr from-[#FF8C00] via-[#E1306C] to-[#833AB4] text-white flex items-center justify-center hover:scale-110 transition-all"
-                                    aria-label="Instagram"
-                                >
-                                    <Instagram size={16} />
-                                </a>
-                                <OrderForm>
-                                    <button className="bg-brand-gold text-brand-charcoal py-1.5 px-5 rounded-full text-[10px] font-black uppercase tracking-wider">RESERVAR</button>
-                                </OrderForm>
+                            <div className="flex flex-wrap justify-center gap-x-6 gap-y-3 text-[11px] uppercase tracking-widest font-bold text-brand-gold">
+                                <a href="#marca" className="hover:text-white transition-colors">A Marca</a>
+                                <a href="#produtos" className="hover:text-white transition-colors">Cortes</a>
+                                <a href="#lojas" className="hover:text-white transition-colors">Lojas</a>
+                                <a href="#franquias" className="hover:text-white transition-colors">Franquias</a>
                             </div>
                         </nav>
                     </div>
