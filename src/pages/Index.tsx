@@ -22,7 +22,7 @@ import HomeProductsSection from "../components/HomeProductsSection";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 
 const Index = () => {
-    // Forçar atualização do commit (timestamp: 2024-02-27T23:00:00)
+    // Forçar nova build Vercel (timestamp: 2026-03-03T20:33:00)
     const preparedImages = [
         "/preparado-2.jpeg", "/preparado-3.jpeg", "/preparado-4.jpeg", "/preparado-5.jpeg",
         "/preparado-6.jpeg", "/preparado-7.jpeg", "/preparado-8.jpeg", "/preparado-9.jpeg",
