@@ -555,7 +555,7 @@ const Index = () => {
                                 </p>
                             </div>
 
-                            <div className="grid md:grid-cols-2 gap-12">
+                            <div className="grid md:grid-cols-3 gap-12">
                                 <motion.div 
                                     whileHover={{ y: -10 }}
                                     className="group relative overflow-hidden rounded-2xl shadow-2xl bg-black/20 border border-brand-gold/20"
@@ -597,6 +597,29 @@ const Index = () => {
                                                 className="hover:text-brand-gold transition-colors text-lg"
                                             >
                                                 Rua de Cabo Verde, n. 5 Loja<br />2685-316, Prior Velho, Lisboa
+                                            </a>
+                                        </div>
+                                    </div>
+                                </motion.div>
+
+                                <motion.div 
+                                    whileHover={{ y: -10 }}
+                                    className="group relative overflow-hidden rounded-2xl shadow-2xl bg-black/20 border border-brand-gold/20"
+                                >
+                                    <div className="aspect-[4/3] overflow-hidden">
+                                        <img src="/loja-3.jpeg" alt="Baby Beef Loja 3" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                                    </div>
+                                    <div className="p-8 border-t border-brand-gold/10">
+                                        <h4 className="text-2xl font-serif text-brand-gold mb-4">Baby Beef Loja 3</h4>
+                                        <div className="flex items-start gap-3 text-brand-ivory/80">
+                                            <MapPin size={20} className="text-brand-gold shrink-0 mt-1" />
+                                            <a 
+                                                href="https://www.google.com/maps/search/?api=1&query=BabyBeef+Rua+Brigadeiro+Alberto+Fernandes+2+Alverca+do+Ribatejo" 
+                                                target="_blank" 
+                                                rel="noopener noreferrer"
+                                                className="hover:text-brand-gold transition-colors text-lg"
+                                            >
+                                                Rua Brigadeiro Alberto Fernandes, n°2<br />2615-030, Alverca do Ribatejo
                                             </a>
                                         </div>
                                     </div>
@@ -782,6 +805,18 @@ const Index = () => {
                                         >
                                             <span className="font-bold text-brand-gold">BabyBeef Loja 2</span><br />
                                             Rua de Cabo Verde, n. 5 Loja - 2685-316, Prior Velho, Lisboa
+                                        </a>
+                                    </li>
+                                    <li className="flex items-start gap-2">
+                                        <MapPin size={16} className="text-brand-gold mt-1 flex-shrink-0" />
+                                        <a
+                                            href="https://www.google.com/maps/search/?api=1&query=BabyBeef+Rua+Brigadeiro+Alberto+Fernandes+2+Alverca+do+Ribatejo"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="hover:text-brand-gold transition-colors"
+                                        >
+                                            <span className="font-bold text-brand-gold">BabyBeef Loja 3</span><br />
+                                            Rua Brigadeiro Alberto Fernandes, n°2 - 2615-030 - Alverca do Ribatejo
                                         </a>
                                     </li>
                                     <li className="flex items-center gap-2">
