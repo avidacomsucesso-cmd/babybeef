@@ -72,6 +72,13 @@ const OrderForm = ({ children }: { children: React.ReactNode }) => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    const formData = new FormData(e.currentTarget as HTMLFormElement);
+    const name = formData.get('name') as string;
+    const email = formData.get('email') as string;
+    const phone = formData.get('phone') as string;
+    const time = formData.get('time') as string;
+    const address = formData.get('address') as string;
+
     if (selectedCuts.length === 0) {
       toast.error("Por favor, selecione pelo menos um corte.");
       return;
@@ -80,16 +87,48 @@ const OrderForm = ({ children }: { children: React.ReactNode }) => {
       toast.error("Por favor, selecione uma data.");
       return;
     }
+    
     setLoading(true);
+
+    const formattedDate = format(date, "PPP", { locale: pt });
+    const cutsList = selectedCuts
+      .map(c => `- ${c.name}: ${c.quantity} ${c.unit}`)
+      .join('\n');
+
+    const subject = `Nova Reserva - Baby Beef & Co - ${name}`;
+    const body = `
+Olá, gostaria de realizar uma reserva/pedido:
+
+DADOS DO CLIENTE:
+Nome: ${name}
+Email: ${email}
+WhatsApp: ${phone}
+
+DETALHES DA LOGÍSTICA:
+Modo: ${orderType === "pickup" ? "Retirar no Talho" : "Entrega ao Domicílio"}
+Data: ${formattedDate}
+Horário Sugerido: ${time}
+${orderType === "delivery" ? `Endereço: ${address}` : ""}
+
+CORTES SELECIONADOS:
+${cutsList}
+
+---
+Pedido gerado via Website Baby Beef & Co.
+    `.trim();
+
+    const mailtoUrl = `mailto:drapriscilasoarez@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    
+    window.location.href = mailtoUrl;
 
     setTimeout(() => {
       setLoading(false);
       setOpen(false);
-      toast.success("Reserva recebida com sucesso!", {
-        description: `Entraremos em contacto para confirmar os pesos e valores.`,
+      toast.success("Reserva preparada!", {
+        description: `O seu cliente de email foi aberto com os dados do pedido.`,
       });
       setSelectedCuts([]);
-    }, 2000);
+    }, 1000);
   };
 
   return (
@@ -252,6 +291,7 @@ const OrderForm = ({ children }: { children: React.ReactNode }) => {
                   <Input 
                     type="time" 
                     id="time" 
+                    name="time"
                     required 
                     className="bg-brand-charcoal border-brand-gold/10 focus:border-brand-gold h-12" 
                   />
@@ -261,23 +301,23 @@ const OrderForm = ({ children }: { children: React.ReactNode }) => {
               <div className="space-y-4 pt-4 border-t border-brand-gold/10">
                 <div className="space-y-2">
                   <Label htmlFor="name">Nome Completo</Label>
-                  <Input id="name" required className="bg-brand-charcoal border-brand-gold/10" />
+                  <Input id="name" name="name" required className="bg-brand-charcoal border-brand-gold/10" />
                 </div>
                 <div className="grid grid-cols-2 gap-4">
                   <div className="space-y-2">
                     <Label htmlFor="email" className="flex items-center gap-2"><Mail size={14} /> Email</Label>
-                    <Input id="email" type="email" required className="bg-brand-charcoal border-brand-gold/10" />
+                    <Input id="email" name="email" type="email" required className="bg-brand-charcoal border-brand-gold/10" />
                   </div>
                   <div className="space-y-2">
                     <Label htmlFor="phone" className="flex items-center gap-2"><Phone size={14} /> WhatsApp</Label>
-                    <Input id="phone" required className="bg-brand-charcoal border-brand-gold/10" />
+                    <Input id="phone" name="phone" required className="bg-brand-charcoal border-brand-gold/10" />
                   </div>
                 </div>
                 
                 {orderType === "delivery" && (
                   <div className="space-y-2 animate-fade-in">
                     <Label htmlFor="address">Endereço Completo</Label>
-                    <Input id="address" placeholder="Rua, Número, Andar, Código Postal" required className="bg-brand-charcoal border-brand-gold/10" />
+                    <Input id="address" name="address" placeholder="Rua, Número, Andar, Código Postal" required className="bg-brand-charcoal border-brand-gold/10" />
                   </div>
                 )}
               </div>
