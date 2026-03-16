@@ -117,7 +117,7 @@ ${cutsList}
 Pedido gerado via Website Baby Beef & Co.
     `.trim();
 
-    const mailtoUrl = `mailto:drapriscilasoarez@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    const mailtoUrl = `mailto:Babybeef.pt@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     
     window.location.href = mailtoUrl;
 
