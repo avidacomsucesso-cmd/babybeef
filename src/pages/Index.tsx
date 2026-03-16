@@ -822,8 +822,9 @@ const Index = () => {
                                     <li className="flex items-center gap-2">
                                         <Phone size={16} className="text-brand-gold" />219 335 677
                                                                                                                                                                                                                     </li>
-                                    <li className="flex items-center gap-2 underline text-brand-gold">adm@babybeef.pt
-                                                                                                                                                                                                                    </li>
+                                    <li className="flex items-center gap-2 underline text-brand-gold">
+                                        <a href="mailto:Babybeef.pt@gmail.com" className="hover:text-white transition-colors">Babybeef.pt@gmail.com</a>
+                                    </li>
                                 </ul>
                             </div>
                             <div className="flex flex-col items-center md:items-start">
